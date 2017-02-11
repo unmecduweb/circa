@@ -15,8 +15,8 @@ class __TwigTemplate_898504e5602f1cef6fbc40a0ffda7ac589b7964325829e553be82e28e5a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_59e0d510b2cfcccd6feccf908e832429ca13002e0ba25136cae9292af63b9fd4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_59e0d510b2cfcccd6feccf908e832429ca13002e0ba25136cae9292af63b9fd4->enter($__internal_59e0d510b2cfcccd6feccf908e832429ca13002e0ba25136cae9292af63b9fd4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/include/php_image_magician.php"));
+        $__internal_f4411b931a343b3af833412a72ba1f9c612a6df6bedc0ece7385651c312c52ef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f4411b931a343b3af833412a72ba1f9c612a6df6bedc0ece7385651c312c52ef->enter($__internal_f4411b931a343b3af833412a72ba1f9c612a6df6bedc0ece7385651c312c52ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/include/php_image_magician.php"));
 
         // line 1
         echo "<?php
@@ -3804,7 +3804,7 @@ class imageLib {
  */
 ";
         
-        $__internal_59e0d510b2cfcccd6feccf908e832429ca13002e0ba25136cae9292af63b9fd4->leave($__internal_59e0d510b2cfcccd6feccf908e832429ca13002e0ba25136cae9292af63b9fd4_prof);
+        $__internal_f4411b931a343b3af833412a72ba1f9c612a6df6bedc0ece7385651c312c52ef->leave($__internal_f4411b931a343b3af833412a72ba1f9c612a6df6bedc0ece7385651c312c52ef_prof);
 
     }
 

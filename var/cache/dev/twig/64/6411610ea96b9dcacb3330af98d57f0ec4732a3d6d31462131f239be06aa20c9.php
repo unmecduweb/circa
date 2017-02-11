@@ -15,8 +15,8 @@ class __TwigTemplate_da06004e140fccfed27c8108be6a8744533a338ba02264809ee4c79e11d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_84f07ede531c723dd56b0051f4e4581cc2800e60238f93af5f79e0b21c2ced1c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_84f07ede531c723dd56b0051f4e4581cc2800e60238f93af5f79e0b21c2ced1c->enter($__internal_84f07ede531c723dd56b0051f4e4581cc2800e60238f93af5f79e0b21c2ced1c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/skin/pink.flag/mustache/jplayer.pink.flag.audio.stream.html"));
+        $__internal_5e4e2a1e23bdfae29080687fdd87806dc8343ffe173f5e53282d4413e57ccfaa = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5e4e2a1e23bdfae29080687fdd87806dc8343ffe173f5e53282d4413e57ccfaa->enter($__internal_5e4e2a1e23bdfae29080687fdd87806dc8343ffe173f5e53282d4413e57ccfaa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/skin/pink.flag/mustache/jplayer.pink.flag.audio.stream.html"));
 
         // line 1
         echo "<div id=\"";
@@ -50,7 +50,7 @@ class __TwigTemplate_da06004e140fccfed27c8108be6a8744533a338ba02264809ee4c79e11d
 </div>
 ";
         
-        $__internal_84f07ede531c723dd56b0051f4e4581cc2800e60238f93af5f79e0b21c2ced1c->leave($__internal_84f07ede531c723dd56b0051f4e4581cc2800e60238f93af5f79e0b21c2ced1c_prof);
+        $__internal_5e4e2a1e23bdfae29080687fdd87806dc8343ffe173f5e53282d4413e57ccfaa->leave($__internal_5e4e2a1e23bdfae29080687fdd87806dc8343ffe173f5e53282d4413e57ccfaa_prof);
 
     }
 

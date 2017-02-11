@@ -15,8 +15,8 @@ class __TwigTemplate_a8b9a4bd1de8ebde00edf3e0d9f0bdc742d04cdcf40214757ccd47eebdc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_14a6749c0579a9ae211e777bbd353b278adbf576815b323efde25f531e072c86 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_14a6749c0579a9ae211e777bbd353b278adbf576815b323efde25f531e072c86->enter($__internal_14a6749c0579a9ae211e777bbd353b278adbf576815b323efde25f531e072c86_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/ajax_calls.php"));
+        $__internal_25182e450bf26eebbe3c76264ab95fd1b5861ab4cd15a4fcf2507b70a04a6a4a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_25182e450bf26eebbe3c76264ab95fd1b5861ab4cd15a4fcf2507b70a04a6a4a->enter($__internal_25182e450bf26eebbe3c76264ab95fd1b5861ab4cd15a4fcf2507b70a04a6a4a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/ajax_calls.php"));
 
         // line 1
         echo "<?php
@@ -713,7 +713,7 @@ if(isset(\$_GET['action']))
 }
 ?>";
         
-        $__internal_14a6749c0579a9ae211e777bbd353b278adbf576815b323efde25f531e072c86->leave($__internal_14a6749c0579a9ae211e777bbd353b278adbf576815b323efde25f531e072c86_prof);
+        $__internal_25182e450bf26eebbe3c76264ab95fd1b5861ab4cd15a4fcf2507b70a04a6a4a->leave($__internal_25182e450bf26eebbe3c76264ab95fd1b5861ab4cd15a4fcf2507b70a04a6a4a_prof);
 
     }
 

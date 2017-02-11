@@ -15,8 +15,8 @@ class __TwigTemplate_74281d11e4e352ad8d530164bd132410d9a9491cc38f298fb2928f1054b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_24e8c35700a4506b514172e8c5778dcb432f6dc7d7f10d63d4e0d1256810bc10 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_24e8c35700a4506b514172e8c5778dcb432f6dc7d7f10d63d4e0d1256810bc10->enter($__internal_24e8c35700a4506b514172e8c5778dcb432f6dc7d7f10d63d4e0d1256810bc10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/ico/wma.jpg"));
+        $__internal_bc11165ef08ec8f0b96c29ded039b526fe9b4b8f107286b4acb6f48c3964e9a4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bc11165ef08ec8f0b96c29ded039b526fe9b4b8f107286b4acb6f48c3964e9a4->enter($__internal_bc11165ef08ec8f0b96c29ded039b526fe9b4b8f107286b4acb6f48c3964e9a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/ico/wma.jpg"));
 
         // line 1
         echo "ÿØÿà\000JFIF\000\000\000\000\000\000ÿá\000@Exif\000\000MM\000*\000\000\000\000‡i\000\000\000\000\000\000\000\000\000\000\000\000 \000\000\000\000\000\000\000z \000\000\000\000\000\000\000[\000\000\000\000ÿş\0004Optimized by JPEGmini 3.9.2.5L Internal 0xbb36a588ÿÛ\000C\000\t
@@ -41,7 +41,7 @@ class __TwigTemplate_74281d11e4e352ad8d530164bd132410d9a9491cc38f298fb2928f1054b
 œ† \000\000\000\000\000\000\000ÿÄ\000\000\000\000\000\000\000\000\000\000\000\000\000 !10@aqÿÚ\000?éô‚l€u}E`Ãî8B‡ÿÄ\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000 !01@AQÿÚ\000?á
 ´´öîü97•X\"»WOÿÄ\000\"\000\000\000\000\000\000\000\000\000\000\000!10QaPq‘`¡ÁÿÚ\000\000?ø¡‡Ç=‘‹’’¶}\000Æ(\$š#‰ˆ„¥À›„˜’“\000L®5;3+\"2‘//75©‰Šå<ì‚Á0a` nèK—rr¸­;\t\"ò1*êo¨VÂZó\\z†.’3éè@ÂI=µ÷v‡B2¯íRhi~8€YLME&SÚ_ÿÙ";
         
-        $__internal_24e8c35700a4506b514172e8c5778dcb432f6dc7d7f10d63d4e0d1256810bc10->leave($__internal_24e8c35700a4506b514172e8c5778dcb432f6dc7d7f10d63d4e0d1256810bc10_prof);
+        $__internal_bc11165ef08ec8f0b96c29ded039b526fe9b4b8f107286b4acb6f48c3964e9a4->leave($__internal_bc11165ef08ec8f0b96c29ded039b526fe9b4b8f107286b4acb6f48c3964e9a4_prof);
 
     }
 

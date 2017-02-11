@@ -15,8 +15,8 @@ class __TwigTemplate_35308e51ceaea486d03d1b0db266b1786c05977f3084692d19df5dbe08a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_971c49755615f983cc7bfdd55772fd7d19d17a52faed7130f9b396030cee8470 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_971c49755615f983cc7bfdd55772fd7d19d17a52faed7130f9b396030cee8470->enter($__internal_971c49755615f983cc7bfdd55772fd7d19d17a52faed7130f9b396030cee8470_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/ViewerJS/images/toolbarButton-zoomIn.png"));
+        $__internal_62359ad4ff802e08a1bc34dea0f1156cc806dd1b7caed877a82683e89298a1a4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_62359ad4ff802e08a1bc34dea0f1156cc806dd1b7caed877a82683e89298a1a4->enter($__internal_62359ad4ff802e08a1bc34dea0f1156cc806dd1b7caed877a82683e89298a1a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/ViewerJS/images/toolbarButton-zoomIn.png"));
 
         // line 1
         echo "‰PNG
@@ -27,7 +27,7 @@ BAE
 Û4˜¶6›`üƒÿ`Òh5[­b²ù~ÜzÌ”e‘ežïrw8°³£RÊ þ'h|c1ruÖ%˜«ÿ\0009\"X«9\"Ø¨¹Gàw^õ {ï;i\t¸ó³âuÏlK°ÐÿÖ³-A[±7Nê¯@öÞfrKÄDLú½·™Ôû
 g Gžq¥þäˆÀw9\"ð@ú%Äuø´tCõÉü\000\000\000\000IEND®B`‚";
         
-        $__internal_971c49755615f983cc7bfdd55772fd7d19d17a52faed7130f9b396030cee8470->leave($__internal_971c49755615f983cc7bfdd55772fd7d19d17a52faed7130f9b396030cee8470_prof);
+        $__internal_62359ad4ff802e08a1bc34dea0f1156cc806dd1b7caed877a82683e89298a1a4->leave($__internal_62359ad4ff802e08a1bc34dea0f1156cc806dd1b7caed877a82683e89298a1a4_prof);
 
     }
 

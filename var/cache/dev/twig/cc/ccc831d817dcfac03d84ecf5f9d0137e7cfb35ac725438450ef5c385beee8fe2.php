@@ -22,32 +22,32 @@ class __TwigTemplate_1b81b43fc1bbf288269b20d6c3ae21c1fa0681bef6b38e49c0e25d3dd67
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_470880720d11e5cc4477ebf3c1f5e4162cdc0308b8dd8b66a1210c3428ce7492 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_470880720d11e5cc4477ebf3c1f5e4162cdc0308b8dd8b66a1210c3428ce7492->enter($__internal_470880720d11e5cc4477ebf3c1f5e4162cdc0308b8dd8b66a1210c3428ce7492_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MwebCoreBundle::content.html.twig"));
+        $__internal_e9bb25609e7c615af1998fc0ef42c35259d564f3530674c24daff666800c3ab6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e9bb25609e7c615af1998fc0ef42c35259d564f3530674c24daff666800c3ab6->enter($__internal_e9bb25609e7c615af1998fc0ef42c35259d564f3530674c24daff666800c3ab6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MwebCoreBundle::content.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_470880720d11e5cc4477ebf3c1f5e4162cdc0308b8dd8b66a1210c3428ce7492->leave($__internal_470880720d11e5cc4477ebf3c1f5e4162cdc0308b8dd8b66a1210c3428ce7492_prof);
+        $__internal_e9bb25609e7c615af1998fc0ef42c35259d564f3530674c24daff666800c3ab6->leave($__internal_e9bb25609e7c615af1998fc0ef42c35259d564f3530674c24daff666800c3ab6_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_6fb890ed1865fadd591509feb8beb65d9fee642a4376d1206a65fbc7bf12236c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6fb890ed1865fadd591509feb8beb65d9fee642a4376d1206a65fbc7bf12236c->enter($__internal_6fb890ed1865fadd591509feb8beb65d9fee642a4376d1206a65fbc7bf12236c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_a35c23efa5c95e9de1b96086369339adf0becdce3a574d28a7522930030eddf4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a35c23efa5c95e9de1b96086369339adf0becdce3a574d28a7522930030eddf4->enter($__internal_a35c23efa5c95e9de1b96086369339adf0becdce3a574d28a7522930030eddf4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : $this->getContext($context, "page")), "title", array()), "html", null, true);
         
-        $__internal_6fb890ed1865fadd591509feb8beb65d9fee642a4376d1206a65fbc7bf12236c->leave($__internal_6fb890ed1865fadd591509feb8beb65d9fee642a4376d1206a65fbc7bf12236c_prof);
+        $__internal_a35c23efa5c95e9de1b96086369339adf0becdce3a574d28a7522930030eddf4->leave($__internal_a35c23efa5c95e9de1b96086369339adf0becdce3a574d28a7522930030eddf4_prof);
 
     }
 
     // line 8
     public function block_content($context, array $blocks = array())
     {
-        $__internal_0ad64d160f16d97c7a862668aa4ac62f7e538521fc30af8a3e00caadea7fe4d9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0ad64d160f16d97c7a862668aa4ac62f7e538521fc30af8a3e00caadea7fe4d9->enter($__internal_0ad64d160f16d97c7a862668aa4ac62f7e538521fc30af8a3e00caadea7fe4d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_e26d57379b1a8735b117e7d71120bfe01f7e80dc9f7375c894513ad613a9c781 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e26d57379b1a8735b117e7d71120bfe01f7e80dc9f7375c894513ad613a9c781->enter($__internal_e26d57379b1a8735b117e7d71120bfe01f7e80dc9f7375c894513ad613a9c781_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 9
         echo "    ";
@@ -99,8 +99,11 @@ class __TwigTemplate_1b81b43fc1bbf288269b20d6c3ae21c1fa0681bef6b38e49c0e25d3dd67
                 ";
         // line 36
         echo "                <div class=\"col-xs-12 col-sm-4\">
-
-                </div>
+                    ";
+        // line 37
+        $this->loadTemplate("MwebCoreBundle::sidebar.html.twig", "MwebCoreBundle::content.html.twig", 37)->display($context);
+        // line 38
+        echo "                </div>
                 <div class=\"clear\"></div>
             </div>
 
@@ -108,14 +111,11 @@ class __TwigTemplate_1b81b43fc1bbf288269b20d6c3ae21c1fa0681bef6b38e49c0e25d3dd67
     </section>
 
 
-    ";
-        // line 46
-        $this->loadTemplate("MwebCoreBundle::sidebar.html.twig", "MwebCoreBundle::content.html.twig", 46)->display($context);
-        // line 47
-        echo "
+
+
 ";
         
-        $__internal_0ad64d160f16d97c7a862668aa4ac62f7e538521fc30af8a3e00caadea7fe4d9->leave($__internal_0ad64d160f16d97c7a862668aa4ac62f7e538521fc30af8a3e00caadea7fe4d9_prof);
+        $__internal_e26d57379b1a8735b117e7d71120bfe01f7e80dc9f7375c894513ad613a9c781->leave($__internal_e26d57379b1a8735b117e7d71120bfe01f7e80dc9f7375c894513ad613a9c781_prof);
 
     }
 
@@ -131,7 +131,7 @@ class __TwigTemplate_1b81b43fc1bbf288269b20d6c3ae21c1fa0681bef6b38e49c0e25d3dd67
 
     public function getDebugInfo()
     {
-        return array (  115 => 47,  113 => 46,  101 => 36,  96 => 33,  81 => 21,  75 => 20,  68 => 16,  64 => 15,  55 => 10,  53 => 9,  47 => 8,  35 => 5,  11 => 1,);
+        return array (  106 => 38,  104 => 37,  101 => 36,  96 => 33,  81 => 21,  75 => 20,  68 => 16,  64 => 15,  55 => 10,  53 => 9,  47 => 8,  35 => 5,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -180,7 +180,7 @@ class __TwigTemplate_1b81b43fc1bbf288269b20d6c3ae21c1fa0681bef6b38e49c0e25d3dd67
                 </div>
                 {#NEWS#}
                 <div class=\"col-xs-12 col-sm-4\">
-
+                    {%  include 'MwebCoreBundle::sidebar.html.twig' %}
                 </div>
                 <div class=\"clear\"></div>
             </div>
@@ -189,7 +189,7 @@ class __TwigTemplate_1b81b43fc1bbf288269b20d6c3ae21c1fa0681bef6b38e49c0e25d3dd67
     </section>
 
 
-    {%  include 'MwebCoreBundle::sidebar.html.twig' %}
+
 
 {% endblock %}", "MwebCoreBundle::content.html.twig", "/home/fab/Documents/Pro/www/circa/src/Mweb/CoreBundle/Resources/views/content.html.twig");
     }

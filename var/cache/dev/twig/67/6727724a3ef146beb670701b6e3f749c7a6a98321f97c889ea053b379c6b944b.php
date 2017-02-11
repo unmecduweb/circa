@@ -15,8 +15,8 @@ class __TwigTemplate_b3fe9576f388e12ca7b843835b2d590dc13978862ce8d7901733afd1380
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d5f697243d3c6dc0bca4eadb1960e2af845f068efbff9c234ab423908f070216 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d5f697243d3c6dc0bca4eadb1960e2af845f068efbff9c234ab423908f070216->enter($__internal_d5f697243d3c6dc0bca4eadb1960e2af845f068efbff9c234ab423908f070216_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/ViewerJS/AGPL-3.0.txt"));
+        $__internal_d59b9e55f3d0949784bd0bb877a621a0a326d60a01f0a8a68ed7d0b04129e604 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d59b9e55f3d0949784bd0bb877a621a0a326d60a01f0a8a68ed7d0b04129e604->enter($__internal_d59b9e55f3d0949784bd0bb877a621a0a326d60a01f0a8a68ed7d0b04129e604_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/ViewerJS/AGPL-3.0.txt"));
 
         // line 1
         echo "                    GNU AFFERO GENERAL PUBLIC LICENSE
@@ -682,7 +682,7 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 <http://www.gnu.org/licenses/>.
 ";
         
-        $__internal_d5f697243d3c6dc0bca4eadb1960e2af845f068efbff9c234ab423908f070216->leave($__internal_d5f697243d3c6dc0bca4eadb1960e2af845f068efbff9c234ab423908f070216_prof);
+        $__internal_d59b9e55f3d0949784bd0bb877a621a0a326d60a01f0a8a68ed7d0b04129e604->leave($__internal_d59b9e55f3d0949784bd0bb877a621a0a326d60a01f0a8a68ed7d0b04129e604_prof);
 
     }
 

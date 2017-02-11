@@ -15,8 +15,8 @@ class __TwigTemplate_ac3c5104e57f3f4d43ccd812b172c182e9a0f269c59bb86d26e3ea45a2d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a87f1163fb7faff4668b67c938a6dba5422068172766519cac2c85c7aa5ca93d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a87f1163fb7faff4668b67c938a6dba5422068172766519cac2c85c7aa5ca93d->enter($__internal_a87f1163fb7faff4668b67c938a6dba5422068172766519cac2c85c7aa5ca93d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/add-on/jplayer.playlist.js"));
+        $__internal_337e32146615f853191ff24b16928cf9eacdf79228a06765a986d079b428ee6b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_337e32146615f853191ff24b16928cf9eacdf79228a06765a986d079b428ee6b->enter($__internal_337e32146615f853191ff24b16928cf9eacdf79228a06765a986d079b428ee6b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/add-on/jplayer.playlist.js"));
 
         // line 1
         echo "/*
@@ -517,7 +517,7 @@ class __TwigTemplate_ac3c5104e57f3f4d43ccd812b172c182e9a0f269c59bb86d26e3ea45a2d
 })(jQuery);
 ";
         
-        $__internal_a87f1163fb7faff4668b67c938a6dba5422068172766519cac2c85c7aa5ca93d->leave($__internal_a87f1163fb7faff4668b67c938a6dba5422068172766519cac2c85c7aa5ca93d_prof);
+        $__internal_337e32146615f853191ff24b16928cf9eacdf79228a06765a986d079b428ee6b->leave($__internal_337e32146615f853191ff24b16928cf9eacdf79228a06765a986d079b428ee6b_prof);
 
     }
 

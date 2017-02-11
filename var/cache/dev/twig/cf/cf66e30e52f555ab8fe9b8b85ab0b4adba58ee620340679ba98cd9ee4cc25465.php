@@ -15,8 +15,8 @@ class __TwigTemplate_2ee5c381d4294f5ed85db85f0b92259f53d4bf171336a4f658a2558f55a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_962c5a37da41e0cec044c8a705f7f32295ae2e41eda81858148aa38a9e01b0d0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_962c5a37da41e0cec044c8a705f7f32295ae2e41eda81858148aa38a9e01b0d0->enter($__internal_962c5a37da41e0cec044c8a705f7f32295ae2e41eda81858148aa38a9e01b0d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/skin/pink.flag/css/jplayer.pink.flag.css"));
+        $__internal_599f2efe03bdc6b5c422891bf92c1c56de2ca99014c6b67c7b7db1ecd0ca18d6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_599f2efe03bdc6b5c422891bf92c1c56de2ca99014c6b67c7b7db1ecd0ca18d6->enter($__internal_599f2efe03bdc6b5c422891bf92c1c56de2ca99014c6b67c7b7db1ecd0ca18d6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/skin/pink.flag/css/jplayer.pink.flag.css"));
 
         // line 1
         echo "/*! Pink Flag Skin for jPlayer 2.9.2 ~ (c) 2009-2014 Happyworm Ltd ~ MIT License */
@@ -593,7 +593,7 @@ span.jp-artist {
 /* @end */
 ";
         
-        $__internal_962c5a37da41e0cec044c8a705f7f32295ae2e41eda81858148aa38a9e01b0d0->leave($__internal_962c5a37da41e0cec044c8a705f7f32295ae2e41eda81858148aa38a9e01b0d0_prof);
+        $__internal_599f2efe03bdc6b5c422891bf92c1c56de2ca99014c6b67c7b7db1ecd0ca18d6->leave($__internal_599f2efe03bdc6b5c422891bf92c1c56de2ca99014c6b67c7b7db1ecd0ca18d6_prof);
 
     }
 

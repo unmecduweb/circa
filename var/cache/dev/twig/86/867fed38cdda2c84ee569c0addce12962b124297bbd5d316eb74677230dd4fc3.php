@@ -15,8 +15,8 @@ class __TwigTemplate_589e1661a27503124cce929784b181022130fdaf9c3717e26fe7087f82b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b5ba6dbfd71c66352e65cfb5969485d750b726d18971c20e6c374e1a17dbb87c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b5ba6dbfd71c66352e65cfb5969485d750b726d18971c20e6c374e1a17dbb87c->enter($__internal_b5ba6dbfd71c66352e65cfb5969485d750b726d18971c20e6c374e1a17dbb87c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/duplicate.png"));
+        $__internal_905eacd75e6d2b68e16c71b860ac1958cfbaba3fa4887870dab5916020a0600c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_905eacd75e6d2b68e16c71b860ac1958cfbaba3fa4887870dab5916020a0600c->enter($__internal_905eacd75e6d2b68e16c71b860ac1958cfbaba3fa4887870dab5916020a0600c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/duplicate.png"));
 
         // line 1
         echo "‰PNG
@@ -25,7 +25,7 @@ class __TwigTemplate_589e1661a27503124cce929784b181022130fdaf9c3717e26fe7087f82b
 IHDR\000\000\000\000\000\000\000\000\000(-S\000\000\0003PLTEÿÿÿ333&&&ÿÿÿÿÿÿ222333***)))&&&333ºôË\000\000\000tRNS\000\000\000\000(@ŸŸþþþþþþ•4Ï\000\000\000cIDATx^}ŠQ€ AÓ€J»ÿiÁÑ¯ÞÀ\000»\000Ž4\"jcð&ë ÷Î
 8=§ƒÑ\\ÁtÎ¢\\°”Á4Â\000D7!¸ô‚kà×þ1µü|¸faÑâùa‰\t»°ô\000K{>TkSë4[\000\000\000\000IEND®B`‚";
         
-        $__internal_b5ba6dbfd71c66352e65cfb5969485d750b726d18971c20e6c374e1a17dbb87c->leave($__internal_b5ba6dbfd71c66352e65cfb5969485d750b726d18971c20e6c374e1a17dbb87c_prof);
+        $__internal_905eacd75e6d2b68e16c71b860ac1958cfbaba3fa4887870dab5916020a0600c->leave($__internal_905eacd75e6d2b68e16c71b860ac1958cfbaba3fa4887870dab5916020a0600c_prof);
 
     }
 

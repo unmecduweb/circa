@@ -15,8 +15,8 @@ class __TwigTemplate_98e7988764028bfd24932e9bdea8a705125e281de1cfe4f38f28a458d81
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c30a2b7267625fab82626d83ea0d14c09de8ccb96372daf8a2576a6af9cfeaef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c30a2b7267625fab82626d83ea0d14c09de8ccb96372daf8a2576a6af9cfeaef->enter($__internal_c30a2b7267625fab82626d83ea0d14c09de8ccb96372daf8a2576a6af9cfeaef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/ViewerJS/viewer.js"));
+        $__internal_5fafba3805b6a0a86021c53436c20e3475e15202c4a6df821c931c24f5b705fb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5fafba3805b6a0a86021c53436c20e3475e15202c4a6df821c931c24f5b705fb->enter($__internal_5fafba3805b6a0a86021c53436c20e3475e15202c4a6df821c931c24f5b705fb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/ViewerJS/viewer.js"));
 
         // line 1
         echo "function Viewer(c,r){function P(){var a,f,b,d,h;c&&(b=c.getPluginName(),d=c.getPluginVersion(),h=c.getPluginURL());a=document.createElement(\"div\");a.id=\"aboutDialogCentererTable\";f=document.createElement(\"div\");f.id=\"aboutDialogCentererCell\";s=document.createElement(\"div\");s.id=\"aboutDialog\";s.innerHTML='<h1>ViewerJS</h1><p>Open Source document viewer for webpages, built with HTML and JavaScript.</p><p>Learn more and get your own copy on the <a href=\"http://viewerjs.org/\" target=\"_blank\">ViewerJS website</a>.</p>'+
@@ -39,7 +39,7 @@ e(document.getElementById(\"scaleSelect\").value);x()}),window.addEventListener(
 break;case 87:case 188:k&&M(\"#FFF\");break;case 36:b.showPage(0);break;case 35:b.showPage(q.length)}}))})()};
 ";
         
-        $__internal_c30a2b7267625fab82626d83ea0d14c09de8ccb96372daf8a2576a6af9cfeaef->leave($__internal_c30a2b7267625fab82626d83ea0d14c09de8ccb96372daf8a2576a6af9cfeaef_prof);
+        $__internal_5fafba3805b6a0a86021c53436c20e3475e15202c4a6df821c931c24f5b705fb->leave($__internal_5fafba3805b6a0a86021c53436c20e3475e15202c4a6df821c931c24f5b705fb_prof);
 
     }
 

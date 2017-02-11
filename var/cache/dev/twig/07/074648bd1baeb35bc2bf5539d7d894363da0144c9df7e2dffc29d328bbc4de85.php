@@ -15,8 +15,8 @@ class __TwigTemplate_60550fcb4e0f43f38cf7c95b45309353918292bf6772c14217341ba8e64
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fe3128203d961e95f64dc1416fb93d19a62a7b23ecca1c70fca121657b87d7c9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fe3128203d961e95f64dc1416fb93d19a62a7b23ecca1c70fca121657b87d7c9->enter($__internal_fe3128203d961e95f64dc1416fb93d19a62a7b23ecca1c70fca121657b87d7c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/lang/az_AZ.php"));
+        $__internal_97d38cdabb8316af6b2ce5667b82c087d684c1d979c7002ffa06697f5a9389b4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_97d38cdabb8316af6b2ce5667b82c087d684c1d979c7002ffa06697f5a9389b4->enter($__internal_97d38cdabb8316af6b2ce5667b82c087d684c1d979c7002ffa06697f5a9389b4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/lang/az_AZ.php"));
 
         // line 1
         echo "<?php
@@ -144,7 +144,7 @@ return array(
 );
 ";
         
-        $__internal_fe3128203d961e95f64dc1416fb93d19a62a7b23ecca1c70fca121657b87d7c9->leave($__internal_fe3128203d961e95f64dc1416fb93d19a62a7b23ecca1c70fca121657b87d7c9_prof);
+        $__internal_97d38cdabb8316af6b2ce5667b82c087d684c1d979c7002ffa06697f5a9389b4->leave($__internal_97d38cdabb8316af6b2ce5667b82c087d684c1d979c7002ffa06697f5a9389b4_prof);
 
     }
 

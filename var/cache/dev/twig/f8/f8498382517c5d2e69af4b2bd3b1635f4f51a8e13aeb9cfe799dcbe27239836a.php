@@ -15,8 +15,8 @@ class __TwigTemplate_bc11e014bec04d68ef748ca3f55821440619307539a64f48463f73fae32
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6077298be76e5435a422be385eaf6898b3253d528256aeca80b6e1647d243afa = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6077298be76e5435a422be385eaf6898b3253d528256aeca80b6e1647d243afa->enter($__internal_6077298be76e5435a422be385eaf6898b3253d528256aeca80b6e1647d243afa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MwebAdminBundle::menu.html.twig"));
+        $__internal_b655bbdd2b93805a5039ef64166020097533142a5ea79e514ae5cf66498d5423 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b655bbdd2b93805a5039ef64166020097533142a5ea79e514ae5cf66498d5423->enter($__internal_b655bbdd2b93805a5039ef64166020097533142a5ea79e514ae5cf66498d5423_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MwebAdminBundle::menu.html.twig"));
 
         // line 1
         echo "<nav class=\"navbar navbar-inverse\" style=\"position:fixed;top:0;z-index:99999;width:100%;\">
@@ -101,7 +101,7 @@ class __TwigTemplate_bc11e014bec04d68ef748ca3f55821440619307539a64f48463f73fae32
     </div><!-- /.container-fluid -->
 </nav>";
         
-        $__internal_6077298be76e5435a422be385eaf6898b3253d528256aeca80b6e1647d243afa->leave($__internal_6077298be76e5435a422be385eaf6898b3253d528256aeca80b6e1647d243afa_prof);
+        $__internal_b655bbdd2b93805a5039ef64166020097533142a5ea79e514ae5cf66498d5423->leave($__internal_b655bbdd2b93805a5039ef64166020097533142a5ea79e514ae5cf66498d5423_prof);
 
     }
 

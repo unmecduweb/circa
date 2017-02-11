@@ -15,8 +15,8 @@ class __TwigTemplate_6b379ac8c75126ecf1ba3f7b4507c899bdc2c1fe79a9519d5aaf5226fc0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_45645c83c2db8120a7b42e5c6e95396eecd06d8e2691b9013934978baab47e15 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_45645c83c2db8120a7b42e5c6e95396eecd06d8e2691b9013934978baab47e15->enter($__internal_45645c83c2db8120a7b42e5c6e95396eecd06d8e2691b9013934978baab47e15_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/rename.png"));
+        $__internal_1bcfba4ba378d69b4ce85f5f4011038d8d97d7a3733052d31891e6a835ffdd29 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1bcfba4ba378d69b4ce85f5f4011038d8d97d7a3733052d31891e6a835ffdd29->enter($__internal_1bcfba4ba378d69b4ce85f5f4011038d8d97d7a3733052d31891e6a835ffdd29_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/rename.png"));
 
         // line 1
         echo "‰PNG
@@ -25,7 +25,7 @@ class __TwigTemplate_6b379ac8c75126ecf1ba3f7b4507c899bdc2c1fe79a9519d5aaf5226fc0
 IHDR\000\000\000\000\000\000\000\000\000(-S\000\000\000NPLTEÿÿÿÿÿÿÿÿÿYYYÿÿÿ\$\$\$ÿÿÿÃÃÃœœœ§§§GGG***...000\"\"\"&&&%%%w¸\000\000\000tRNS\000#/4@MWqŒĞÑÔÙÚÛğğî“#q\000\000\000PIDATx^Í;€ CÑ 
 ~ÑÁıoTÊŒ…Çt÷¤xøZï^ŞÎQÙçûRŠå`‹¤Øµfk”KøoŸ•±´{ë±”Õ’açi`Ãt,<UËWÑ›£\000\000\000\000IEND®B`‚";
         
-        $__internal_45645c83c2db8120a7b42e5c6e95396eecd06d8e2691b9013934978baab47e15->leave($__internal_45645c83c2db8120a7b42e5c6e95396eecd06d8e2691b9013934978baab47e15_prof);
+        $__internal_1bcfba4ba378d69b4ce85f5f4011038d8d97d7a3733052d31891e6a835ffdd29->leave($__internal_1bcfba4ba378d69b4ce85f5f4011038d8d97d7a3733052d31891e6a835ffdd29_prof);
 
     }
 

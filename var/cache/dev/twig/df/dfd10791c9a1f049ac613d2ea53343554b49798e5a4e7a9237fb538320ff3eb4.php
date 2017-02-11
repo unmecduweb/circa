@@ -15,8 +15,8 @@ class __TwigTemplate_d121757259a31b4cb725d2517ae6ddb39c5468a066376eaaccd985630af
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d1d43129258c4497e173aaf7f85d90cd3ee28bf79a35a8bdc7327493804a9842 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d1d43129258c4497e173aaf7f85d90cd3ee28bf79a35a8bdc7327493804a9842->enter($__internal_d1d43129258c4497e173aaf7f85d90cd3ee28bf79a35a8bdc7327493804a9842_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/lang/vi.php"));
+        $__internal_2652b08a52450cc5956729bc8e97c15a67c042a712d48aafaf6c905059d1b1a5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2652b08a52450cc5956729bc8e97c15a67c042a712d48aafaf6c905059d1b1a5->enter($__internal_2652b08a52450cc5956729bc8e97c15a67c042a712d48aafaf6c905059d1b1a5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/lang/vi.php"));
 
         // line 1
         echo "<?php
@@ -143,7 +143,7 @@ return array(
 \t'total size' => \"Total size\",
 );";
         
-        $__internal_d1d43129258c4497e173aaf7f85d90cd3ee28bf79a35a8bdc7327493804a9842->leave($__internal_d1d43129258c4497e173aaf7f85d90cd3ee28bf79a35a8bdc7327493804a9842_prof);
+        $__internal_2652b08a52450cc5956729bc8e97c15a67c042a712d48aafaf6c905059d1b1a5->leave($__internal_2652b08a52450cc5956729bc8e97c15a67c042a712d48aafaf6c905059d1b1a5_prof);
 
     }
 

@@ -129,7 +129,7 @@ liip_imagine:
         partner:
             quality: 150
             filters:
-                thumbnail: { size: [50], mode: outbound }
+                thumbnail: { size: [150], mode: outbound }
         news:
             quality: 100
             filters:

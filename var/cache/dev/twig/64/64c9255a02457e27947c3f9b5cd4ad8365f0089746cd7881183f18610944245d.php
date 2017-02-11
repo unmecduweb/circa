@@ -15,36 +15,48 @@ class __TwigTemplate_4ed8c61a580ab2d9352887aa13654c9cadd10f584c31602288dd135d2ba
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_36fde1cc7e62acf1b9c08a13b78ffa6ddb418f0572f3f735f4991d86f28afe29 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_36fde1cc7e62acf1b9c08a13b78ffa6ddb418f0572f3f735f4991d86f28afe29->enter($__internal_36fde1cc7e62acf1b9c08a13b78ffa6ddb418f0572f3f735f4991d86f28afe29_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MwebCoreBundle::sidebar.html.twig"));
+        $__internal_bb1b3fe8dbba51f9eb94d48a0e206e868f1d0e8f4504b8aeff402786e3dae1be = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bb1b3fe8dbba51f9eb94d48a0e206e868f1d0e8f4504b8aeff402786e3dae1be->enter($__internal_bb1b3fe8dbba51f9eb94d48a0e206e868f1d0e8f4504b8aeff402786e3dae1be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MwebCoreBundle::sidebar.html.twig"));
 
         // line 1
         echo "
-
 ";
-        // line 3
+        // line 2
+        if ( !array_key_exists("col", $context)) {
+            // line 3
+            echo "    <div class=\"col-xs-12\">
+        <h3>Dernières actualités</h3>
+
+    </div>
+    ";
+            // line 7
+            $context["col"] = 12;
+        }
+        // line 9
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["news"]) ? $context["news"] : $this->getContext($context, "news")));
         foreach ($context['_seq'] as $context["_key"] => $context["actu"]) {
-            // line 4
-            echo "    <div class=\"col-xs-12 col-sm-6 news\">
+            // line 10
+            echo "    <div class=\"col-xs-";
+            echo twig_escape_filter($this->env, (isset($context["col"]) ? $context["col"] : $this->getContext($context, "col")), "html", null, true);
+            echo " news\">
         <img src=\"";
-            // line 5
-            echo twig_escape_filter($this->env, $this->env->getExtension('Mweb\AdminBundle\Twig\TwigExtension')->liip((isset($context["news"]) ? $context["news"] : $this->getContext($context, "news")), "news"), "html", null, true);
+            // line 11
+            echo twig_escape_filter($this->env, $this->env->getExtension('Mweb\AdminBundle\Twig\TwigExtension')->liip($context["actu"], "news"), "html", null, true);
             echo "\" alt=\"\"/>
         <h3>";
-            // line 6
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute((isset($context["news"]) ? $context["news"] : $this->getContext($context, "news")), "startDate", array()), "d/m"), "html", null, true);
+            // line 12
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["actu"], "startDate", array()), "d/m"), "html", null, true);
             echo " - ";
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["news"]) ? $context["news"] : $this->getContext($context, "news")), "title", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["actu"], "title", array()), "html", null, true);
             echo "</h3>
         <p>";
-            // line 7
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["news"]) ? $context["news"] : $this->getContext($context, "news")), "summary", array()), "html", null, true);
+            // line 13
+            echo twig_escape_filter($this->env, $this->getAttribute($context["actu"], "summary", array()), "html", null, true);
             echo "</p>
         <a href=\"";
-            // line 8
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("news", array("newsSlug" => $this->getAttribute((isset($context["news"]) ? $context["news"] : $this->getContext($context, "news")), "slug", array()))), "html", null, true);
+            // line 14
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("circa_news", array("slugNews" => $this->getAttribute($context["actu"], "slug", array()))), "html", null, true);
             echo "\" class=\"button\">En savoir plus</a>
         <div class=\"clear\"></div>
     </div>
@@ -55,7 +67,7 @@ class __TwigTemplate_4ed8c61a580ab2d9352887aa13654c9cadd10f584c31602288dd135d2ba
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['actu'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_36fde1cc7e62acf1b9c08a13b78ffa6ddb418f0572f3f735f4991d86f28afe29->leave($__internal_36fde1cc7e62acf1b9c08a13b78ffa6ddb418f0572f3f735f4991d86f28afe29_prof);
+        $__internal_bb1b3fe8dbba51f9eb94d48a0e206e868f1d0e8f4504b8aeff402786e3dae1be->leave($__internal_bb1b3fe8dbba51f9eb94d48a0e206e868f1d0e8f4504b8aeff402786e3dae1be_prof);
 
     }
 
@@ -71,7 +83,7 @@ class __TwigTemplate_4ed8c61a580ab2d9352887aa13654c9cadd10f584c31602288dd135d2ba
 
     public function getDebugInfo()
     {
-        return array (  47 => 8,  43 => 7,  37 => 6,  33 => 5,  30 => 4,  26 => 3,  22 => 1,);
+        return array (  59 => 14,  55 => 13,  49 => 12,  45 => 11,  40 => 10,  36 => 9,  33 => 7,  27 => 3,  25 => 2,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -85,16 +97,22 @@ class __TwigTemplate_4ed8c61a580ab2d9352887aa13654c9cadd10f584c31602288dd135d2ba
     public function getSourceContext()
     {
         return new Twig_Source("
+{% if col is not defined %}
+    <div class=\"col-xs-12\">
+        <h3>Dernières actualités</h3>
 
-{%  for actu in news %}
-    <div class=\"col-xs-12 col-sm-6 news\">
-        <img src=\"{{ liip(news, 'news') }}\" alt=\"\"/>
-        <h3>{{ news.startDate|date('d/m') }} - {{ news.title }}</h3>
-        <p>{{ news.summary }}</p>
-        <a href=\"{{ path('news', {'newsSlug': news.slug}) }}\" class=\"button\">En savoir plus</a>
+    </div>
+    {% set col = 12 %}
+{% endif %}
+{% for actu in news %}
+    <div class=\"col-xs-{{ col }} news\">
+        <img src=\"{{ liip(actu, 'news') }}\" alt=\"\"/>
+        <h3>{{ actu.startDate|date('d/m') }} - {{ actu.title }}</h3>
+        <p>{{ actu.summary }}</p>
+        <a href=\"{{ path('circa_news', {'slugNews': actu.slug}) }}\" class=\"button\">En savoir plus</a>
         <div class=\"clear\"></div>
     </div>
 
-{%  endfor %}", "MwebCoreBundle::sidebar.html.twig", "/home/fab/Documents/Pro/www/circa/src/Mweb/CoreBundle/Resources/views/sidebar.html.twig");
+{% endfor %}", "MwebCoreBundle::sidebar.html.twig", "/home/fab/Documents/Pro/www/circa/src/Mweb/CoreBundle/Resources/views/sidebar.html.twig");
     }
 }

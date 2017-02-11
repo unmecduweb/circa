@@ -15,8 +15,8 @@ class __TwigTemplate_9e45207f90eb101a1330ce86a4dc81453cd27e3a16839b00a7016b42f9c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3c3bfd3f19f80bc60080319dcea7d9d0c488ca03f47931651d46dcdd149402d9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3c3bfd3f19f80bc60080319dcea7d9d0c488ca03f47931651d46dcdd149402d9->enter($__internal_3c3bfd3f19f80bc60080319dcea7d9d0c488ca03f47931651d46dcdd149402d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/skin/blue.monday/mustache/jplayer.blue.monday.video.single.html"));
+        $__internal_73b46260db74d3a1ba7586f7c678b91f57c77a0c474bb260becd34773c76b2d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_73b46260db74d3a1ba7586f7c678b91f57c77a0c474bb260becd34773c76b2d8->enter($__internal_73b46260db74d3a1ba7586f7c678b91f57c77a0c474bb260becd34773c76b2d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/skin/blue.monday/mustache/jplayer.blue.monday.video.single.html"));
 
         // line 1
         echo "<div id=\"";
@@ -69,7 +69,7 @@ class __TwigTemplate_9e45207f90eb101a1330ce86a4dc81453cd27e3a16839b00a7016b42f9c
 </div>
 ";
         
-        $__internal_3c3bfd3f19f80bc60080319dcea7d9d0c488ca03f47931651d46dcdd149402d9->leave($__internal_3c3bfd3f19f80bc60080319dcea7d9d0c488ca03f47931651d46dcdd149402d9_prof);
+        $__internal_73b46260db74d3a1ba7586f7c678b91f57c77a0c474bb260becd34773c76b2d8->leave($__internal_73b46260db74d3a1ba7586f7c678b91f57c77a0c474bb260becd34773c76b2d8_prof);
 
     }
 

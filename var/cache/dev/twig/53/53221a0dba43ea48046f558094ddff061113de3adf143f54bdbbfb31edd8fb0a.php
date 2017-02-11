@@ -15,8 +15,8 @@ class __TwigTemplate_069a19ccb8d432b86a3f3ddfe84fd5b6addfed1b42533c697a40f9dfc68
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_50621175c176cfe3252ffff325ef17589e8875eced7894c651608546420b636f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_50621175c176cfe3252ffff325ef17589e8875eced7894c651608546420b636f->enter($__internal_50621175c176cfe3252ffff325ef17589e8875eced7894c651608546420b636f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/ico/xhtml.jpg"));
+        $__internal_8cd3b6ab62bfebd12a07352c0feeee3ef409ef4f71c103eb50888486207451e0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8cd3b6ab62bfebd12a07352c0feeee3ef409ef4f71c103eb50888486207451e0->enter($__internal_8cd3b6ab62bfebd12a07352c0feeee3ef409ef4f71c103eb50888486207451e0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/ico/xhtml.jpg"));
 
         // line 1
         echo "ÿØÿà\000JFIF\000\000\000\000\000\000ÿá\000@Exif\000\000MM\000*\000\000\000\000‡i\000\000\000\000\000\000\000\000\000\000\000\000 \000\000\000\000\000\000\000z \000\000\000\000\000\000\000[\000\000\000\000ÿþ\0004Optimized by JPEGmini 3.9.2.5L Internal 0xfa27b1f5ÿÛ\000C\000
@@ -46,7 +46,7 @@ JXÐb·e–öÐëš†¢ù×›;þ·ÿÚ\000\000\000\000\000\000\000\000\000\000\000\000\
 ¬Š*¦DX¼!Õ¨Ñò-Œ‘YK1¿lÉŠ‚n®½^e„ÒÏ]\000ë±8-Œ'(\0007­jN*¹tµi,L¬¦^B!Žüˆ•Ôk]8Ö§;j>\000ÑzÛÌÅI7tªè¾G
 Üï:ð„|ªÿ\000\"#éÃ‹Ã D«EÚãj÷µ xL‚Êy¬òJðÖH€³^OëXþô±Å.~?¤°!¯Š‚¥)òõK%}ÛÿÙ";
         
-        $__internal_50621175c176cfe3252ffff325ef17589e8875eced7894c651608546420b636f->leave($__internal_50621175c176cfe3252ffff325ef17589e8875eced7894c651608546420b636f_prof);
+        $__internal_8cd3b6ab62bfebd12a07352c0feeee3ef409ef4f71c103eb50888486207451e0->leave($__internal_8cd3b6ab62bfebd12a07352c0feeee3ef409ef4f71c103eb50888486207451e0_prof);
 
     }
 

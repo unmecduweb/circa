@@ -15,8 +15,8 @@ class __TwigTemplate_980af80775eb5375ca267fdf33c44a061a20726b4ef120ab57c6d50be4b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_67106c6e84ba617eba9089826f3a4dc48a0d22f5c9ff082c5dc18ecf1956dc48 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_67106c6e84ba617eba9089826f3a4dc48a0d22f5c9ff082c5dc18ecf1956dc48->enter($__internal_67106c6e84ba617eba9089826f3a4dc48a0d22f5c9ff082c5dc18ecf1956dc48_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/ViewerJS/local.css"));
+        $__internal_c0738ab38aabf301cae11c945713a1eebfde4faa1b1835a87dab13f7492e82de = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c0738ab38aabf301cae11c945713a1eebfde4faa1b1835a87dab13f7492e82de->enter($__internal_c0738ab38aabf301cae11c945713a1eebfde4faa1b1835a87dab13f7492e82de_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/ViewerJS/local.css"));
 
         // line 1
         echo "
@@ -85,7 +85,7 @@ html[dir='ltr'] .innerCenter{
   font-size: 10px;
 }";
         
-        $__internal_67106c6e84ba617eba9089826f3a4dc48a0d22f5c9ff082c5dc18ecf1956dc48->leave($__internal_67106c6e84ba617eba9089826f3a4dc48a0d22f5c9ff082c5dc18ecf1956dc48_prof);
+        $__internal_c0738ab38aabf301cae11c945713a1eebfde4faa1b1835a87dab13f7492e82de->leave($__internal_c0738ab38aabf301cae11c945713a1eebfde4faa1b1835a87dab13f7492e82de_prof);
 
     }
 
