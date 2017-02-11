@@ -1,0 +1,45 @@
+
+
+{% extends "form_div_layout.html.twig" %} 
+
+    
+{# Affichage d'un groupe de champ ou d'un champ de son label et des erreurs#}
+{% block form_row %}
+    {% spaceless %}
+
+        {# Class du champ #}
+        {% set field_class='' %}
+        {% if attr.field_class is defined %}
+            {% set field_class = attr.field_class %}
+        {% endif %}
+
+        {# Class de la div qui entoure le champ #}
+        {% set class='' %}
+        {% if attr.class is defined %}
+            {% set class = attr.class %}
+        {% endif %}
+
+        <div class="form-group">
+           {{ form_label(form) }}
+           
+            {{ form_widget(form, {"attr":{'class':'form-control'}} ) }}
+          
+        </div>
+    {% endspaceless %}
+{% endblock form_row %}
+
+
+{%- block time_widget -%}
+    {%- if widget == 'single_text' -%}
+        {{ block('form_widget_simple') }}
+    {%- else -%}
+        {%- set vars = widget == 'text' ? { 'attr': { 'size': 1 , 'class' : 'form-cntrol col-xs-5'}} : {} -%}
+        <div class="form-goup" {{ block('widget_container_attributes') }}>
+            {{ form_widget(form.hour, vars) }}H
+            {% if with_minutes %}:{{ form_widget(form.minute, vars) }}M{% endif %}
+            {% if with_seconds %}:{{ form_widget(form.second, vars) }}S{% endif %}
+        </div>
+    {%- endif -%}
+{%- endblock time_widget -%}
+
+

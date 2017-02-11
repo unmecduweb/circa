@@ -1,0 +1,138 @@
+{% extends "MwebCoreBundle::layout.html.twig" %}
+
+
+
+{% block title %}Accueil{% endblock %}
+
+
+{% block content %}
+    {#{{ liip(page, 'paralax', paralax) }}#}
+    <section id="section-info" class="paralax-wrap" style="background-image: url('{{ asset('uploads/illu1.jpg') }}')">
+        <div class="section-container" style="height: 100%;">
+            <div class="container-fluid">
+                <div class="block-title right">
+                    <h2>
+                        <span class="main"><span class="line"></span>Festival Besançon</span>
+                        <span class="back">Electro-DUB</span>
+                    </h2>
+                </div>
+                <div class="block-title right">
+                    <h2>
+                        <span class="main">
+                            <span class="line"></span>
+                            <span style="font-family: 'number'">4.5.6</span>
+                            Mai
+                            <span style="font-family: 'number'">2017</span>
+                        </span>
+
+                        <span class="back">Rock'n cirk</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content" id="section-befores">
+        <div class="container-fluid">
+            <div class="wrap">
+                <div class="block-title center col-xs-12 black">
+                    <h2>
+                        <span class="main"><span class="line"></span>Les actu du circa<span class="line"></span></span>
+                        <span class="back">News</span>
+                    </h2>
+                    <div class="clear"></div>
+                </div>
+                {% include 'MwebCoreBundle::sidebar.html.twig'  with {'col': '6'} %}
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-festival" class="paralax-wrap" style="background-image: url({{ asset('uploads/illu3.jpg') }})">
+        <div class="section-container">
+            <div class="container-fluid">
+                <div class="block-title center col-xs-12">
+                    <h2>
+                        <span class="main"><span class="line"></span>Edition 2017<span class="line"></span></span>
+                        <span class="back">Circasismic</span>
+                    </h2>
+                </div>
+                <div class="col-xs-4">
+                    <p>Ohé, du bateau, le Festival Circasismic amarrera bien à Besançon pour une troisième édition en
+                        mai
+
+                        2017 ! Changement de décor et de lieu, cette année l’évènement change de friche et se déploiera
+
+                        aux Prés-De- Vaux sur les vestiges de la Rodiaceta en conservant la vue imprenable sur la
+                        Citadelle
+
+                        mais sur l’autre versant. La formule évolue aussi puisque 3 soirées seront proposées au public
+                        qui
+
+                        débarquera ébahi parmi gredins, flibustiers et artistes internationaux. Les amateurs de cirque
+
+                        pourront s’accoquiner au choix avec une ambiance dub le jeudi «Rock’N’Cirk» le vendredi et
+                        «Electro
+
+                        Circus» le samedi . Les musiciens et circassiens se mêleront aux marins d’eau douce pour
+                        festoyer
+
+                        avec les visiteurs sous l’égide du Jolly Roger.</p>
+
+                </div>
+                <div class="col-xs-4">
+                    <img src="{{ asset('uploads/illu.png') }}" alt=""/>
+                </div>
+                <div class="col-xs-4">
+                    <p>On hissera haut les toiles des deux grands chapiteaux permettant aux nombreux spectateurs de
+
+                        profiter des concerts et représentations par tous temps et tous vents…. (contre vents et marées)
+
+                        Les échoppes et tavernes abritées et animées par des vieux loups de mer et autres boit-sans-
+                        soif
+
+                        proposeront de quoi se restaurer et se divertir toute la nuit.</p>
+                    <p>
+
+                        Toujours de manière éco-responsable, les organisateurs proposeront des toilettes sèches, le tri
+                        des
+
+                        déchets, l’utilisation d’écocups réutilisables et encourageront le covoiturage et les modes de
+
+                        déplacements doux étant donné l’emplacement du site.</p>
+                    <p>
+
+                    </p>
+
+                </div>
+                <div class="clear"></div>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-2 logo">
+                    <a href="{{ path('circa_page', {'slug': 'les-associations'}) }}"><img
+                                src="{{ asset('bundles/mwebcore/img/logo-citron.png') }}" alt=""/> </a>
+                </div>
+                <div class="col-xs-2 logo">
+                    <a href="{{ path('circa_page', {'slug': 'les-associations'}) }}"><img
+                                src="{{ asset('bundles/mwebcore/img/logo-bastion.png') }}" alt=""/> </a>
+                </div>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-2 logo">
+                    <a href="{{ path('circa_page', {'slug': 'les-associations'}) }}"><img
+                                src="{{ asset('bundles/mwebcore/img/logo-nushy.png') }}" alt=""/> </a>
+                </div>
+                <div class="col-xs-2 logo">
+                    <a href="{{ path('circa_page', {'slug': 'les-associations'}) }}"><img
+                                src="{{ asset('bundles/mwebcore/img/logo-5sens.png') }}" alt=""/> </a>
+                </div>
+                <div class="col-xs-1"></div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,13 @@
+_homepage:
+    path: /
+    defaults: { _controller: MwebCoreBundle:Default:index, _locale: fr }
+    requirements:
+        _locale: %locales%
+
+circa_page:
+  path: /{slug}
+  defaults: { _controller: MwebCoreBundle:Default:page, _locale: fr }
+
+circa_news:
+  path: /actu/{slugNews}
+  defaults: { _controller: MwebCoreBundle:Default:news, _locale: fr }

@@ -1,0 +1,29 @@
+rdv: J'ai un projet et je souhaite prendre un rendez-vous
+demo: Je souhaite assister à une démonstration
+doc: Je souhaite recevoir une documentation détaillé
+other: Autre
+Submit: Envoyer
+Tel: Téléphone *
+Nom: Nom *
+Institution: Institution *
+Mail: Email *
+Addresse: Addresse postale *
+Objet: Objet de la demande de contact *
+Message: Message *
+contactTitle: Vous souhaitez prendre contact
+madeBySkinSoft: myEXPO une application développée par SKINsoft
+linkedin: SKINsoft sur Linkedin
+conception: Conception web L'agence privée pour SKINsoft
+messagesended: Votre message a bien été envoyé
+mention: Mentions légales
+misc:
+  searchSimple: Recherche simple
+  menu: Afficher le menu
+  menuSearch: Menu de recherche
+meta:
+  sitename: Centre Régional Livre Midi-Pyrénées
+  logo: My Expo - L'application autonome de régie des expositions
+  home:
+    title: My Expo - L'application autonome de régie des expositions
+    description: Les collections 
+    keywords: Centre régional livre

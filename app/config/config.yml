@@ -1,0 +1,223 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+
+lexik_translation:
+    fallback_locale: [fr]         # (required) default locale(s) to use
+    managed_locales: [fr] # (required) locales that the bundle has to manage
+    grid_input_type: text       # text|textarea
+    grid_toggle_similar: false
+    auto_cache_clean: true
+    storage:
+        type: orm
+
+framework:
+    #esi:             ~
+    translator:      { fallbacks: ["%locale%"] }
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    #serializer:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    session:
+        # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
+        handler_id:  session.handler.native_file
+        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+    fragments:       ~
+    http_method_override: true
+    assets: ~
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   pdo_mysql
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8
+        # if using pdo_sqlite as your database driver:
+        #   1. add the path in parameters.yml
+        #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
+        #   2. Uncomment database_path in parameters.yml.dist
+        #   3. Uncomment next line:
+        #     path:     "%database_path%"
+    orm:
+          auto_generate_proxy_classes: "%kernel.debug%"
+  #        auto_mapping: true
+          entity_managers:
+              default:
+  #                auto_mapping: true
+                  mappings:
+                      MwebCoreBundle: ~
+                      MwebAdminBundle: ~
+                      LexikTranslationBundle: ~
+                      gedmo_translatable:
+                          type: annotation
+                          alias: GedmoTranslatable
+                          prefix: Gedmo\Translatable\Entity
+                          dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity"
+                          is_bundle: false
+
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    spool:     { type: memory }
+
+
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
+
+
+
+stof_doctrine_extensions:
+    default_locale: fr_FR
+    translation_fallback: true
+    orm:
+        default:
+            translatable: true
+            sluggable: true
+            timestampable: true
+
+
+vich_uploader:
+    db_driver: orm
+    mappings:
+        content_image:
+             uri_prefix:         /files/uploads/content
+             upload_destination: '%kernel.root_dir%/../web/files/uploads/content'
+             inject_on_load: true
+        news_image:
+             uri_prefix:         /files/uploads/news
+             upload_destination: '%kernel.root_dir%/../web/files/uploads/news'
+             inject_on_load: true
+        parallax_image:
+             uri_prefix:         /files/uploads/paralax
+             upload_destination: '%kernel.root_dir%/../web/files/uploads/paralax'
+             inject_on_load: true
+
+
+liip_imagine:
+    resolvers:
+       default:
+          web_path: ~
+
+    filter_sets:
+        cache: ~
+        partner:
+            quality: 150
+            filters:
+                thumbnail: { size: [50], mode: outbound }
+        news:
+            quality: 100
+            filters:
+                thumbnail: { size: [420], mode: outbound }
+        parallax:
+            quality: 80
+            filters:
+                thumbnail: { size: [1920, 400], mode: outbound }
+
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb' and 'couchdb'
+    firewall_name: main
+    user_class: Mweb\AdminBundle\Entity\User
+
+mweb_admin:
+    noIllu: niche
+    menus:
+        page:
+            beautyName: Pages
+        news:
+            beautyName: Actualités
+    entities:
+        page:
+            beautyName: Pages
+            menu: page
+            class: Mweb\CoreBundle\Entity\Content
+            form: Mweb\CoreBundle\Form\ContentType
+            listProperties:
+                name:
+                    dataName: title
+                    beautyName: Nom
+                    type: string
+                updated:
+                    dataName: updated
+                    beautyName: Mis à jour
+                    type: date
+                created:
+                    dataName: created
+                    beautyName: Ajouté le
+                    type: date
+                status:
+                     dataName: status
+                     beautyName: En ligne
+                     type: boolean
+        news:
+            beautyName: Actualités
+            menu: news
+            class: Mweb\CoreBundle\Entity\News
+            form: \Mweb\CoreBundle\Form\NewsType
+            views: default
+            listProperties:
+                name:
+                    dataName: title
+                    beautyName: Nom
+                    type: string
+                updated:
+                    dataName: updated
+                    beautyName: Mis à jour
+                    type: date
+                created:
+                    dataName: created
+                    beautyName: Ajouté le
+                    type: date
+                status:
+                     dataName: status
+                     beautyName: En ligne
+                     type: boolean
+        paralax:
+            beautyName: Illustrations
+            menu: paralax
+            class: Mweb\CoreBundle\Entity\Paralax
+            form: \Mweb\CoreBundle\Form\ParalaxType
+            views: default
+            listProperties:
+                name:
+                    dataName: title
+                    beautyName: Nom
+                    type: string
+                updated:
+                    dataName: updated
+                    beautyName: Mis à jour
+                    type: date
+                created:
+                    dataName: created
+                    beautyName: Ajouté le
+                    type: date
+                status:
+                     dataName: status
+                     beautyName: En ligne
+                     type: boolean
