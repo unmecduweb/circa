@@ -66,11 +66,13 @@ class DefaultController extends Controller
                 $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
                 $news = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findBy(array(), array('created' => 'DESC'), 2);
                 $actu = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findOneBySlug($slugNews);
-                
+        
+                $parent = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findOneByDevAlias('news');
                 return $this->render('MwebCoreBundle::actu.html.twig', array(
                         'pagesMenu' => $pagesMenu,
                         'actu' => $actu,
-                        'news'=>$news
+                        'news'=>$news,
+                        'parent'=>$parent
                 
                 ));
                 
