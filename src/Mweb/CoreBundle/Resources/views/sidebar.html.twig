@@ -10,7 +10,7 @@
     <div class="col-xs-{{ col }} news">
         <img src="{{ liip(actu, 'news') }}" alt=""/>
         <h3>{{ actu.startDate|date('d/m') }} - {{ actu.title }}</h3>
-        <p>{{ actu.summary }}</p>
+        <p>{{ actu.summary|raw }}</p>
         <a href="{{ path('circa_news', {'slugNews': actu.slug}) }}" class="button">En savoir plus</a>
         <div class="clear"></div>
     </div>
