@@ -42,7 +42,7 @@ class DefaultController extends Controller
         
                 $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
                 $page = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findOneBySlug($slug);
-                if($page->getSlug() == 'news'){
+                if($page->getDevAlias() == 'news'){
                         $newsList = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findAll();
                 }else{
                         $newsList = array();
