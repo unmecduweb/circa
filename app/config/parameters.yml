@@ -2,9 +2,9 @@
 parameters:
     database_host: 127.0.0.1
     database_port: null
-    database_name: circa
-    database_user: root
-    database_password: fabfab
+    database_name: mweb_circa
+    database_user: mweb_circa
+    database_password: $MW_circa_2017
     locale: fr
     locales: fr
     mailer_transport: smtp
