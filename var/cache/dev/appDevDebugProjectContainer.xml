@@ -478,11 +478,11 @@
         </parameter>
         <parameter key="unique">false</parameter>
       </parameter>
-      <parameter key="paralax" type="collection">
-        <parameter key="beautyName">Illustrations</parameter>
-        <parameter key="menu">paralax</parameter>
-        <parameter key="class">Mweb\CoreBundle\Entity\Paralax</parameter>
-        <parameter key="form">\Mweb\CoreBundle\Form\ParalaxType</parameter>
+      <parameter key="artist" type="collection">
+        <parameter key="beautyName">Artistes</parameter>
+        <parameter key="menu">artist</parameter>
+        <parameter key="class">Mweb\CoreBundle\Entity\Artist</parameter>
+        <parameter key="form">\Mweb\CoreBundle\Form\ArtistType</parameter>
         <parameter key="views">default</parameter>
         <parameter key="listProperties" type="collection">
           <parameter key="name" type="collection">
@@ -515,6 +515,9 @@
       </parameter>
       <parameter key="news" type="collection">
         <parameter key="beautyName">Actualités</parameter>
+      </parameter>
+      <parameter key="artist" type="collection">
+        <parameter key="beautyName">Artistes</parameter>
       </parameter>
     </parameter>
     <parameter key="mweb_admin.noillu">niche</parameter>
@@ -644,7 +647,7 @@
       <parameter>Default</parameter>
     </parameter>
     <parameter key="fos_user.registration.confirmation.from_email" type="collection">
-      <parameter key="webmaster@example.com">webmaster</parameter>
+      <parameter key="blop@niche.com">FAB</parameter>
     </parameter>
     <parameter key="fos_user.registration.confirmation.enabled">false</parameter>
     <parameter key="fos_user.registration.form.type">FOS\UserBundle\Form\Type\RegistrationFormType</parameter>
@@ -660,7 +663,7 @@
       <parameter>Default</parameter>
     </parameter>
     <parameter key="fos_user.resetting.email.from_email" type="collection">
-      <parameter key="webmaster@example.com">webmaster</parameter>
+      <parameter key="blop@niche.com">FAB</parameter>
     </parameter>
     <parameter key="fos_user.resetting.retry_ttl">7200</parameter>
     <parameter key="fos_user.resetting.token_ttl">86400</parameter>
@@ -707,6 +710,19 @@
         <parameter key="delete_on_update">true</parameter>
         <parameter key="db_driver">orm</parameter>
       </parameter>
+      <parameter key="parallax_image" type="collection">
+        <parameter key="uri_prefix">/files/uploads/content</parameter>
+        <parameter key="upload_destination">/home/fab/Documents/Pro/www/circa/app/../web/files/uploads/content</parameter>
+        <parameter key="inject_on_load">true</parameter>
+        <parameter key="namer" type="collection">
+          <parameter key="service">null</parameter>
+          <parameter key="options">null</parameter>
+        </parameter>
+        <parameter key="directory_namer">null</parameter>
+        <parameter key="delete_on_remove">true</parameter>
+        <parameter key="delete_on_update">true</parameter>
+        <parameter key="db_driver">orm</parameter>
+      </parameter>
       <parameter key="news_image" type="collection">
         <parameter key="uri_prefix">/files/uploads/news</parameter>
         <parameter key="upload_destination">/home/fab/Documents/Pro/www/circa/app/../web/files/uploads/news</parameter>
@@ -720,9 +736,9 @@
         <parameter key="delete_on_update">true</parameter>
         <parameter key="db_driver">orm</parameter>
       </parameter>
-      <parameter key="parallax_image" type="collection">
-        <parameter key="uri_prefix">/files/uploads/paralax</parameter>
-        <parameter key="upload_destination">/home/fab/Documents/Pro/www/circa/app/../web/files/uploads/paralax</parameter>
+      <parameter key="artist_image" type="collection">
+        <parameter key="uri_prefix">/files/uploads/artist</parameter>
+        <parameter key="upload_destination">/home/fab/Documents/Pro/www/circa/app/../web/files/uploads/artist</parameter>
         <parameter key="inject_on_load">true</parameter>
         <parameter key="namer" type="collection">
           <parameter key="service">null</parameter>
@@ -851,6 +867,27 @@
             <parameter key="size" type="collection">
               <parameter>1920</parameter>
               <parameter>400</parameter>
+            </parameter>
+            <parameter key="mode">outbound</parameter>
+          </parameter>
+        </parameter>
+        <parameter key="jpeg_quality">null</parameter>
+        <parameter key="png_compression_level">null</parameter>
+        <parameter key="png_compression_filter">null</parameter>
+        <parameter key="format">null</parameter>
+        <parameter key="animated">false</parameter>
+        <parameter key="cache">null</parameter>
+        <parameter key="data_loader">null</parameter>
+        <parameter key="default_image">null</parameter>
+        <parameter key="post_processors" type="collection"/>
+      </parameter>
+      <parameter key="artist" type="collection">
+        <parameter key="quality">80</parameter>
+        <parameter key="filters" type="collection">
+          <parameter key="thumbnail" type="collection">
+            <parameter key="size" type="collection">
+              <parameter>800</parameter>
+              <parameter>600</parameter>
             </parameter>
             <parameter key="mode">outbound</parameter>
           </parameter>
@@ -1064,7 +1101,7 @@
                   <tag name="cache.pool"/>
                   <argument>cObhH-Rsq5</argument>
                   <argument>0</argument>
-                  <argument>CzvdwUfx6d+iG1+N7+PXWp</argument>
+                  <argument>xCcFn5-QycqAImVYNAxZ2+</argument>
                   <argument>/home/fab/Documents/Pro/www/circa/var/cache/dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1077,7 +1114,7 @@
                   <tag name="cache.pool"/>
                   <argument>hzhvmYrFrr</argument>
                   <argument>0</argument>
-                  <argument>CzvdwUfx6d+iG1+N7+PXWp</argument>
+                  <argument>xCcFn5-QycqAImVYNAxZ2+</argument>
                   <argument>/home/fab/Documents/Pro/www/circa/var/cache/dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1761,7 +1798,7 @@
       <tag name="cache.pool"/>
       <argument>KRq3WbYif4</argument>
       <argument>0</argument>
-      <argument>CzvdwUfx6d+iG1+N7+PXWp</argument>
+      <argument>xCcFn5-QycqAImVYNAxZ2+</argument>
       <argument>/home/fab/Documents/Pro/www/circa/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -2592,7 +2629,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>589f11993fef09.51852952</argument>
+            <argument>58a9f1ddc47371.31597150</argument>
           </service>
         </argument>
       </argument>
@@ -2895,7 +2932,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>589f11993fef09.51852952</argument>
+            <argument>58a9f1ddc47371.31597150</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3358,6 +3395,19 @@
             <argument type="service">
               <service class="Vich\UploaderBundle\EventListener\Doctrine\CleanListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="50"/>
+                <argument>parallax_image</argument>
+                <argument type="service">
+                  <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
+                </argument>
+                <argument type="service" id="vich_uploader.metadata_reader"/>
+                <argument type="service" id="vich_uploader.upload_handler"/>
+              </service>
+            </argument>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service">
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\CleanListener" public="false">
+                <tag name="doctrine.event_subscriber" priority="50"/>
                 <argument>content_image</argument>
                 <argument type="service">
                   <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
@@ -3371,7 +3421,7 @@
             <argument type="service">
               <service class="Vich\UploaderBundle\EventListener\Doctrine\CleanListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="50"/>
-                <argument>parallax_image</argument>
+                <argument>artist_image</argument>
                 <argument type="service">
                   <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
                 </argument>
@@ -3395,11 +3445,27 @@
           </call>
           <call method="addEventSubscriber">
             <argument type="service">
-              <service class="Gedmo\Timestampable\TimestampableListener" public="false">
-                <tag name="doctrine.event_subscriber" connection="default"/>
-                <call method="setAnnotationReader">
-                  <argument type="service" id="annotation_reader"/>
-                </call>
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\InjectListener" public="false">
+                <tag name="doctrine.event_subscriber" priority="0"/>
+                <argument>content_image</argument>
+                <argument type="service">
+                  <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
+                </argument>
+                <argument type="service" id="vich_uploader.metadata_reader"/>
+                <argument type="service" id="vich_uploader.upload_handler"/>
+              </service>
+            </argument>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service">
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\UploadListener" public="false">
+                <tag name="doctrine.event_subscriber" priority="0"/>
+                <argument>parallax_image</argument>
+                <argument type="service">
+                  <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
+                </argument>
+                <argument type="service" id="vich_uploader.metadata_reader"/>
+                <argument type="service" id="vich_uploader.upload_handler"/>
               </service>
             </argument>
           </call>
@@ -3424,9 +3490,9 @@
           </call>
           <call method="addEventSubscriber">
             <argument type="service">
-              <service class="Vich\UploaderBundle\EventListener\Doctrine\RemoveListener" public="false">
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\InjectListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="0"/>
-                <argument>content_image</argument>
+                <argument>parallax_image</argument>
                 <argument type="service">
                   <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
                 </argument>
@@ -3437,7 +3503,30 @@
           </call>
           <call method="addEventSubscriber">
             <argument type="service">
-              <service class="Vich\UploaderBundle\EventListener\Doctrine\InjectListener" public="false">
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\UploadListener" public="false">
+                <tag name="doctrine.event_subscriber" priority="0"/>
+                <argument>news_image</argument>
+                <argument type="service">
+                  <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
+                </argument>
+                <argument type="service" id="vich_uploader.metadata_reader"/>
+                <argument type="service" id="vich_uploader.upload_handler"/>
+              </service>
+            </argument>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service">
+              <service class="Gedmo\Timestampable\TimestampableListener" public="false">
+                <tag name="doctrine.event_subscriber" connection="default"/>
+                <call method="setAnnotationReader">
+                  <argument type="service" id="annotation_reader"/>
+                </call>
+              </service>
+            </argument>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service">
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\RemoveListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="0"/>
                 <argument>content_image</argument>
                 <argument type="service">
@@ -3465,7 +3554,7 @@
             <argument type="service">
               <service class="Vich\UploaderBundle\EventListener\Doctrine\UploadListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="0"/>
-                <argument>news_image</argument>
+                <argument>content_image</argument>
                 <argument type="service">
                   <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
                 </argument>
@@ -3489,9 +3578,9 @@
           </call>
           <call method="addEventSubscriber">
             <argument type="service">
-              <service class="Vich\UploaderBundle\EventListener\Doctrine\UploadListener" public="false">
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\RemoveListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="0"/>
-                <argument>content_image</argument>
+                <argument>parallax_image</argument>
                 <argument type="service">
                   <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
                 </argument>
@@ -3504,7 +3593,7 @@
             <argument type="service">
               <service class="Vich\UploaderBundle\EventListener\Doctrine\UploadListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="0"/>
-                <argument>parallax_image</argument>
+                <argument>artist_image</argument>
                 <argument type="service">
                   <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
                 </argument>
@@ -3517,7 +3606,7 @@
             <argument type="service">
               <service class="Vich\UploaderBundle\EventListener\Doctrine\InjectListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="0"/>
-                <argument>parallax_image</argument>
+                <argument>artist_image</argument>
                 <argument type="service">
                   <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
                 </argument>
@@ -3530,7 +3619,7 @@
             <argument type="service">
               <service class="Vich\UploaderBundle\EventListener\Doctrine\RemoveListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="0"/>
-                <argument>parallax_image</argument>
+                <argument>artist_image</argument>
                 <argument type="service">
                   <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
                 </argument>
@@ -3854,11 +3943,11 @@
           </argument>
           <argument key="unique">false</argument>
         </argument>
-        <argument key="paralax" type="collection">
-          <argument key="beautyName">Illustrations</argument>
-          <argument key="menu">paralax</argument>
-          <argument key="class">Mweb\CoreBundle\Entity\Paralax</argument>
-          <argument key="form">\Mweb\CoreBundle\Form\ParalaxType</argument>
+        <argument key="artist" type="collection">
+          <argument key="beautyName">Artistes</argument>
+          <argument key="menu">artist</argument>
+          <argument key="class">Mweb\CoreBundle\Entity\Artist</argument>
+          <argument key="form">\Mweb\CoreBundle\Form\ArtistType</argument>
           <argument key="views">default</argument>
           <argument key="listProperties" type="collection">
             <argument key="name" type="collection">
@@ -3891,6 +3980,9 @@
         </argument>
         <argument key="news" type="collection">
           <argument key="beautyName">Actualités</argument>
+        </argument>
+        <argument key="artist" type="collection">
+          <argument key="beautyName">Artistes</argument>
         </argument>
       </argument>
     </service>
@@ -4922,6 +5014,19 @@
           <argument key="delete_on_update">true</argument>
           <argument key="db_driver">orm</argument>
         </argument>
+        <argument key="parallax_image" type="collection">
+          <argument key="uri_prefix">/files/uploads/content</argument>
+          <argument key="upload_destination">/home/fab/Documents/Pro/www/circa/app/../web/files/uploads/content</argument>
+          <argument key="inject_on_load">true</argument>
+          <argument key="namer" type="collection">
+            <argument key="service">null</argument>
+            <argument key="options">null</argument>
+          </argument>
+          <argument key="directory_namer">null</argument>
+          <argument key="delete_on_remove">true</argument>
+          <argument key="delete_on_update">true</argument>
+          <argument key="db_driver">orm</argument>
+        </argument>
         <argument key="news_image" type="collection">
           <argument key="uri_prefix">/files/uploads/news</argument>
           <argument key="upload_destination">/home/fab/Documents/Pro/www/circa/app/../web/files/uploads/news</argument>
@@ -4935,9 +5040,9 @@
           <argument key="delete_on_update">true</argument>
           <argument key="db_driver">orm</argument>
         </argument>
-        <argument key="parallax_image" type="collection">
-          <argument key="uri_prefix">/files/uploads/paralax</argument>
-          <argument key="upload_destination">/home/fab/Documents/Pro/www/circa/app/../web/files/uploads/paralax</argument>
+        <argument key="artist_image" type="collection">
+          <argument key="uri_prefix">/files/uploads/artist</argument>
+          <argument key="upload_destination">/home/fab/Documents/Pro/www/circa/app/../web/files/uploads/artist</argument>
           <argument key="inject_on_load">true</argument>
           <argument key="namer" type="collection">
             <argument key="service">null</argument>
@@ -5164,6 +5269,27 @@
               <argument key="size" type="collection">
                 <argument>1920</argument>
                 <argument>400</argument>
+              </argument>
+              <argument key="mode">outbound</argument>
+            </argument>
+          </argument>
+          <argument key="jpeg_quality">null</argument>
+          <argument key="png_compression_level">null</argument>
+          <argument key="png_compression_filter">null</argument>
+          <argument key="format">null</argument>
+          <argument key="animated">false</argument>
+          <argument key="cache">null</argument>
+          <argument key="data_loader">null</argument>
+          <argument key="default_image">null</argument>
+          <argument key="post_processors" type="collection"/>
+        </argument>
+        <argument key="artist" type="collection">
+          <argument key="quality">80</argument>
+          <argument key="filters" type="collection">
+            <argument key="thumbnail" type="collection">
+              <argument key="size" type="collection">
+                <argument>800</argument>
+                <argument>600</argument>
               </argument>
               <argument key="mode">outbound</argument>
             </argument>
@@ -5710,10 +5836,10 @@
         <argument key="resetting.template">@FOSUser/Resetting/email.txt.twig</argument>
         <argument key="from_email" type="collection">
           <argument key="confirmation" type="collection">
-            <argument key="webmaster@example.com">webmaster</argument>
+            <argument key="blop@niche.com">FAB</argument>
           </argument>
           <argument key="resetting" type="collection">
-            <argument key="webmaster@example.com">webmaster</argument>
+            <argument key="blop@niche.com">FAB</argument>
           </argument>
         </argument>
       </argument>

@@ -22,38 +22,38 @@ class __TwigTemplate_5b5d5432948b985bda0b0fca4c36fe8468f9c6e7423500bdcb39605d82c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4a13fd6a11d24ab846df3e42842237399e3ca3fcf66e6e32bc7a852f3410c06a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4a13fd6a11d24ab846df3e42842237399e3ca3fcf66e6e32bc7a852f3410c06a->enter($__internal_4a13fd6a11d24ab846df3e42842237399e3ca3fcf66e6e32bc7a852f3410c06a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MwebCoreBundle::index.html.twig"));
+        $__internal_1fa9e2505e5c79f58974119235b2e98a8faf3e0c45ebe7980678da1f71a4571e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1fa9e2505e5c79f58974119235b2e98a8faf3e0c45ebe7980678da1f71a4571e->enter($__internal_1fa9e2505e5c79f58974119235b2e98a8faf3e0c45ebe7980678da1f71a4571e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MwebCoreBundle::index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_4a13fd6a11d24ab846df3e42842237399e3ca3fcf66e6e32bc7a852f3410c06a->leave($__internal_4a13fd6a11d24ab846df3e42842237399e3ca3fcf66e6e32bc7a852f3410c06a_prof);
+        $__internal_1fa9e2505e5c79f58974119235b2e98a8faf3e0c45ebe7980678da1f71a4571e->leave($__internal_1fa9e2505e5c79f58974119235b2e98a8faf3e0c45ebe7980678da1f71a4571e_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_0618b0acb4ac7a61a9d107a1a27ad1c5caf37edd16cfb93dd72209649d913d31 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0618b0acb4ac7a61a9d107a1a27ad1c5caf37edd16cfb93dd72209649d913d31->enter($__internal_0618b0acb4ac7a61a9d107a1a27ad1c5caf37edd16cfb93dd72209649d913d31_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_71946f2cfa98dc5899ff6bc7bf7a13fa6f681329c89eb56a7704368722433037 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_71946f2cfa98dc5899ff6bc7bf7a13fa6f681329c89eb56a7704368722433037->enter($__internal_71946f2cfa98dc5899ff6bc7bf7a13fa6f681329c89eb56a7704368722433037_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Accueil";
         
-        $__internal_0618b0acb4ac7a61a9d107a1a27ad1c5caf37edd16cfb93dd72209649d913d31->leave($__internal_0618b0acb4ac7a61a9d107a1a27ad1c5caf37edd16cfb93dd72209649d913d31_prof);
+        $__internal_71946f2cfa98dc5899ff6bc7bf7a13fa6f681329c89eb56a7704368722433037->leave($__internal_71946f2cfa98dc5899ff6bc7bf7a13fa6f681329c89eb56a7704368722433037_prof);
 
     }
 
     // line 8
     public function block_content($context, array $blocks = array())
     {
-        $__internal_37f95bcb5e1aa11734b8289c6e83cc80d3e036dece445fb7e247fbfda446d9c3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_37f95bcb5e1aa11734b8289c6e83cc80d3e036dece445fb7e247fbfda446d9c3->enter($__internal_37f95bcb5e1aa11734b8289c6e83cc80d3e036dece445fb7e247fbfda446d9c3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_b0dcd483bbd43c046ba392ed94b94c13e04000cb79e31115f47d307c9ee3594d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b0dcd483bbd43c046ba392ed94b94c13e04000cb79e31115f47d307c9ee3594d->enter($__internal_b0dcd483bbd43c046ba392ed94b94c13e04000cb79e31115f47d307c9ee3594d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 9
         echo "    ";
         // line 10
         echo "    <section id=\"section-info\" class=\"paralax-wrap\" style=\"background-image: url('";
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("uploads/illu1.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bundles/mwebcore/img/illuhome.jpg"), "html", null, true);
         echo "')\">
         <div class=\"section-container\" style=\"height: 100%;\">
             <div class=\"container-fluid\">
@@ -217,7 +217,7 @@ class __TwigTemplate_5b5d5432948b985bda0b0fca4c36fe8468f9c6e7423500bdcb39605d82c
 
 ";
         
-        $__internal_37f95bcb5e1aa11734b8289c6e83cc80d3e036dece445fb7e247fbfda446d9c3->leave($__internal_37f95bcb5e1aa11734b8289c6e83cc80d3e036dece445fb7e247fbfda446d9c3_prof);
+        $__internal_b0dcd483bbd43c046ba392ed94b94c13e04000cb79e31115f47d307c9ee3594d->leave($__internal_b0dcd483bbd43c046ba392ed94b94c13e04000cb79e31115f47d307c9ee3594d_prof);
 
     }
 
@@ -255,7 +255,7 @@ class __TwigTemplate_5b5d5432948b985bda0b0fca4c36fe8468f9c6e7423500bdcb39605d82c
 
 {% block content %}
     {#{{ liip(page, 'paralax', paralax) }}#}
-    <section id=\"section-info\" class=\"paralax-wrap\" style=\"background-image: url('{{ asset('uploads/illu1.jpg') }}')\">
+    <section id=\"section-info\" class=\"paralax-wrap\" style=\"background-image: url('{{ asset('bundles/mwebcore/img/illuhome.jpg') }}')\">
         <div class=\"section-container\" style=\"height: 100%;\">
             <div class=\"container-fluid\">
                 <div class=\"block-title right\">

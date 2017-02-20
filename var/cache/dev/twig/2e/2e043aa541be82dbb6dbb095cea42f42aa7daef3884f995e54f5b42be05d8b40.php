@@ -15,8 +15,8 @@ class __TwigTemplate_7bd290415fcf45af923c81adb23a71798573c8d5caeb6f8e706a43659e6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cb7062d267661bfc61b3c1568d7c1067ab6e30c1c138e4ceafddbd2b8232fb40 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cb7062d267661bfc61b3c1568d7c1067ab6e30c1c138e4ceafddbd2b8232fb40->enter($__internal_cb7062d267661bfc61b3c1568d7c1067ab6e30c1c138e4ceafddbd2b8232fb40_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/ico/default.jpg"));
+        $__internal_a89b1b795e59654d7a2f07bb31d0a7593f6e30af38d22848e5566bfb18711bec = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a89b1b795e59654d7a2f07bb31d0a7593f6e30af38d22848e5566bfb18711bec->enter($__internal_a89b1b795e59654d7a2f07bb31d0a7593f6e30af38d22848e5566bfb18711bec_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/ico/default.jpg"));
 
         // line 1
         echo "ÿØÿà\000JFIF\000\000\000\000\000\000ÿá\000@Exif\000\000MM\000*\000\000\000\000‡i\000\000\000\000\000\000\000\000\000\000\000\000 \000\000\000\000\000\000\000z \000\000\000\000\000\000\000[\000\000\000\000ÿþ\0004Optimized by JPEGmini 3.9.2.5L Internal 0xfa27b1f5ÿÛ\000C\000
@@ -43,7 +43,7 @@ class __TwigTemplate_7bd290415fcf45af923c81adb23a71798573c8d5caeb6f8e706a43659e6
 +¥XðèBP¢:q´Ž
 .àlÊ(ÔmÐá%eÔ@s#+¢B>àýúêÙ€m\"ÀÌ\"Ú¹\000oC–ŸéUÎ0ŒGÊŒŠ+ÉÓW ôø(°Ùùccì/Àç¦G”ÓpÜ&\000,J*ÕÈõ{mp=UÅW‚Èíæ¯¥Pówß×7ä©Ãºi¨{¸tÿÙ";
         
-        $__internal_cb7062d267661bfc61b3c1568d7c1067ab6e30c1c138e4ceafddbd2b8232fb40->leave($__internal_cb7062d267661bfc61b3c1568d7c1067ab6e30c1c138e4ceafddbd2b8232fb40_prof);
+        $__internal_a89b1b795e59654d7a2f07bb31d0a7593f6e30af38d22848e5566bfb18711bec->leave($__internal_a89b1b795e59654d7a2f07bb31d0a7593f6e30af38d22848e5566bfb18711bec_prof);
 
     }
 

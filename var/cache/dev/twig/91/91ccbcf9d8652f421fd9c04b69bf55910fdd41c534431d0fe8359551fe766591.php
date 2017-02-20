@@ -15,8 +15,8 @@ class __TwigTemplate_18069cacd50155a7a69235cddf399a6640c3d7ca71485ae4d23cde11308
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_61e5ba77d7b1ae1260819f03ea9d279fc44ef4f30eb1bbba7327ff1c01a163de = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_61e5ba77d7b1ae1260819f03ea9d279fc44ef4f30eb1bbba7327ff1c01a163de->enter($__internal_61e5ba77d7b1ae1260819f03ea9d279fc44ef4f30eb1bbba7327ff1c01a163de_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/clipboard_apply.png"));
+        $__internal_877dfca5f2bc0ceadf1044337193164178d9e83cacee72f27de1467824086ab0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_877dfca5f2bc0ceadf1044337193164178d9e83cacee72f27de1467824086ab0->enter($__internal_877dfca5f2bc0ceadf1044337193164178d9e83cacee72f27de1467824086ab0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/clipboard_apply.png"));
 
         // line 1
         echo "‰PNG
@@ -26,7 +26,7 @@ IHDR\000\000\000\000\000\000\000\000\000íÝâR\000\000\000PLTE&&&ÿÿÿ&&&&&&&&&
 € „Ñ#8€ 0\000I;€ÒÛ&[ÔïGórE)å~9}#¯™P5ûb
 'áñvD?äƒAÂ±`d.\000àðaÁ’¾ 0P•ž5ì=0ÓÄ3@Jiÿ²\000\000\000\000IEND®B`‚";
         
-        $__internal_61e5ba77d7b1ae1260819f03ea9d279fc44ef4f30eb1bbba7327ff1c01a163de->leave($__internal_61e5ba77d7b1ae1260819f03ea9d279fc44ef4f30eb1bbba7327ff1c01a163de_prof);
+        $__internal_877dfca5f2bc0ceadf1044337193164178d9e83cacee72f27de1467824086ab0->leave($__internal_877dfca5f2bc0ceadf1044337193164178d9e83cacee72f27de1467824086ab0_prof);
 
     }
 

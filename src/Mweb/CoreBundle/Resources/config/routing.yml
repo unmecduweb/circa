@@ -5,7 +5,7 @@ _homepage:
         _locale: %locales%
 
 circa_page:
-  path: /{slug}
+  path: /festival/{slug}
   defaults: { _controller: MwebCoreBundle:Default:page, _locale: fr }
 
 circa_news:

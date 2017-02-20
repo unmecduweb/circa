@@ -15,8 +15,8 @@ class __TwigTemplate_bdea5951220e57eed1b387b2c834522090bd8fd9d6ff87d2b1831de4cd6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b7dafeb10269f86974c18094550407634952672d1a7e766d5bc86643ce6859ef = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b7dafeb10269f86974c18094550407634952672d1a7e766d5bc86643ce6859ef->enter($__internal_b7dafeb10269f86974c18094550407634952672d1a7e766d5bc86643ce6859ef_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/MIT-LICENSE.txt"));
+        $__internal_8f4cf9dc50639bad009d28859670d2f100766834b3e0dfa2a20ac096f21b7b09 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8f4cf9dc50639bad009d28859670d2f100766834b3e0dfa2a20ac096f21b7b09->enter($__internal_8f4cf9dc50639bad009d28859670d2f100766834b3e0dfa2a20ac096f21b7b09_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/MIT-LICENSE.txt"));
 
         // line 1
         echo "Copyright (c) 2009 - 2013 Happyworm Ltd
@@ -41,7 +41,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.";
         
-        $__internal_b7dafeb10269f86974c18094550407634952672d1a7e766d5bc86643ce6859ef->leave($__internal_b7dafeb10269f86974c18094550407634952672d1a7e766d5bc86643ce6859ef_prof);
+        $__internal_8f4cf9dc50639bad009d28859670d2f100766834b3e0dfa2a20ac096f21b7b09->leave($__internal_8f4cf9dc50639bad009d28859670d2f100766834b3e0dfa2a20ac096f21b7b09_prof);
 
     }
 

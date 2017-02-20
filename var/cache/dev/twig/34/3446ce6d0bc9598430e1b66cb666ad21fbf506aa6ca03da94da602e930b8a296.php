@@ -15,8 +15,8 @@ class __TwigTemplate_7659d38681ba1929231d65d079d70ce8d5c6342d9617f19608620a1cf5d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f15109fe51e47f9e1dde38b0b79043d4e6f80beecca14fae635ef303889a4080 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f15109fe51e47f9e1dde38b0b79043d4e6f80beecca14fae635ef303889a4080->enter($__internal_f15109fe51e47f9e1dde38b0b79043d4e6f80beecca14fae635ef303889a4080_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MwebCoreBundle::sidebar.html.twig"));
+        $__internal_53f197d7f01c23ac0e5d423e450c1cd10bda013c53593397636ab15b8774b245 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_53f197d7f01c23ac0e5d423e450c1cd10bda013c53593397636ab15b8774b245->enter($__internal_53f197d7f01c23ac0e5d423e450c1cd10bda013c53593397636ab15b8774b245_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "MwebCoreBundle::sidebar.html.twig"));
 
         // line 1
         echo "
@@ -67,7 +67,7 @@ class __TwigTemplate_7659d38681ba1929231d65d079d70ce8d5c6342d9617f19608620a1cf5d
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['actu'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_f15109fe51e47f9e1dde38b0b79043d4e6f80beecca14fae635ef303889a4080->leave($__internal_f15109fe51e47f9e1dde38b0b79043d4e6f80beecca14fae635ef303889a4080_prof);
+        $__internal_53f197d7f01c23ac0e5d423e450c1cd10bda013c53593397636ab15b8774b245->leave($__internal_53f197d7f01c23ac0e5d423e450c1cd10bda013c53593397636ab15b8774b245_prof);
 
     }
 

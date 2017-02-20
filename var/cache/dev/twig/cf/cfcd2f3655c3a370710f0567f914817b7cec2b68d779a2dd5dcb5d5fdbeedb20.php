@@ -15,8 +15,8 @@ class __TwigTemplate_d8f78a575eb1e37d55514a5bd1bfda9a8f11bd51e09e0024692bd7590fd
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1123cb13f45399eb83f0aa8b550ef9a8668bb773be76eb35b055c0fe0b101d20 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1123cb13f45399eb83f0aa8b550ef9a8668bb773be76eb35b055c0fe0b101d20->enter($__internal_1123cb13f45399eb83f0aa8b550ef9a8668bb773be76eb35b055c0fe0b101d20_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/lang/bg_BG.php"));
+        $__internal_ce64d41026a2c17a96995adc31ddd6d7ca0942153479bca23abfefca076a3415 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ce64d41026a2c17a96995adc31ddd6d7ca0942153479bca23abfefca076a3415->enter($__internal_ce64d41026a2c17a96995adc31ddd6d7ca0942153479bca23abfefca076a3415_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/lang/bg_BG.php"));
 
         // line 1
         echo "<?php
@@ -144,7 +144,7 @@ return array(
 );
 ";
         
-        $__internal_1123cb13f45399eb83f0aa8b550ef9a8668bb773be76eb35b055c0fe0b101d20->leave($__internal_1123cb13f45399eb83f0aa8b550ef9a8668bb773be76eb35b055c0fe0b101d20_prof);
+        $__internal_ce64d41026a2c17a96995adc31ddd6d7ca0942153479bca23abfefca076a3415->leave($__internal_ce64d41026a2c17a96995adc31ddd6d7ca0942153479bca23abfefca076a3415_prof);
 
     }
 

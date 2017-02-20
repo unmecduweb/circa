@@ -18,19 +18,32 @@
 <body id="default">
 
     <header>
-        <div class="right black"></div>
         <div class="container-fluid">
             <div class="wrap">
                 <a href="{{ path('_homepage') }}" id="logo">
                     <img src="{{ asset('bundles/mwebcore/img/logo.png') }}" alt="Festival Circasismic"/>
                 </a>
 
+                <ul class="social-link">
+                    <li>
+                        <a href="https://www.facebook.com/festivalcircasismic/"><img src="{{ asset("bundles/mwebcore/img/fb.png") }}" alt=""/></a>
+                        <a href="https://www.instagram.com/festivalcircasismic/"><img src="{{ asset("bundles/mwebcore/img/inst.png") }}" alt=""/></a>
+                    </li>
+                </ul>
                 <button class="mobile-menu mobile-only"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
                 <nav id="menu-wrap">
                     <ul id="menu">
-                        <li class="elm_menu"><a href="{{ path('_homepage') }}">Accueil</a></li>
+                        {% set selected ='' %}
+                        {% if app.request.get('slug') is empty %}{% set selected = 'selected' %}{% endif %}
+                        <li class="elm_menu">
+                            <a href="{{ path('_homepage') }}" class="{{ selected }}">Accueil</a>
+                        </li>
                         {% for page in pagesMenu %}
-                            <li class="elm_menu"><a href="{{ path('circa_page', {'slug': page.slug}) }}">{{ page.title }}</a></li>
+                            {% set selected ='' %}
+                            {% if app.request.get('slug') == page.slug %}{% set selected = 'selected' %}{% endif %}
+                            <li class="elm_menu">
+                                <a href="{{ path('circa_page', {'slug': page.slug}) }}" class="{{ selected }}">{{ page.title|stripAccents }}</a>
+                            </li>
                         {% endfor %}
                     </ul>
                 </nav>
@@ -57,7 +70,35 @@
                     <li> <a href="" target="_blank"><img src="{{ asset('uploads/partner/Sacem_logo_vertical_CMJN.jpg')| imagine_filter('partner') }}" /></a></li>
                 </ul>
             </div>
+        </div>
     </section>
+
+    {%  block footer %}
+        <footer>
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-5">
+                    <img src="{{ asset('bundles/mwebcore/img/footer-logo.png') }}" alt="" />
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <ul class="list-link">
+                        <li><a href="{{ path('circa_page', {"slug": "info-contact"}) }}">Contact</a></li>
+                        <li><a href="{{ path('circa_page', {"slug": "info-contact"}) }}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <ul class="social-link">
+                        <li>
+                            <a href="https://www.facebook.com/festivalcircasismic/"><img src="{{ asset("bundles/mwebcore/img/fb.png") }}" alt=""/> Facebook</a>
+                        </li><li>
+                            <a href="https://www.instagram.com/festivalcircasismic/"><img src="{{ asset("bundles/mwebcore/img/inst.png") }}" alt=""/> Intsagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 fab-link"><a class="" href="http://unmecduweb.com/">Création de site web : unmecduweb.com</a></div>
+            </div>
+
+        </footer>
+    {% endblock %}
 
     {% block javascripts %}
         <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/plugin/a_jquery.3.1.1.min.js') }}"></script>

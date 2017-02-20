@@ -18,9 +18,12 @@ class DefaultController extends Controller
                 $news = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findBy(array(), array('created' => 'DESC'), 2);
                 
                 
+                
+                
                 return $this->render('MwebCoreBundle::index.html.twig', array(
                         'pagesMenu' => $pagesMenu,
                         'news' => $news
+                
                 
                 ));
                 
@@ -31,12 +34,19 @@ class DefaultController extends Controller
                 
                 $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findBy(array('parentContent' => null));
                 $page = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findOneBySlug($slug);
+                if($page->getSlug() == 'news'){
+                        $newsList = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findAll();
+                }else{
+                        $newsList = array();
+                }
                 $news = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findBy(array(), array('created' => 'DESC'), 2);
+                
                 
                 return $this->render('MwebCoreBundle::content.html.twig', array(
                         'pagesMenu' => $pagesMenu,
                         'page' => $page,
-                        'news'=>$news
+                        'news'=>$news,
+                        'newsList'=>$newsList
                 
                 ));
                 

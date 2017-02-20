@@ -25,7 +25,7 @@ body{padding-top: 130px;}
    HEADER - NAV BAR
    ========================================================================== */
 
-header{transition-duration: 0.5s; position: fixed; height:152px; width: 100%; background: url('../../files/design/back-menu.png') right top #000 ; z-index: 100; top:0px;}
+header{transition-duration: 0.5s; position: fixed; height:152px; width: 100%;z-index: 100; top:0px;}
 header .right.black{height: 100%; position: absolute; left: 0; background: #000; width: 30%;}
 header .container{height: 100%; }
 header.scroll-active{transition-duration: 0.5s; position: fixed; height:130px; width: 100%; z-index: 100; box-shadow: 0px 0px 12px #000;}
@@ -39,7 +39,7 @@ header.scroll-active #logo{transition-duration: 0.5s; bottom: -6px;  height: 145
 #menu-wrap{position: absolute; bottom:18px; right: 15px; margin:0;  padding:0; display: block; width: auto; height: auto; top: auto; left: auto; border-bottom: 0px;}
 #menu{margin:0;  padding:0;}
 #menu li{list-style: none; float: left; padding: 0; margin: 0; border-bottom:0px; }
-#menu a{font-family: 'caribbean'; font-size: 16px; padding: 5px 10px; margin:0 10px; color: #fff;}
+
 #menu a.active{text-decoration: underline;}
 #menu a:last-child{margin-right: 0px; padding-right: 0px;}
 

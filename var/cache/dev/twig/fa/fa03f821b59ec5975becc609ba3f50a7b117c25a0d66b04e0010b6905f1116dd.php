@@ -15,8 +15,8 @@ class __TwigTemplate_c6985ed89483cf714c460cc997c4a33e5fcde8445ac368781b65e461ac1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b00b9bdbfbd319b9c97bfa86d6a36355eb78c6ad16585992a70a34e03289c0f2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b00b9bdbfbd319b9c97bfa86d6a36355eb78c6ad16585992a70a34e03289c0f2->enter($__internal_b00b9bdbfbd319b9c97bfa86d6a36355eb78c6ad16585992a70a34e03289c0f2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/skin/blue.monday/css/jplayer.blue.monday.css"));
+        $__internal_f9f79c9fa015f6ed51d3e6c1e7544d647f12056961aaada0ea321996853515d9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f9f79c9fa015f6ed51d3e6c1e7544d647f12056961aaada0ea321996853515d9->enter($__internal_f9f79c9fa015f6ed51d3e6c1e7544d647f12056961aaada0ea321996853515d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/skin/blue.monday/css/jplayer.blue.monday.css"));
 
         // line 1
         echo "/*! Blue Monday Skin for jPlayer 2.9.2 ~ (c) 2009-2014 Happyworm Ltd ~ MIT License */
@@ -572,7 +572,7 @@ span.jp-artist {
 /* @end */
 ";
         
-        $__internal_b00b9bdbfbd319b9c97bfa86d6a36355eb78c6ad16585992a70a34e03289c0f2->leave($__internal_b00b9bdbfbd319b9c97bfa86d6a36355eb78c6ad16585992a70a34e03289c0f2_prof);
+        $__internal_f9f79c9fa015f6ed51d3e6c1e7544d647f12056961aaada0ea321996853515d9->leave($__internal_f9f79c9fa015f6ed51d3e6c1e7544d647f12056961aaada0ea321996853515d9_prof);
 
     }
 

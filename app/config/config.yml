@@ -109,13 +109,17 @@ vich_uploader:
              uri_prefix:         /files/uploads/content
              upload_destination: '%kernel.root_dir%/../web/files/uploads/content'
              inject_on_load: true
+        parallax_image:
+            uri_prefix:         /files/uploads/content
+            upload_destination: '%kernel.root_dir%/../web/files/uploads/content'
+            inject_on_load: true
         news_image:
              uri_prefix:         /files/uploads/news
              upload_destination: '%kernel.root_dir%/../web/files/uploads/news'
              inject_on_load: true
-        parallax_image:
-             uri_prefix:         /files/uploads/paralax
-             upload_destination: '%kernel.root_dir%/../web/files/uploads/paralax'
+        artist_image:
+             uri_prefix:         /files/uploads/artist
+             upload_destination: '%kernel.root_dir%/../web/files/uploads/artist'
              inject_on_load: true
 
 
@@ -138,6 +142,10 @@ liip_imagine:
             quality: 80
             filters:
                 thumbnail: { size: [1920, 400], mode: outbound }
+        artist:
+            quality: 80
+            filters:
+                thumbnail: { size: [800, 600], mode: outbound }
 
 
 fos_user:
@@ -155,6 +163,8 @@ mweb_admin:
             beautyName: Pages
         news:
             beautyName: Actualités
+        artist:
+            beautyName: Artistes
     entities:
         page:
             beautyName: Pages
@@ -201,11 +211,11 @@ mweb_admin:
                      dataName: status
                      beautyName: En ligne
                      type: boolean
-        paralax:
-            beautyName: Illustrations
-            menu: paralax
-            class: Mweb\CoreBundle\Entity\Paralax
-            form: \Mweb\CoreBundle\Form\ParalaxType
+        artist:
+            beautyName: Artistes
+            menu: artist
+            class: Mweb\CoreBundle\Entity\Artist
+            form: \Mweb\CoreBundle\Form\ArtistType
             views: default
             listProperties:
                 name:

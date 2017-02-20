@@ -15,8 +15,8 @@ class __TwigTemplate_24e6cd2f3014e1f5f64bca6d6235c79d32a20ebd6422593ccd530e6d566
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4202bdd96fcbbb3bd38d27116fbed307cc5a1a97053ec736c03b3440404e30da = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4202bdd96fcbbb3bd38d27116fbed307cc5a1a97053ec736c03b3440404e30da->enter($__internal_4202bdd96fcbbb3bd38d27116fbed307cc5a1a97053ec736c03b3440404e30da_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/jplayer.jquery.json"));
+        $__internal_cf0cea0f55aacfdd148086900be24d7440f478425019dc820e88daf53ddf5c19 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_cf0cea0f55aacfdd148086900be24d7440f478425019dc820e88daf53ddf5c19->enter($__internal_cf0cea0f55aacfdd148086900be24d7440f478425019dc820e88daf53ddf5c19_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/jplayer.jquery.json"));
 
         // line 1
         echo "{
@@ -53,7 +53,7 @@ class __TwigTemplate_24e6cd2f3014e1f5f64bca6d6235c79d32a20ebd6422593ccd530e6d566
 \t\"bugs\": \"https://github.com/happyworm/jPlayer/issues\"
 }";
         
-        $__internal_4202bdd96fcbbb3bd38d27116fbed307cc5a1a97053ec736c03b3440404e30da->leave($__internal_4202bdd96fcbbb3bd38d27116fbed307cc5a1a97053ec736c03b3440404e30da_prof);
+        $__internal_cf0cea0f55aacfdd148086900be24d7440f478425019dc820e88daf53ddf5c19->leave($__internal_cf0cea0f55aacfdd148086900be24d7440f478425019dc820e88daf53ddf5c19_prof);
 
     }
 

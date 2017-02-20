@@ -15,8 +15,8 @@ class __TwigTemplate_25c981634e6973ab01748bfa2f908176383e522f3c3ecdb15586541b125
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9934292775520c3572310d79634a2162d440ec9c67c20b6cd47c8046dbcaf965 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9934292775520c3572310d79634a2162d440ec9c67c20b6cd47c8046dbcaf965->enter($__internal_9934292775520c3572310d79634a2162d440ec9c67c20b6cd47c8046dbcaf965_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/skin/blue.monday/jplayer.blue.monday.css"));
+        $__internal_e7b43e6a710d13fa942735b375a5f16203bdf88046090c58f27016bcbaeefe32 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e7b43e6a710d13fa942735b375a5f16203bdf88046090c58f27016bcbaeefe32->enter($__internal_e7b43e6a710d13fa942735b375a5f16203bdf88046090c58f27016bcbaeefe32_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/jPlayer/skin/blue.monday/jplayer.blue.monday.css"));
 
         // line 1
         echo "/*
@@ -661,7 +661,7 @@ a.jp-shuffle-off:hover {
 /* @end */
 ";
         
-        $__internal_9934292775520c3572310d79634a2162d440ec9c67c20b6cd47c8046dbcaf965->leave($__internal_9934292775520c3572310d79634a2162d440ec9c67c20b6cd47c8046dbcaf965_prof);
+        $__internal_e7b43e6a710d13fa942735b375a5f16203bdf88046090c58f27016bcbaeefe32->leave($__internal_e7b43e6a710d13fa942735b375a5f16203bdf88046090c58f27016bcbaeefe32_prof);
 
     }
 

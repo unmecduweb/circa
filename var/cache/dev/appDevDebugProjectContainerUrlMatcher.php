@@ -284,7 +284,7 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // circa_page
-        if (preg_match('#^/(?P<slug>[^/]++)$#s', $pathinfo, $matches)) {
+        if (0 === strpos($pathinfo, '/festival') && preg_match('#^/festival/(?P<slug>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'circa_page')), array (  '_controller' => 'Mweb\\CoreBundle\\Controller\\DefaultController::pageAction',  '_locale' => 'fr',));
         }
 

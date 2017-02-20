@@ -15,8 +15,8 @@ class __TwigTemplate_06d4da1dadaf6e3d34cebc662225d3fb742d3948501d437944648962d59
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e29e62c03ddc53a433f42ee0863309bc7ffca79dc3553ac6565ae2bedd17a099 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e29e62c03ddc53a433f42ee0863309bc7ffca79dc3553ac6565ae2bedd17a099->enter($__internal_e29e62c03ddc53a433f42ee0863309bc7ffca79dc3553ac6565ae2bedd17a099_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/ViewerJS/images/toolbarButton-fullscreen.png"));
+        $__internal_0f482ff659fc3d3f2893c3187113a2a6d66fe637f99a6bd160096206ce223ecc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0f482ff659fc3d3f2893c3187113a2a6d66fe637f99a6bd160096206ce223ecc->enter($__internal_0f482ff659fc3d3f2893c3187113a2a6d66fe637f99a6bd160096206ce223ecc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/js/ViewerJS/images/toolbarButton-fullscreen.png"));
 
         // line 1
         echo "‰PNG
@@ -28,7 +28,7 @@ JMh„§cæl=¨%éÀ,-P*I-h`TÁÙÍ•†JÃù……;¼‚Ævkÿ-Íi°ûôEÖ¨æ.wna(È\$Óëm¾Î±â±
 ’¤¤ä°°×6fP‰&÷ÜÇžRM\"¤^rW1À°ð’u>‰›ªzI¿ìL>ÇT×„ý9Æª†
 ?øµ#ˆb´ñ›¬Œ\"T¢tœ?:4›}O­lv\000\000\000\000IEND®B`‚";
         
-        $__internal_e29e62c03ddc53a433f42ee0863309bc7ffca79dc3553ac6565ae2bedd17a099->leave($__internal_e29e62c03ddc53a433f42ee0863309bc7ffca79dc3553ac6565ae2bedd17a099_prof);
+        $__internal_0f482ff659fc3d3f2893c3187113a2a6d66fe637f99a6bd160096206ce223ecc->leave($__internal_0f482ff659fc3d3f2893c3187113a2a6d66fe637f99a6bd160096206ce223ecc_prof);
 
     }
 

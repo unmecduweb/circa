@@ -15,8 +15,8 @@ class __TwigTemplate_a5eea008697316a0305046833255a9be78f973b2e9f69e68cdcce3fb808
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_022f717a3c810ede72905df9a6e72d65f7e4ebe3713da277b26d74c08166fe89 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_022f717a3c810ede72905df9a6e72d65f7e4ebe3713da277b26d74c08166fe89->enter($__internal_022f717a3c810ede72905df9a6e72d65f7e4ebe3713da277b26d74c08166fe89_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/info.png"));
+        $__internal_56006310cf831280ab7ad6a900e56d694a2f7d27e3ef332a0fe133fc7f700c38 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_56006310cf831280ab7ad6a900e56d694a2f7d27e3ef332a0fe133fc7f700c38->enter($__internal_56006310cf831280ab7ad6a900e56d694a2f7d27e3ef332a0fe133fc7f700c38_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/info.png"));
 
         // line 1
         echo "‰PNG
@@ -25,7 +25,7 @@ class __TwigTemplate_a5eea008697316a0305046833255a9be78f973b2e9f69e68cdcce3fb808
 IHDR\000\000\000\000\000\000\000\000\000(-S\000\000\000iPLTEÿÿÿ\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000¶v²Š\000\000\000\"tRNS\000óïíNèýçþðÝGßìLEîáãÄ¾F\000\000\000}IDATx^mŽ\tƒ@EÁYœu´.Ý×ÿCM-mÓ’G>@3–bÛî¤½`2\t¨
 ±ŠúKÐ‘bJqŽ(Ã sâ³»öý]7¸‡ßžüäˆWqà‹wÈö¹BPÁ´\t@ù)šòŸh~\"á¦KÍa4v=Û9#^DáQAjùä\tuV¨ÉŠ‰J\000\000\000\000IEND®B`‚";
         
-        $__internal_022f717a3c810ede72905df9a6e72d65f7e4ebe3713da277b26d74c08166fe89->leave($__internal_022f717a3c810ede72905df9a6e72d65f7e4ebe3713da277b26d74c08166fe89_prof);
+        $__internal_56006310cf831280ab7ad6a900e56d694a2f7d27e3ef332a0fe133fc7f700c38->leave($__internal_56006310cf831280ab7ad6a900e56d694a2f7d27e3ef332a0fe133fc7f700c38_prof);
 
     }
 

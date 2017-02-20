@@ -15,8 +15,8 @@ class __TwigTemplate_b870762e55a4836f9429150edee0e5e802e1ae27c13cc0236f46b353aca
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8ac071aef3a496562862918187cbe6d6fa7bd1d6b38138a13ef8212fa91b2617 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8ac071aef3a496562862918187cbe6d6fa7bd1d6b38138a13ef8212fa91b2617->enter($__internal_8ac071aef3a496562862918187cbe6d6fa7bd1d6b38138a13ef8212fa91b2617_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/copy.png"));
+        $__internal_e1618ee8decd3fd5a78619692a24565014db6b68885b54ad8ea8b60d55e6135d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e1618ee8decd3fd5a78619692a24565014db6b68885b54ad8ea8b60d55e6135d->enter($__internal_e1618ee8decd3fd5a78619692a24565014db6b68885b54ad8ea8b60d55e6135d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/copy.png"));
 
         // line 1
         echo "‰PNG
@@ -26,7 +26,7 @@ IHDR\000\000\000\000\000\000\000\000\000íÝâR\000\000\0000PLTE&&&333ÿÿÿÿÿÿÿÿÿ
 tRNS\000\000\000(@ŸŸþþþþþþQ5\"Ð\000\000\000`IDATx^c¸W^«˜ôEÁŒ
 LÚ’I Æ&!m™¥ Æ!%g¤Ì\000)©Q+‰@”3|‚(gøÿÈ(oWbPR:¤¤¤¤bl2´QD>\t))éƒÿA@\t\000o“'+[“\000\000\000\000IEND®B`‚";
         
-        $__internal_8ac071aef3a496562862918187cbe6d6fa7bd1d6b38138a13ef8212fa91b2617->leave($__internal_8ac071aef3a496562862918187cbe6d6fa7bd1d6b38138a13ef8212fa91b2617_prof);
+        $__internal_e1618ee8decd3fd5a78619692a24565014db6b68885b54ad8ea8b60d55e6135d->leave($__internal_e1618ee8decd3fd5a78619692a24565014db6b68885b54ad8ea8b60d55e6135d_prof);
 
     }
 

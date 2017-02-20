@@ -16,20 +16,20 @@ class __TwigTemplate_3a70173a98dd143478428e7c1a26ea82cd0f1e875567f6ea7ec6fadfeda
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_10018863b4f6cf760ccf2d2080cc2ca455187aefcafde1157c3171a1ce610f9a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_10018863b4f6cf760ccf2d2080cc2ca455187aefcafde1157c3171a1ce610f9a->enter($__internal_10018863b4f6cf760ccf2d2080cc2ca455187aefcafde1157c3171a1ce610f9a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "LiipImagineBundle:Form:form_div_layout.html.twig"));
+        $__internal_1534140a75dc1828eb54d4859f1516b4851a60ccafddcb4a42f1950525938a50 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1534140a75dc1828eb54d4859f1516b4851a60ccafddcb4a42f1950525938a50->enter($__internal_1534140a75dc1828eb54d4859f1516b4851a60ccafddcb4a42f1950525938a50_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "LiipImagineBundle:Form:form_div_layout.html.twig"));
 
         // line 1
         $this->displayBlock('liip_imagine_image_widget', $context, $blocks);
         
-        $__internal_10018863b4f6cf760ccf2d2080cc2ca455187aefcafde1157c3171a1ce610f9a->leave($__internal_10018863b4f6cf760ccf2d2080cc2ca455187aefcafde1157c3171a1ce610f9a_prof);
+        $__internal_1534140a75dc1828eb54d4859f1516b4851a60ccafddcb4a42f1950525938a50->leave($__internal_1534140a75dc1828eb54d4859f1516b4851a60ccafddcb4a42f1950525938a50_prof);
 
     }
 
     public function block_liip_imagine_image_widget($context, array $blocks = array())
     {
-        $__internal_49671a87fb03494bbb2bc1d2fd84f14b584e5ceec6e31148086ae5d79322f360 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_49671a87fb03494bbb2bc1d2fd84f14b584e5ceec6e31148086ae5d79322f360->enter($__internal_49671a87fb03494bbb2bc1d2fd84f14b584e5ceec6e31148086ae5d79322f360_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "liip_imagine_image_widget"));
+        $__internal_922185f3827d449a7021af9fa0868cd738bbfbd935feb1ebf565acb1967342c9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_922185f3827d449a7021af9fa0868cd738bbfbd935feb1ebf565acb1967342c9->enter($__internal_922185f3827d449a7021af9fa0868cd738bbfbd935feb1ebf565acb1967342c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "liip_imagine_image_widget"));
 
         // line 2
         echo "    ";
@@ -99,7 +99,7 @@ class __TwigTemplate_3a70173a98dd143478428e7c1a26ea82cd0f1e875567f6ea7ec6fadfeda
     ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         
-        $__internal_49671a87fb03494bbb2bc1d2fd84f14b584e5ceec6e31148086ae5d79322f360->leave($__internal_49671a87fb03494bbb2bc1d2fd84f14b584e5ceec6e31148086ae5d79322f360_prof);
+        $__internal_922185f3827d449a7021af9fa0868cd738bbfbd935feb1ebf565acb1967342c9->leave($__internal_922185f3827d449a7021af9fa0868cd738bbfbd935feb1ebf565acb1967342c9_prof);
 
     }
 

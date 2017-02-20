@@ -37,6 +37,8 @@ class NewsType extends AbstractType {
                                 )
                                 
                         ])
+                        
+                        
                         ->add('imageFile',VichFileType::class, array(
                                 'label' => 'admin.news.illu',
                                 'required'      => false,

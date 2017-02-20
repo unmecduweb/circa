@@ -15,8 +15,8 @@ class __TwigTemplate_0d082d98a864020b67114fc190ca7be4e0236196155aaa764d9f8830f86
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e475ed9c21910c3f820b321fd2e8bf151f903fcf294a565dabeaf67ffb397499 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e475ed9c21910c3f820b321fd2e8bf151f903fcf294a565dabeaf67ffb397499->enter($__internal_e475ed9c21910c3f820b321fd2e8bf151f903fcf294a565dabeaf67ffb397499_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/cut.png"));
+        $__internal_db8dfc3dae89438ba1302fddad10bbca60657dd5bb9dce73aa33a7f3b7e258a9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_db8dfc3dae89438ba1302fddad10bbca60657dd5bb9dce73aa33a7f3b7e258a9->enter($__internal_db8dfc3dae89438ba1302fddad10bbca60657dd5bb9dce73aa33a7f3b7e258a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/cut.png"));
 
         // line 1
         echo "‰PNG
@@ -26,7 +26,7 @@ IHDR\000\000\000\000\000\000\000\000\000bò\000\000\000PLTE222&&&&&&222«[
 Æ±
 € EÑK,((þn\"lÆb&°ŒÀ/Ñˆt‡*¡ ëøn•yç˜€8 ÌÜ76oÙ…dÆ+{(Í/brãøÚ'C`›\000\000\000\000IEND®B`‚";
         
-        $__internal_e475ed9c21910c3f820b321fd2e8bf151f903fcf294a565dabeaf67ffb397499->leave($__internal_e475ed9c21910c3f820b321fd2e8bf151f903fcf294a565dabeaf67ffb397499_prof);
+        $__internal_db8dfc3dae89438ba1302fddad10bbca60657dd5bb9dce73aa33a7f3b7e258a9->leave($__internal_db8dfc3dae89438ba1302fddad10bbca60657dd5bb9dce73aa33a7f3b7e258a9_prof);
 
     }
 

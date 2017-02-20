@@ -15,8 +15,8 @@ class __TwigTemplate_e7ef357bb438d264e0a2605cd7ff8fdd74e4d0fed92d82e4a6e319e4d7a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_074b882265768cd8aca73c5bbf322a17c665c514609c2085570072d926a3b227 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_074b882265768cd8aca73c5bbf322a17c665c514609c2085570072d926a3b227->enter($__internal_074b882265768cd8aca73c5bbf322a17c665c514609c2085570072d926a3b227_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/ico/gz.jpg"));
+        $__internal_336fe1dabf5240a37a39a6ac9f5b2f1aea945f8c074161a51a5c2023ea892d4e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_336fe1dabf5240a37a39a6ac9f5b2f1aea945f8c074161a51a5c2023ea892d4e->enter($__internal_336fe1dabf5240a37a39a6ac9f5b2f1aea945f8c074161a51a5c2023ea892d4e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@MwebAdmin/filemanager/img/ico/gz.jpg"));
 
         // line 1
         echo "ÿØÿà\000JFIF\000\000\000\000\000\000ÿá\000@Exif\000\000MM\000*\000\000\000\000‡i\000\000\000\000\000\000\000\000\000\000\000\000 \000\000\000\000\000\000\000z \000\000\000\000\000\000\000[\000\000\000\000ÿþ\0004Optimized by JPEGmini 3.9.2.5L Internal 0x522eaa2cÿÛ\000C\000\t
@@ -43,7 +43,7 @@ z€\000Ë'`g§ÿÄ\000&\000\000\000\000\000\000\000\000\000\000\000046
 MÛx@XfÂ0….‡JÿÄ\000#\000\000\000\000\000\000\000\000\000\000\000\000!1A0@QaqP‘ð¡ÿÚ\000\000?ðn8põÂ‰…š6p€\"€”j!þ@`\000\"(£0Ç¼ß§¶,¾´³ÊñLÛŸÄÁš4ˆQšVD\$2fp«
 f}=°ˆ'M<Œ=NÅ3³}=°k£…eÎÐfŸ°Ë\$)…x‡ AA‰„ógÿÙ";
         
-        $__internal_074b882265768cd8aca73c5bbf322a17c665c514609c2085570072d926a3b227->leave($__internal_074b882265768cd8aca73c5bbf322a17c665c514609c2085570072d926a3b227_prof);
+        $__internal_336fe1dabf5240a37a39a6ac9f5b2f1aea945f8c074161a51a5c2023ea892d4e->leave($__internal_336fe1dabf5240a37a39a6ac9f5b2f1aea945f8c074161a51a5c2023ea892d4e_prof);
 
     }
 
