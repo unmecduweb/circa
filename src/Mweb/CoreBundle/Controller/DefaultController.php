@@ -16,7 +16,7 @@ class DefaultController extends Controller
         {
                 
                 
-                $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findBy(array('parentContent' => null));
+                $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
                 $news = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findBy(array(), array('created' => 'DESC'), 2);
                 
                 
@@ -39,8 +39,8 @@ class DefaultController extends Controller
         
         public function pageAction(Request $request, $slug)
         {
-                
-                $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findBy(array('parentContent' => null));
+        
+                $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
                 $page = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findOneBySlug($slug);
                 if($page->getSlug() == 'news'){
                         $newsList = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findAll();
@@ -62,8 +62,8 @@ class DefaultController extends Controller
         
         public function newsAction(Request $request, $slugNews)
         {
-                
-                $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findBy(array('parentContent' => null));
+        
+                $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
                 $news = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findBy(array(), array('created' => 'DESC'), 2);
                 $actu = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findOneBySlug($slugNews);
                 
