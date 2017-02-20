@@ -6,6 +6,7 @@ use Mweb\CoreBundle\Form\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use SimpleXMLElement;
+use Symfony\Component\HttpFoundation\Cookie;
 use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
@@ -14,18 +15,25 @@ class DefaultController extends Controller
         public function indexAction(Request $request)
         {
                 
+                
                 $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findBy(array('parentContent' => null));
                 $news = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findBy(array(), array('created' => 'DESC'), 2);
                 
                 
                 
                 
-                return $this->render('MwebCoreBundle::index.html.twig', array(
+                $response = $this->render('MwebCoreBundle::index.html.twig', array(
                         'pagesMenu' => $pagesMenu,
                         'news' => $news
                 
                 
                 ));
+                
+                if(!$request->cookies->get('intro')) {
+                        $cookie = new Cookie('intro', 'viewed');
+                        $response->headers->setCookie($cookie);
+                }
+                return $response;
                 
         }
         

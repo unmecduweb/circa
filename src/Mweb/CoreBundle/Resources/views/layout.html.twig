@@ -15,8 +15,32 @@
 
 
 </head>
-<body id="default">
+<body id="default">{#
+#}{#{% if app.request.cookies.get('intro') is not defined  %}#}{#
+<div id="console">
+    <div id="wnd"></div>
+    <div id="log"></div>
 
+    <textarea class="text" rows="11" cols="50">
+    % get project circasismic
+    #circasismic is loading ...
+    % init project
+    [program_host] :
+    #La friche 25000 Besançon
+    [project_name]:
+    #Circasismic #3
+    [project_date]
+    # 4, 5 et 6 Mai 2017
+    [project_category]
+    # Electro circus
+    # Rock'n circ
+    # Duba ... je me rapelle plus de celui là....
+    % circasismic -> start
+
+    </textarea>
+</div>
+#}
+{#<div id="revert"><img src="{{ asset('uploads/illu.png') }}" alt="" /> </div>#}
     <header>
         <div class="container-fluid">
             <div class="wrap">
@@ -113,6 +137,7 @@
         <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/plugin/a_mw-library.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/plugin/bootstrap.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/plugin/jquery.parallax-1.1.3.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/plugin/q.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/script/zzz.js') }}"></script>
 
     {% endblock %}
