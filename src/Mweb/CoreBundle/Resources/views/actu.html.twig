@@ -17,7 +17,9 @@
                 </h2>
 
                 <div class="breadcrumb">
-                    <a href="{{ path('_homepage') }}" >{{ 'homepage'|trans }}</a> //
+                    $ /<a href="{{ path('_homepage') }}">Accueil</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+                    <a href="{{ path('circa_page', {'slug': parent.slug}) }}">{{ parent.title }}</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+
                     <a href="">{{ actu.title }}</a>
                 </div>
             </div>
