@@ -1,2 +1,0 @@
-0
-a:2:{i:0;O:37:"Doctrine\ORM\Mapping\MappedSuperclass":1:{s:15:"repositoryClass";N;}i:1;O:42:"Gedmo\Mapping\Annotation\TranslationEntity":2:{s:5:"class";s:53:"Mweb\AdminBundle\Entity\Translation\EntityTranslation";s:5:"value";N;}}
