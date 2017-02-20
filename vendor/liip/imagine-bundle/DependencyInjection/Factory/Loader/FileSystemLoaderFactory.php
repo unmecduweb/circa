@@ -13,25 +13,20 @@ namespace Liip\ImagineBundle\DependencyInjection\Factory\Loader;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\DefinitionDecorator;
+use Symfony\Component\DependencyInjection\Reference;
 
-class FileSystemLoaderFactory implements LoaderFactoryInterface
+class FileSystemLoaderFactory extends AbstractLoaderFactory
 {
     /**
      * {@inheritdoc}
      */
     public function create(ContainerBuilder $container, $loaderName, array $config)
     {
-        $loaderDefinition = new DefinitionDecorator('liip_imagine.binary.loader.prototype.filesystem');
-        $loaderDefinition->replaceArgument(2, $config['data_root']);
-        $loaderDefinition->addTag('liip_imagine.binary.loader', array(
-            'loader' => $loaderName,
-        ));
-        $loaderId = 'liip_imagine.binary.loader.'.$loaderName;
+        $definition = $this->getChildLoaderDefinition();
+        $definition->replaceArgument(2, $config['data_root']);
+        $definition->replaceArgument(3, new Reference(sprintf('liip_imagine.binary.locator.%s', $config['locator'])));
 
-        $container->setDefinition($loaderId, $loaderDefinition);
-
-        return $loaderId;
+        return $this->setTaggedLoaderDefinition($loaderName, $definition, $container);
     }
 
     /**
@@ -49,6 +44,11 @@ class FileSystemLoaderFactory implements LoaderFactoryInterface
     {
         $builder
             ->children()
+                ->enumNode('locator')
+                    ->values(array('filesystem', 'filesystem_insecure'))
+                    ->info('Using the "filesystem_insecure" locator is not recommended due to a less secure resolver mechanism, but is provided for those using heavily symlinked projects.')
+                    ->defaultValue('filesystem')
+                ->end()
                 ->arrayNode('data_root')
                     ->beforeNormalization()
                     ->ifString()
