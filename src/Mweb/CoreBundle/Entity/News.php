@@ -90,8 +90,8 @@ class News extends AbstractEntity
         
         public function getSummary($limit = 120)
         {
-                $text = str_replace("&rsquo;", "'", strip_tags(utf8_decode((html_entity_decode($this->getContent(), ENT_QUOTES)))));
-                return utf8_encode(substr($text, 0, $limit)) . '...';
+                
+                return substr($this->getContent(), 0, $limit) . '...';
         }
         
         /**
