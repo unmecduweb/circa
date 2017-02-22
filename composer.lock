@@ -1494,12 +1494,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unmecduweb/AdminBundle.git",
-                "reference": "eb24aae0d91dcde661380cd812c6d01aa26ad3b2"
+                "reference": "3ffb2e0b214db0c05249046057fb6d6d26b90285"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unmecduweb/AdminBundle/zipball/eb24aae0d91dcde661380cd812c6d01aa26ad3b2",
-                "reference": "eb24aae0d91dcde661380cd812c6d01aa26ad3b2",
+                "url": "https://api.github.com/repos/unmecduweb/AdminBundle/zipball/3ffb2e0b214db0c05249046057fb6d6d26b90285",
+                "reference": "3ffb2e0b214db0c05249046057fb6d6d26b90285",
                 "shasum": ""
             },
             "require": {
@@ -1528,7 +1528,7 @@
                 "source": "https://github.com/unmecduweb/AdminBundle/tree/master",
                 "issues": "https://github.com/unmecduweb/AdminBundle/issues"
             },
-            "time": "2017-02-20 09:26:30"
+            "time": "2017-02-22 12:41:59"
         },
         {
             "name": "ocramius/proxy-manager",
@@ -1959,7 +1959,7 @@
                 "translatable",
                 "tree"
             ],
-            "time": "2017-01-13T18:32:32+00:00"
+            "time": "2017-01-13 18:32:32"
         },
         {
             "name": "swiftmailer/swiftmailer",

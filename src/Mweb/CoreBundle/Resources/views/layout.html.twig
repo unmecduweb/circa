@@ -7,132 +7,12 @@
     <title>{% block title %}{% endblock %} Circasismic #3 - #Dub #Rock #Electro #Circus</title>
 
 
-    {%  block stylesheets %}
-        <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/mwebcore/css/bootstrap.min.css') }}"/>
+    {% block stylesheets %}
+        <link rel="stylesheet" type="text/css" media="screen"
+              href="{{ asset('bundles/mwebcore/css/bootstrap.min.css') }}"/>
         <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/mwebcore/css/style.css') }}"/>
-        <link rel="stylesheet" type="text/css" media="all and (min-width: 768px)" href="{{ asset('bundles/mwebcore/css/responsive/responsiveDesk.css') }}"/>
-    {% endblock %}
-
-
-</head>
-<body id="default">{#
-#}{#{% if app.request.cookies.get('intro') is not defined  %}#}{#
-<div id="console">
-    <div id="wnd"></div>
-    <div id="log"></div>
-
-    <textarea class="text" rows="11" cols="50">
-    % get project circasismic
-    #circasismic is loading ...
-    % init project
-    [program_host] :
-    #La friche 25000 Besançon
-    [project_name]:
-    #Circasismic #3
-    [project_date]
-    # 4, 5 et 6 Mai 2017
-    [project_category]
-    # Electro circus
-    # Rock'n circ
-    # Duba ... je me rapelle plus de celui là....
-    % circasismic -> start
-
-    </textarea>
-</div>
-#}
-{#<div id="revert"><img src="{{ asset('uploads/illu.png') }}" alt="" /> </div>#}
-    <header>
-        <div class="container-fluid">
-            <div class="wrap">
-                <a href="{{ path('_homepage') }}" id="logo">
-                    <img src="{{ asset('bundles/mwebcore/img/logo.png') }}" alt="Festival Circasismic"/>
-                </a>
-
-                <ul class="social-link">
-                    <li>
-                        <a href="https://www.facebook.com/festivalcircasismic/"><img src="{{ asset("bundles/mwebcore/img/fb.png") }}" alt=""/></a>
-                        <a href="https://www.instagram.com/festivalcircasismic/"><img src="{{ asset("bundles/mwebcore/img/inst.png") }}" alt=""/></a>
-                    </li>
-                </ul>
-                <button class="mobile-menu mobile-only"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
-                <nav id="menu-wrap">
-                    <ul id="menu">
-                        {% set selected ='' %}
-                        {% if app.request.get('slug') is empty %}{% set selected = 'selected' %}{% endif %}
-                        <li class="elm_menu">
-                            <a href="{{ path('_homepage') }}" class="{{ selected }}">Accueil</a>
-                        </li>
-                        {% for page in pagesMenu %}
-                            {% set selected ='' %}
-                            {% if app.request.get('slug') == page.slug %}{% set selected = 'selected' %}{% endif %}
-                            <li class="elm_menu">
-                                <a href="{{ path('circa_page', {'slug': page.slug}) }}" class="{{ selected }}">{{ page.title|stripAccents }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </nav>
-
-                <div class="clear"></div>
-            </div>
-        </div>
-
-    </header>
-
-    {% block content %}
-
-    {% endblock %}
-
-    <section id="section-partner">
-        <div class="section-container">
-            <div class="container-fluid">
-                <ul class="partner-list">
-                    <li><a href="" target="_blank"><img src="{{ 'uploads/partner/besac.jpg'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/bfc.jpg'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/doubs.jpg'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/crous.png'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/grd-besac.jpg'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/rodia.jpg'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/sacem.jpg'| imagine_filter('partner') }}" /></a></li>
-                </ul>
-                <ul class="partner-list">
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/sandales.jpg'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/ch_box.jpg'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/vitabri.png'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/espa-concept.png'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/studioplus.jpg'| imagine_filter('partner') }}" /></a></li>
-                    <li><a href="" target="_blank"><img src="{{ '/uploads/partner/videlio.png'| imagine_filter('partner') }}" /></a></li>
-                    <li> <a href="" target="_blank"><img src="{{ '/uploads/partner/zen.png'| imagine_filter('partner') }}" /></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    {%  block footer %}
-        <footer>
-            <div class="container-fluid">
-                <div class="col-xs-12 col-sm-5">
-                    <img src="{{ asset('bundles/mwebcore/img/footer-logo.png') }}" alt="" />
-                </div>
-                <div class="col-sm-2 col-xs-12"></div>
-               {# <div class="col-xs-12 col-sm-4">
-                    <ul class="list-link">
-                        <li><a href="{{ path('circa_page', {"slug": "info-contact"}) }}">Contact</a></li>
-                        <li><a href="{{ path('circa_page', {"slug": "info-contact"}) }}">Contact</a></li>
-                    </ul>
-                </div>#}
-                <div class="col-xs-12 col-sm-3">
-                    <ul class="social-link">
-                        <li>
-                            <a href="https://www.facebook.com/festivalcircasismic/"><img src="{{ asset("bundles/mwebcore/img/fb.png") }}" alt=""/> Facebook</a>
-                        </li><li>
-                            <a href="https://www.instagram.com/festivalcircasismic/"><img src="{{ asset("bundles/mwebcore/img/inst.png") }}" alt=""/> Intsagram</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 fab-link"><a class="" href="http://unmecduweb.com/">Création de site web : unmecduweb.com</a></div>
-            </div>
-
-        </footer>
+        <link rel="stylesheet" type="text/css" media="all and (min-width: 768px)"
+              href="{{ asset('bundles/mwebcore/css/responsive/responsiveDesk.css') }}"/>
     {% endblock %}
 
     {% block javascripts %}
@@ -140,19 +20,149 @@
         <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/plugin/a_mw-library.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/plugin/bootstrap.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/plugin/jquery.parallax-1.1.3.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/plugin/q.js') }}"></script>
+        {#<script type="text/javascript" src="{{ asset('bundles/mwebcore/js/plugin/q.js') }}"></script>#}
         <script type="text/javascript" src="{{ asset('bundles/mwebcore/js/script/zzz.js') }}"></script>
 
+
     {% endblock %}
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-9644162-8', 'auto');
-        ga('send', 'pageview');
 
-    </script>
+</head>
+<body id="default">
+{#<div id="revert"><img src="{{ asset('uploads/illu.png') }}" alt="" /> </div>#}
+<header>
+    <div class="container-fluid">
+        <div class="wrap">
+            <a href="{{ path('_homepage') }}" id="logo">
+                <img src="{{ asset('bundles/mwebcore/img/logo.png') }}" alt="Festival Circasismic"/>
+            </a>
+
+            <ul class="social-link">
+                <li>
+                    <a href="https://www.facebook.com/festivalcircasismic/"><img
+                                src="{{ asset("bundles/mwebcore/img/fb.png") }}" alt=""/></a>
+                    <a href="https://www.instagram.com/festivalcircasismic/"><img
+                                src="{{ asset("bundles/mwebcore/img/inst.png") }}" alt=""/></a>
+                </li>
+            </ul>
+            <button class="mobile-menu mobile-only"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+            <nav id="menu-wrap">
+                <ul id="menu">
+                    {% set selected ='' %}
+                    {% if app.request.get('slug') is empty %}{% set selected = 'selected' %}{% endif %}
+                    <li class="elm_menu">
+                        <a href="{{ path('_homepage') }}" class="{{ selected }}">Accueil</a>
+                    </li>
+                    {% for page in pagesMenu %}
+                        {% set selected ='' %}
+                        {% if app.request.get('slug') == page.slug %}{% set selected = 'selected' %}{% endif %}
+                        <li class="elm_menu">
+                            <a href="{{ path('circa_page', {'slug': page.slug}) }}"
+                               class="{{ selected }}">{{ page.title|stripAccents }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+</header>
+
+{% block content %}
+
+{% endblock %}
+
+<section id="section-partner">
+    <div class="section-container">
+        <div class="container-fluid">
+            <ul class="partner-list">
+                <li class="line">
+                    <a href="" target="_blank"><img src="{{ 'uploads/partner/besac.jpg'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img src="{{ '/uploads/partner/bfc.jpg'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/doubs.jpg'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/crous.png'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/grd-besac.jpg'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/rodia.jpg'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/sacem.jpg'| imagine_filter('partner') }}"/></a>
+                </li>
+                <li class="clear"></li>
+                <li class="line">
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/sandales.jpg'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/ch_box.jpg'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/vitabri.png'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/espa-concept.jpg'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/studioplus.jpg'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img
+                                src="{{ '/uploads/partner/videlio.png'| imagine_filter('partner') }}"/></a>
+                    <a href="" target="_blank"><img src="{{ '/uploads/partner/zen.png'| imagine_filter('partner') }}"/></a>
+                </li>
+                <li class="clear"></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% block footer %}
+    <footer>
+        <div class="container-fluid">
+            <div class="col-xs-12 col-sm-5">
+                <img src="{{ asset('bundles/mwebcore/img/footer-logo.png') }}" alt=""/>
+            </div>
+            <div class="col-sm-2 col-xs-12"></div>
+            {# <div class="col-xs-12 col-sm-4">
+                 <ul class="list-link">
+                     <li><a href="{{ path('circa_page', {"slug": "info-contact"}) }}">Contact</a></li>
+                     <li><a href="{{ path('circa_page', {"slug": "info-contact"}) }}">Contact</a></li>
+                 </ul>
+             </div>#}
+            <div class="col-xs-12 col-sm-3">
+                <ul class="social-link">
+                    <li>
+                        <a href="https://www.facebook.com/festivalcircasismic/"><img
+                                    src="{{ asset("bundles/mwebcore/img/fb.png") }}" alt=""/> Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/festivalcircasismic/"><img
+                                    src="{{ asset("bundles/mwebcore/img/inst.png") }}" alt=""/> Intsagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 fab-link"><a class="" href="http://unmecduweb.com/">Création de site web :
+                    unmecduweb.com</a></div>
+        </div>
+
+    </footer>
+{% endblock %}
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-9644162-8', 'auto');
+    ga('send', 'pageview');
+
+</script>
 </body>
 </html>

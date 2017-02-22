@@ -175,9 +175,9 @@ ol{}
 .select-style select {padding: 0; width: 100%; border: none; box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none;  -moz-appearance: none; appearance: none; width: 100%;}
 .select-style select:focus {outline: none;}
 
-.content-wrap .button{background: #bc3a2c; border: none; color: #fff; padding: 10px 15px; font-family: 'pirate'; display: block; overflow: hidden; }
-.content-wrap a.button{color: #fff;}
-.content-wrap  .button:hover{background:url('../files/design/button.png') center center #000; color:#bc3a2c; text-decoration: none;}
+.content .button, .content-wrap .button{background: #bc3a2c; border: none; color: #fff; padding: 10px 15px; font-family: 'pirate'; display: block; overflow: hidden; }
+.content a.button,.content-wrap a.button{color: #fff;}
+.content a.button:hover, .content-wrap  .button:hover{background:url('../files/design/button.png') center center #000; color:#bc3a2c; text-decoration: none;}
 
 
 .icon{background-image: url('../img/list_item.png'); width: 23px; height: 20px; display: inline-block;}
@@ -296,9 +296,10 @@ footer .social-link li a img{margin-right: 5px;}
 /* ==========================================================================
    Footer & partner
    ========================================================================== */
-.partner-list{list-style: none; padding: 0; margin: 0;}
-.partner-list li{height: 100px; float:left; margin: 10px 20px; }
-.partner-list li a{vertical-align: middle; line-height: 100px; }
+.partner-list{list-style: none; padding: 0; margin: 0 0 10px;}
+.partner-list li.line{height: 90px; float:left; margin: 10px 20px; text-align: center; width: 100%;}
+.partner-list li a{vertical-align: middle; line-height: 80px; margin: 0 20px; opacity: 0.7;}
+.partner-list li a:hover{opacity: 1;}
 .fab-link{text-align: center; font-size: 12px; font-family: 'oswaldmedium', Helvetica Neue, Helvetica, Arial, sans-serif; color: #be7119;}
 .fab-link a{text-align: center; font-size: 12px; font-family: 'oswaldmedium', Helvetica Neue, Helvetica, Arial, sans-serif; color: #be7119;}
 
