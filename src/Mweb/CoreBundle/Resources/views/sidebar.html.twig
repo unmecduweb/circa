@@ -7,7 +7,7 @@
     {% set col = 12 %}
 {% endif %}
 {% for actu in news %}
-    <div class="col-xs-{{ col }} news">
+    <div class="col-sm-{{ col }} col-xs-12 news">
         <img src="{{ liip(actu, 'news') }}" alt=""/>
         <h3>{{ actu.startDate|date('d/m') }} - {{ actu.title }}</h3>
         <p>{{ actu.summary|raw }}</p>

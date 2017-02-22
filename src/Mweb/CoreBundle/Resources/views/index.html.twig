@@ -37,7 +37,7 @@
             <div class="wrap">
                 <div class="block-title center col-xs-12 black">
                     <h2>
-                        <span class="main"><span class="line"></span>Les actualites du circa<span class="line"></span></span>
+                        <span class="main"><span class="line"></span>Actu circa<span class="line"></span></span>
                         <span class="back">News</span>
                     </h2>
                     <div class="clear"></div>
@@ -58,7 +58,7 @@
                         <span class="back">Circasismic</span>
                     </h2>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-sm-4 col-xs-12">
                     <p>Ohé, du bateau, le Festival Circasismic amarrera bien à Besançon pour une troisième édition en
                         mai
 
@@ -81,10 +81,10 @@
                         avec les visiteurs sous l’égide du Jolly Roger.</p>
 
                 </div>
-                <div class="col-xs-4">
-                    <img src="{{ asset('uploads/illu.png') }}" alt=""/>
+                <div class="col-sm-4 hidden-xs">
+                    <img src="{{ asset('uploads/illu.png') }}" alt="" style="width: 100%;"/>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-sm-4 col-xs-12">
                     <p>On hissera haut les toiles des deux grands chapiteaux permettant aux nombreux spectateurs de
 
                         profiter des concerts et représentations par tous temps et tous vents…. (contre vents et marées)
@@ -107,25 +107,26 @@
 
                 </div>
                 <div class="clear"></div>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-2 logo">
+
+                <div class="col-sm-3 logo col-xs-6">
                     <a href="{{ path('circa_page', {'slug': 'les-associations'}) }}"><img
                                 src="{{ asset('bundles/mwebcore/img/logo-citron.png') }}" alt=""/> </a>
                 </div>
-                <div class="col-xs-2 logo">
+                <div class="col-sm-3 logo col-xs-6">
                     <a href="{{ path('circa_page', {'slug': 'les-associations'}) }}"><img
                                 src="{{ asset('bundles/mwebcore/img/logo-bastion.png') }}" alt=""/> </a>
                 </div>
-                <div class="col-xs-2"></div>
-                <div class="col-xs-2 logo">
+                <div class="visible-xs clear"></div>
+
+                <div class="col-sm-3 logo col-xs-6">
                     <a href="{{ path('circa_page', {'slug': 'les-associations'}) }}"><img
                                 src="{{ asset('bundles/mwebcore/img/logo-nushy.png') }}" alt=""/> </a>
                 </div>
-                <div class="col-xs-2 logo">
+                <div class="col-sm-3 logo col-xs-6">
                     <a href="{{ path('circa_page', {'slug': 'les-associations'}) }}"><img
                                 src="{{ asset('bundles/mwebcore/img/logo-5sens.png') }}" alt=""/> </a>
                 </div>
-                <div class="col-xs-1"></div>
+
 
             </div>
         </div>

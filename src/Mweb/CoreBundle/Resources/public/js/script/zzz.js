@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 
     $("body").click(function(){
-        vibration()
+        /*vibration()*/
     })
 });
 var active = false;
