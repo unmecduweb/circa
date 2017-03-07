@@ -37,6 +37,7 @@ admin:
     content: Contenu de la page
   artist:
       title: Nom du groupe
+      subTitle: Sous titre format genre - pays
       scene: Scène
       sessionDate: Date et heure de passage
       type: Catégorie
