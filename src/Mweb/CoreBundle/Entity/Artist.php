@@ -43,7 +43,13 @@ class Artist extends AbstractEntity
          */
         private $subTitle;
         
-  
+        /**
+         * @var string
+         * @ORM\Column(name="ssession_hours", type="string", length=250, nullable=true)
+         */
+        private $sessionHours;
+        
+        
         /**
          * @ORM\Column(name="slug", type="string", length=250, nullable=false)
          * @Gedmo\Slug(fields={"title"})
@@ -485,5 +491,29 @@ class Artist extends AbstractEntity
     public function getVideoLink()
     {
         return $this->videoLink;
+    }
+
+    /**
+     * Set sessionHours
+     *
+     * @param string $sessionHours
+     *
+     * @return Artist
+     */
+    public function setSessionHours($sessionHours)
+    {
+        $this->sessionHours = $sessionHours;
+
+        return $this;
+    }
+
+    /**
+     * Get sessionHours
+     *
+     * @return string
+     */
+    public function getSessionHours()
+    {
+        return $this->sessionHours;
     }
 }

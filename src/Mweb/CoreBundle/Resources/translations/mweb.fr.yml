@@ -36,6 +36,7 @@ admin:
     illu: Illustration de la page
     content: Contenu de la page
   artist:
+      sessionHours: Horaire de passage ex 19h30 - 22H15
       title: Nom du groupe
       subTitle: Sous titre format genre - pays
       scene: Scène

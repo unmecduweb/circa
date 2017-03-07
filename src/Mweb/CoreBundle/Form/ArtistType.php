@@ -41,6 +41,9 @@ class ArtistType extends AbstractType {
                                 'label' => 'admin.artist.sessionDate',
                                 'empty_data' => new \DateTime('2017-05-04')
                         ])
+                        ->add('sessionHours', TextType::class,[
+                                'label' => 'admin.artist.sessionHours'
+                        ])
                         
                         ->add('type', ChoiceType::class,[
                                 'label' => 'admin.artist.type',

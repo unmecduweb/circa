@@ -34,20 +34,22 @@ class Artist extends AbstractEntity
          *
          * @ORM\Column(name="title", type="string", length=250, nullable=false)
          * @Assert\NotBlank()
-         * @Gedmo\Translatable
          */
         private $title;
         
         /**
          * @var string
-         *
-         * @ORM\Column(name="sub_title", type="string", length=250, nullable=false)
-         * @Assert\NotBlank()
-         * @Gedmo\Translatable
+         * @ORM\Column(name="sub_title", type="string", length=250, nullable=true)
          */
         private $subTitle;
         
-  
+        /**
+         * @var string
+         * @ORM\Column(name="ssession_hours", type="string", length=250, nullable=true)
+         */
+        private $sessionHours;
+        
+        
         /**
          * @ORM\Column(name="slug", type="string", length=250, nullable=false)
          * @Gedmo\Slug(fields={"title"})
@@ -63,7 +65,7 @@ class Artist extends AbstractEntity
         /**
          * @var File
          *
-         * @Vich\UploadableField(mapping="artiste_image", fileNameProperty="imageName")
+         * @Vich\UploadableField(mapping="artist_image", fileNameProperty="imageName")
          */
         private $imageFile;
         /**
@@ -112,7 +114,7 @@ class Artist extends AbstractEntity
         /**
          * @var string
          *
-         * @ORM\Column(name="video_link", type="string", length=250)
+         * @ORM\Column(name="video_link", type="text", length=65535, nullable=true)
          */
         private $videoLink;
         
@@ -345,5 +347,149 @@ class Artist extends AbstractEntity
     public function getType()
     {
         return $this->type;
+    }
+
+    /**
+     * Set subTitle
+     *
+     * @param string $subTitle
+     *
+     * @return Artist
+     */
+    public function setSubTitle($subTitle)
+    {
+        $this->subTitle = $subTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get subTitle
+     *
+     * @return string
+     */
+    public function getSubTitle()
+    {
+        return $this->subTitle;
+    }
+
+    /**
+     * Set sessionDate
+     *
+     * @param \DateTime $sessionDate
+     *
+     * @return Artist
+     */
+    public function setSessionDate($sessionDate)
+    {
+        $this->sessionDate = $sessionDate;
+
+        return $this;
+    }
+
+    /**
+     * Get sessionDate
+     *
+     * @return \DateTime
+     */
+    public function getSessionDate()
+    {
+        return $this->sessionDate;
+    }
+
+    /**
+     * Set website
+     *
+     * @param string $website
+     *
+     * @return Artist
+     */
+    public function setWebsite($website)
+    {
+        $this->website = $website;
+
+        return $this;
+    }
+
+    /**
+     * Get website
+     *
+     * @return string
+     */
+    public function getWebsite()
+    {
+        return $this->website;
+    }
+
+    /**
+     * Set facebook
+     *
+     * @param string $facebook
+     *
+     * @return Artist
+     */
+    public function setFacebook($facebook)
+    {
+        $this->facebook = $facebook;
+
+        return $this;
+    }
+
+    /**
+     * Get facebook
+     *
+     * @return string
+     */
+    public function getFacebook()
+    {
+        return $this->facebook;
+    }
+
+    /**
+     * Set scene
+     *
+     * @param string $scene
+     *
+     * @return Artist
+     */
+    public function setScene($scene)
+    {
+        $this->scene = $scene;
+
+        return $this;
+    }
+
+    /**
+     * Get scene
+     *
+     * @return string
+     */
+    public function getScene()
+    {
+        return $this->scene;
+    }
+
+    /**
+     * Set videoLink
+     *
+     * @param string $videoLink
+     *
+     * @return Artist
+     */
+    public function setVideoLink($videoLink)
+    {
+        $this->videoLink = $videoLink;
+
+        return $this;
+    }
+
+    /**
+     * Get videoLink
+     *
+     * @return string
+     */
+    public function getVideoLink()
+    {
+        return $this->videoLink;
     }
 }
