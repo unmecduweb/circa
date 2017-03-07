@@ -33,7 +33,7 @@ class ArtistType extends AbstractType {
                                 'choices'=> array(
                                         "Chapiteau concert" => 'chapiteau',
                                         'Chapiteau Bar'=> "bar",
-                                        'Scene Extérieur'=> "out",
+                                        'Scene Extérieure'=> "out",
                                 )
 
                         ])
