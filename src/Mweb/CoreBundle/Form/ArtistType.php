@@ -28,9 +28,14 @@ class ArtistType extends AbstractType {
                         ->add('subTitle', TextType::class,[
                                 'label' => 'admin.artist.subTitle'
                         ])
-                        ->add('scene', TextType::class,[
+                        ->add('scene', ChoiceType::class,[
                                 'label' => 'admin.artist.scene',
-                                
+                                'choices'=> array(
+                                        "Chapiteau concert" => 'chapiteau',
+                                        'Chapiteau Bar'=> "bar",
+                                        'Scene Extérieur'=> "out",
+                                )
+
                         ])
                         ->add('sessionDate', DateTimeType::class,[
                                 'label' => 'admin.artist.sessionDate',
@@ -40,10 +45,10 @@ class ArtistType extends AbstractType {
                         ->add('type', ChoiceType::class,[
                                 'label' => 'admin.artist.type',
                                 'choices'=> array(
-                                        'rock'=> "admin.artist.rock",
-                                        'electro'=> "admin.artist.electro",
-                                        'dub'=> "admin.artist.dub",
-                                        'circ'=> "admin.artist.circ"
+                                        'rock'=> "rock",
+                                        'electro'=> "electro",
+                                        'dub'=> "dub",
+                                        'circ'=> "circ"
                                 )
         
                         ])
@@ -57,7 +62,7 @@ class ArtistType extends AbstractType {
                                 'required' => false
                         ])
         
-                        ->add('videoLink', TextType::class,[
+                        ->add('videoLink', TextareaType::class,[
                                 'label' => 'admin.artist.videoLink',
                                 'required' => false
                         ])

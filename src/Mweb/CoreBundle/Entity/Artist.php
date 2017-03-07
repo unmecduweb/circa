@@ -108,7 +108,7 @@ class Artist extends AbstractEntity
         /**
          * @var string
          *
-         * @ORM\Column(name="video_link", type="string", length=250, nullable=true)
+         * @ORM\Column(name="video_link", type="text", length=65535, nullable=true)
          */
         private $videoLink;
         
