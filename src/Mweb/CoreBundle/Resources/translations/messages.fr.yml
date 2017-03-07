@@ -20,6 +20,17 @@ misc:
   searchSimple: Recherche simple
   menu: Afficher le menu
   menuSearch: Menu de recherche
+admin:
+  artist:
+    title: Nom du groupe
+    scene: Scène
+    sessionDate: Date et heure de passage
+    type: Catégorie
+    website: url du site avec le htpp://
+    facebook: url facebook avec le htpp://
+    videoLink: Video a discuter
+    illu: Image principal
+    content: Description
 meta:
   sitename: Centre Régional Livre Midi-Pyrénées
   logo: My Expo - L'application autonome de régie des expositions

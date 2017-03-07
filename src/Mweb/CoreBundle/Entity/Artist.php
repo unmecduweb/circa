@@ -34,16 +34,12 @@ class Artist extends AbstractEntity
          *
          * @ORM\Column(name="title", type="string", length=250, nullable=false)
          * @Assert\NotBlank()
-         * @Gedmo\Translatable
          */
         private $title;
         
         /**
          * @var string
-         *
-         * @ORM\Column(name="sub_title", type="string", length=250, nullable=false)
-         * @Assert\NotBlank()
-         * @Gedmo\Translatable
+         * @ORM\Column(name="sub_title", type="string", length=250, nullable=true)
          */
         private $subTitle;
         
@@ -112,7 +108,7 @@ class Artist extends AbstractEntity
         /**
          * @var string
          *
-         * @ORM\Column(name="video_link", type="string", length=250)
+         * @ORM\Column(name="video_link", type="string", length=250, nullable=true)
          */
         private $videoLink;
         

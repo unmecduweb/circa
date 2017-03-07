@@ -29,10 +29,12 @@ class ArtistType extends AbstractType {
                                 'label' => 'admin.artist.subTitle'
                         ])
                         ->add('scene', TextType::class,[
-                                'label' => 'admin.artist.scene'
+                                'label' => 'admin.artist.scene',
+                                
                         ])
                         ->add('sessionDate', DateTimeType::class,[
-                                'label' => 'admin.artist.sessionDate'
+                                'label' => 'admin.artist.sessionDate',
+                                'data' => new \DateTime('2017-05-04')
                         ])
                         
                         ->add('type', ChoiceType::class,[
@@ -46,15 +48,18 @@ class ArtistType extends AbstractType {
         
                         ])
                         ->add('website', TextType::class,[
-                                'label' => 'admin.artist.'
+                                'label' => 'admin.artist.website',
+                                'required' => false
                         ])
         
                         ->add('facebook', TextType::class,[
-                                'label' => 'admin.artist.facebook'
+                                'label' => 'admin.artist.facebook',
+                                'required' => false
                         ])
         
                         ->add('videoLink', TextType::class,[
-                                'label' => 'admin.artist.videoLink'
+                                'label' => 'admin.artist.videoLink',
+                                'required' => false
                         ])
                         
                         ->add('imageFile',VichFileType::class, array(
@@ -66,6 +71,7 @@ class ArtistType extends AbstractType {
         
                         ->add('content', TextareaType::class, array(
                                 'label' => 'admin.artist.content',
+                                'required' => false,
                                 'attr' => array('class' => 'tinymce')
                         ))
                         
