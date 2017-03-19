@@ -266,14 +266,22 @@ mweb_admin:
                     dataName: title
                     beautyName: Nom
                     type: string
-                updated:
-                    dataName: updated
-                    beautyName: Mis à jour
+                sessionDate:
+                    dataName: sessionDate
+                    beautyName: Journée
                     type: date
-                created:
-                    dataName: created
-                    beautyName: Ajouté le
-                    type: date
+                sessionHours:
+                    dataName: sessionHours
+                    beautyName: Horaires
+                    type: string
+                type:
+                    dataName: type
+                    beautyName: Genre
+                    type: string
+                scene:
+                    dataName: scene
+                    beautyName: Scène
+                    type: string
                 status:
                      dataName: status
                      beautyName: En ligne
