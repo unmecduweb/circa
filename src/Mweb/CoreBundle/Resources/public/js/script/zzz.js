@@ -19,7 +19,7 @@ $(document).ready(function () {
     borderSize();
     contentSlideManage();
 
-
+    artistManage();
 
     $("body").click(function(){
         /*vibration()*/
@@ -147,4 +147,34 @@ function contentSlide(side){
     $('.slider li.wrap:eq('+slidePos+')').fadeIn(300);
 
 
+}
+
+function artistManage(){
+    $('.filter').click(function (){
+        if($(this).hasClass('selected'))$(this).removeClass('selected')
+        else $(this).addClass('selected')
+
+        $('.artist').hide().removeClass('toShow');
+
+        $('.filter.day.selected').each(function(){
+            $('.artist[data-day="'+$(this).data('filter-day')+'"]').addClass('toShow');
+            $('.artist[data-allday="true"]').addClass('toShow');
+            log('.artist[data-day="'+$(this).data('filter-day')+'"]');
+        });
+        if($('.artist.toShow').length == 0)$('.artist').addClass('toShow');
+
+        if($('.filter.type.selected').length) {
+            $('.filter.type.selected').each(function () {
+                $('.artist.toShow[data-type="' + $(this).data('filter-type') + '"]').fadeIn();
+                log('.artist.toShow[data-type="' + $(this).data('filter-type') + '"]');
+            });
+        }else{
+            $('.artist.toShow').fadeIn();
+        }
+
+
+        if($('.filter.selected').length == 0)$('.artist').fadeIn();
+
+
+    })
 }

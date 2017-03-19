@@ -42,10 +42,13 @@ class DefaultController extends Controller
         
                 $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
                 $page = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findOneBySlug($slug);
+                $newsList = array();
+                $artistList = array();
+                
                 if($page->getDevAlias() == 'news'){
                         $newsList = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findAll();
-                }else{
-                        $newsList = array();
+                }else if($page->getDevAlias() == 'artist'){
+                        $artistList = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findAll();
                 }
                 $news = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findBy(array(), array('created' => 'DESC'), 2);
                 
@@ -54,7 +57,8 @@ class DefaultController extends Controller
                         'pagesMenu' => $pagesMenu,
                         'page' => $page,
                         'news'=>$news,
-                        'newsList'=>$newsList
+                        'newsList'=>$newsList,
+                        'artistList'=>$artistList
                 
                 ));
                 
@@ -72,6 +76,26 @@ class DefaultController extends Controller
                         'pagesMenu' => $pagesMenu,
                         'actu' => $actu,
                         'news'=>$news,
+                        'parent'=>$parent
+                
+                ));
+                
+        }
+        
+        
+        public function artistAction(Request $request, $slugArtist)
+        {
+                
+                $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
+                $artist = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findOneBySlug($slugArtist);
+                $artistList = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findBy(array('type'=>$artist->getType()), array('created' => 'DESC'), 2);
+                
+                
+                $parent = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findOneByDevAlias('artist');
+                return $this->render('MwebCoreBundle::artist.html.twig', array(
+                        'pagesMenu' => $pagesMenu,
+                        'artistList' => $artistList,
+                        'artist'=>$artist,
                         'parent'=>$parent
                 
                 ));

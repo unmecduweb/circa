@@ -18,7 +18,7 @@
                     </h2>
 
                     <div class="breadcrumb">
-                        $ /<a href="{{ path('_homepage') }}">Accueil</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+                        $ /<a href="{{ path('_homepage') }}">Circa</a>&nbsp;&nbsp;/&nbsp;&nbsp;
                         <a href="">{{ page.title }}</a>
                     </div>
                 </div>
@@ -41,6 +41,8 @@
                             <div class="clear"></div>
                         </div>
                     {% endfor %}
+                {% elseif artistList is not empty %}
+                    {%  include 'MwebCoreBundle::artistList.html.twig' %}
                 {% else %}
                     <div class="col-xs-12 col-sm-8">
                         {{ page.content|raw }}

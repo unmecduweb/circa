@@ -11,3 +11,7 @@ circa_page:
 circa_news:
   path: /actu/{slugNews}
   defaults: { _controller: MwebCoreBundle:Default:news, _locale: fr }
+
+circa_artist:
+  path: /artist/{slugArtist}
+  defaults: { _controller: MwebCoreBundle:Default:artist, _locale: fr }
