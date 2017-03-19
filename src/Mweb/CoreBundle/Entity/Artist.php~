@@ -492,4 +492,28 @@ class Artist extends AbstractEntity
     {
         return $this->videoLink;
     }
+
+    /**
+     * Set sessionHours
+     *
+     * @param string $sessionHours
+     *
+     * @return Artist
+     */
+    public function setSessionHours($sessionHours)
+    {
+        $this->sessionHours = $sessionHours;
+
+        return $this;
+    }
+
+    /**
+     * Get sessionHours
+     *
+     * @return string
+     */
+    public function getSessionHours()
+    {
+        return $this->sessionHours;
+    }
 }

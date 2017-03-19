@@ -7,7 +7,7 @@
 
 {% block content %}
     {#{{ liip(page, 'paralax', paralax) }}#}
-    <section id="section-info" class="paralax-wrap" style="background-image: url('{{ asset('bundles/mwebcore/img/illuhome.jpg') }}')">
+    <section id="section-info" class="paralax-wrap" style="background-image: url('{{  asset('bundles/mwebcore/img/illuhome.jpg') | imagine_filter('parallax') }}')">
         <div class="section-container" style="height: 100%;">
             <div class="container-fluid">
                 <div class="block-title right">
@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <section id="section-festival" class="paralax-wrap" style="background-image: url({{ asset('uploads/illu3.jpg') }})">
+    <section id="section-festival" class="paralax-wrap" style="background-image: url({{ asset('uploads/illu3.jpg')| imagine_filter('parallax') }})">
         <div class="section-container">
             <div class="container-fluid">
                 <div class="block-title center col-xs-12">

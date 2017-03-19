@@ -9,10 +9,11 @@ use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Vich\UploaderBundle\Form\Type\VichFileType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
-class ContentType extends AbstractType {
+class GameType extends AbstractType {
 
         /**
          * @param FormBuilderInterface $builder
@@ -22,37 +23,44 @@ class ContentType extends AbstractType {
                 parent::buildForm($builder, $options);
                 $builder
                         ->add('title', TextType::class, [
-                            'label' => 'admin.page.title'
+                            'label' => 'admin.game.title'
                         ])
-                        ->add('subTitle', TextType::class,[
-                                'label' => 'admin.page.subTitle'
+                       
+                        ->add('endDate', DateTimeType::class,[
+                                'label' => 'admin.game.sessionDate',
+                                'empty_data' => new \DateTime('2017-05-04')
                         ])
-                        ->add('backTitle', TextType::class,[
-                                'label' => 'admin.page.backTitle'
+                       
+                        ->add('code', TextType::class,[
+                                'label' => 'admin.game.website',
+                                'required' => false
                         ])
-                        
+        
+                     
                         ->add('imageFile',VichFileType::class, array(
-                                'label' => 'admin.page.illu',
+                                'label' => 'admin.game.illu',
                                 'required'      => false,
                                 'allow_delete'  => true, // not mandatory, default is true
                                 'download_link' => true, // not mandatory, default is true
                         ))
         
-                        ->add('parallaxFile',VichFileType::class, array(
-                                'label' => 'admin.page.parallax',
-                                'required'      => false,
-                                'allow_delete'  => true, // not mandatory, default is true
-                                'download_link' => true, // not mandatory, default is true
-                        ))
-                        ->add('content', TextareaType::class, array(
-                                'label' => 'admin.page.content',
+                        ->add('firstStep', TextareaType::class, array(
+                                'label' => 'admin.game.content',
+                                'required' => false,
                                 'attr' => array('class' => 'tinymce')
                         ))
-                     
-                        ->add('metaDesc', TextareaType::class, array(
-                                'label' => 'admin.edit.metaDesc',
-                                'required'      => false
+                        ->add('secondStep', TextareaType::class, array(
+                                'label' => 'admin.game.content',
+                                'required' => false,
+                                'attr' => array('class' => 'tinymce')
+                        ))
+        
+                        ->add('thirdStep', TextareaType::class, array(
+                                'label' => 'admin.game.content',
+                                'required' => false,
+                                'attr' => array('class' => 'tinymce')
                         ));
+                         
 
         }
 

@@ -46,6 +46,19 @@
                 {% else %}
                     <div class="col-xs-12 col-sm-8">
                         {{ page.content|raw }}
+<br />
+<br />
+<br />
+                        {% if page.devAlias == 'game' %}
+                            {% if game.gameStatus == 0%}
+                                {{ game.firstStep|raw }}
+                            {% else %}
+                                <p>Cette semaine le jeu a déjà été remporté par <strong>{{ game.winner.nickname }}</strong> mais tu peux jouer quand même peut être que tu gagnera un poney miniature en bambou... ou pas</p>
+                            {% endif %}
+<br />
+                            <br />
+                            <a href="{{ path('circa_game') }}" class="button">Participer</a>
+                        {% endif %}
                     </div>
                     {#NEWS#}
                     <div class="col-xs-12 col-sm-4">

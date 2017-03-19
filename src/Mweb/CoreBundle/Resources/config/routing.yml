@@ -15,3 +15,8 @@ circa_news:
 circa_artist:
   path: /artist/{slugArtist}
   defaults: { _controller: MwebCoreBundle:Default:artist, _locale: fr }
+
+
+circa_game:
+  path: /jeux-concours
+  defaults: { _controller: MwebCoreBundle:Default:game, _locale: fr }

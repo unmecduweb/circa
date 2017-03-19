@@ -165,7 +165,51 @@ mweb_admin:
             beautyName: Actualités
         artist:
             beautyName: Artistes
+        game:
+            beautyName: Jeux
+        gamers:
+            beautyName: Participants
     entities:
+        game:
+            beautyName: Jeux
+            menu: game
+            class: Mweb\CoreBundle\Entity\Game
+            form: Mweb\CoreBundle\Form\GameType
+            listProperties:
+                name:
+                    dataName: title
+                    beautyName: Nom
+                    type: string
+                gameStatus:
+                    dataName: gameStatus
+                    beautyName: Vainqueur?
+                    type: boolean
+                winner:
+                    dataName: winner
+                    beautyName: Gagnant
+                    type: string
+                status:
+                     dataName: status
+                     beautyName: En ligne
+                     type: boolean
+        gamers:
+            beautyName: Participants
+            menu: gamers
+            class: Mweb\CoreBundle\Entity\Gamer
+            form: Mweb\CoreBundle\Form\GamerType
+            listProperties:
+                name:
+                    dataName: nickname
+                    beautyName: Nom
+                    type: string
+                created:
+                    dataName: created
+                    beautyName: Ajouté le
+                    type: date
+                status:
+                     dataName: status
+                     beautyName: En ligne
+                     type: boolean
         page:
             beautyName: Pages
             menu: page

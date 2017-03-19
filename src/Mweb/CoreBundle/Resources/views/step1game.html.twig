@@ -1,0 +1,55 @@
+{% extends "MwebCoreBundle::layout.html.twig" %}
+
+
+
+{% block title %}{{ page.title }}{% endblock %}
+
+
+{% block content %}
+    {#{{ liip(page, 'paralax', paralax) }}#}
+    <section id="section-page-title" class="paralax-wrap"
+             style="background-image: url('{{ liip(page, 'parallax','parallaxFile') }}')">
+        <div class="section-container">
+            <div class="container-fluid">
+                <div class="block-title left">
+                    <h2>
+                        <span class="main"><span class="line"></span>{{ page.title|stripAccents }}</span>
+                        <span class="back">{{ page.backTitle }}</span>
+                    </h2>
+
+                    <div class="breadcrumb">
+                        $ /<a href="{{ path('_homepage') }}">Circa</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+                        <a href="">{{ page.title }}</a>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="content-wrap">
+
+                <div class="col-xs-12 col-sm-8">
+                    {{ game.secondStep|raw }}
+
+                    {{ form(form) }}
+
+
+                </div>
+                {#NEWS#}
+                <div class="col-xs-12 col-sm-4">
+                    {% include 'MwebCoreBundle::sidebar.html.twig' %}
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+{% endblock %}
