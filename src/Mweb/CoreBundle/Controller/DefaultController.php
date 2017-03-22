@@ -50,7 +50,7 @@ class DefaultController extends Controller
                 if ($page->getDevAlias() == 'news') {
                         $newsList = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findAll();
                 } else if ($page->getDevAlias() == 'artist') {
-                        $artistList = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findAll();
+                        $artistList = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findBy(array(), array('position' => 'ASC'));
                 }
                 $news = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findBy(array(), array('created' => 'DESC'), 2);
                 
