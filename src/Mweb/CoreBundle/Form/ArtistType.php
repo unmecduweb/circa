@@ -83,7 +83,7 @@ class ArtistType extends AbstractType {
                                 'attr' => array('class' => 'tinymce')
                         ))
         
-                        ->add('metaDesc', TextType::class, array(
+                        ->add('position', TextType::class, array(
                                 'label' => 'Position',
                                 'required'      => false
                         ))
