@@ -91,7 +91,7 @@ class DefaultController extends Controller
                 
                 $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
                 $artist = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findOneBySlug($slugArtist);
-                $artistList = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findBy(array('type' => $artist->getType()), array('created' => 'DESC'), 3);
+                $artistList = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findBy(array('type' => $artist->getType()), array('position' => 'ASC'), 3);
                 
                 
                 $parent = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findOneByDevAlias('artist');
