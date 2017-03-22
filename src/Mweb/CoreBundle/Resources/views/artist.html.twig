@@ -39,8 +39,8 @@
                     <h3 class="subtitle"><span class="glyphicon glyphicon-calendar"></span> {{ artist.scene|trans }} - [{{ date|trans }} - {{ artist.sessionDate|date('d') }}]</h3>
                     <p>{{ artist.content|raw }}</p>
                     <p>
-                        <a href="{{ artist.website }}">Voir le site web</a> <br/>
-                        <a href="{{ artist.facebook }}">Voir la page facebook</a>
+                        <a target="_blank" href="{{ artist.website }}">Voir le site web</a> <br/>
+                        <a target="_blank" href="{{ artist.facebook }}">Voir la page facebook</a>
                     </p>
                     {{ artist.videoLink|raw }}
 
