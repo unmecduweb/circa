@@ -266,6 +266,10 @@ mweb_admin:
                     dataName: title
                     beautyName: Nom
                     type: string
+                position:
+                    dataName: position
+                    beautyName: Position
+                    type: string
                 sessionDate:
                     dataName: sessionDate
                     beautyName: Journée
