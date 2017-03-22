@@ -35,7 +35,8 @@
                 <div class="col-xs-12 col-sm-7 artist-content">
 
                     <h3>{{ artist.title|upper }} - {{ artist.subTitle }}</h3>
-                    <h3 class="subtitle"><span class="glyphicon glyphicon-calendar"></span> {{ artist.scene|trans }} - {{ artist.sessionHours }}</h3>
+                    {% set date = 'date'~artist.sessionDate|date('d') %}
+                    <h3 class="subtitle"><span class="glyphicon glyphicon-calendar"></span> {{ artist.scene|trans }} - [{{ date|trans }} - {{ artist.sessionDate|date('d') }}]</h3>
                     <p>{{ artist.content|raw }}</p>
                     <p>
                         <a href="{{ artist.website }}">Voir le site web</a> <br/>
@@ -57,7 +58,10 @@
                                 <img src="{{ liip(art, 'news') }}" alt=""/>
                                 <h3>{{ art.title }}</h3>
                                 <h4>{{ art.subTitle }}</h4>
-                                <h4>{{ art.sessionHours }}</h4>
+                                {% set date = 'date'~artist.sessionDate|date('d') %}
+                                <h4 class="subtitle"><span class="glyphicon glyphicon-calendar"></span> {{ date|trans }} - {{ artist.sessionDate|date('d') }}</h4>
+
+
                                 <a href="{{ path('circa_artist', {'slugArtist': art.slug}) }}" class="button">En savoir
                                     plus</a>
                                 <div class="clear"></div>

@@ -82,7 +82,11 @@ class ArtistType extends AbstractType {
                                 'required' => false,
                                 'attr' => array('class' => 'tinymce')
                         ))
-                        
+        
+                        ->add('metaDesc', TextType::class, array(
+                                'label' => 'Position',
+                                'required'      => false
+                        ))
                         ->add('metaDesc', TextareaType::class, array(
                                 'label' => 'admin.edit.metaDesc',
                                 'required'      => false

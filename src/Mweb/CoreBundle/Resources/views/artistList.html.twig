@@ -23,8 +23,10 @@
 
         <a class="artist-text" href="{{ path('circa_artist', {'slugArtist' : artist.slug}) }}">
             <h3>{{ artist.title }}</h3>
+            {% set date = 'date'~artist.sessionDate|date('d') %}
             <h4>{{ artist.subTitle }}</h4>
-            <h4>{{ artist.sessionHours }}</h4>
+            <h4>[{{ date|trans }} - {{ artist.sessionDate|date('d') }}]</h4>
+
         </a>
     </div>
 {% endfor %}

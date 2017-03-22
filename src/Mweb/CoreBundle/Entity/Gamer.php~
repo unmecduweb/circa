@@ -236,4 +236,28 @@ class Gamer extends AbstractEntity
     {
         return $this->cookie;
     }
+
+    /**
+     * Set winner
+     *
+     * @param integer $winner
+     *
+     * @return Gamer
+     */
+    public function setWinner($winner)
+    {
+        $this->winner = $winner;
+
+        return $this;
+    }
+
+    /**
+     * Get winner
+     *
+     * @return integer
+     */
+    public function getWinner()
+    {
+        return $this->winner;
+    }
 }

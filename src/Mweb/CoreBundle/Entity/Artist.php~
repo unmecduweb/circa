@@ -91,6 +91,13 @@ class Artist extends AbstractEntity
         private $type;
         
         /**
+         * @var integer
+         *
+         * @ORM\Column(name="position", type="smallint")
+         */
+        private $position;
+        
+        /**
          * @var string
          *
          * @ORM\Column(name="website", type="string", length=250, nullable=true)

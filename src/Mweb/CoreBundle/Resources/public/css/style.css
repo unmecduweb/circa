@@ -286,6 +286,7 @@ body .breadcrumb{color:#fff;}
 .news .button{float: right; width: 140px; margin: 15px 0 0;}
 .logo {text-align: center; margin: 10px 0 25px;}
 .news h4{margin: 10px 0 5px;}
+.news h4:first-letter{text-transform: uppercase;}
 .news h3{margin: 7px 0;}
 
 .artist-content img{width: 100%;}
