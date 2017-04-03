@@ -34,24 +34,32 @@
                 <div class="col-xs-12 col-sm-8">
 
                     {% if win == "winGame" %}
-                        Tu as gagné félicitation
-                        On te contactera plus tard,
-                        Tes coordonnées sont {{ gamer.nickname }}  /// {{ gamer.email }} // {{ gamer.phone }}
+                        <p>Tu as gagné, félicitation.<br />
+                        On te contactera plus tard,<br /> tes coordonnées sont {{ gamer.nickname }}  /// {{ gamer.email }} // {{ gamer.phone }}</p>
                     {% elseif win == "winTirage" %}
-                        Ce jeu à déjà gagné, mais un tirage au sort des éternelles second aura lieu, en lot un poney a gagné!!
+                        <p>Ce jeu à déjà été gagné, mais un tirage au sort des éternels second aura lieu, en lot un poney a gagné!!</p>
                     {% else %}
 
 
                         {% if win == "lose" %}
-                            Tu as perdu essai encore
+                            <p>Tu as perdu essaie encore</p>
                         {% endif %}
                         {% if gamer.winner %}
-                            <p>Tu as déjà jouer matelot reviens la semaine prochaine!! </p>
+                            <p>Tu as déjà joué matelot reviens la semaine prochaine!! </p>
 
                         {% else %}
                             {{ game.thirdStep|raw }}
+                            <div class="clear"></div>
+                            <p>&nbsp;</p>
 
-                            {{ form(form) }}
+                            {{ form_start(form) }}
+                            <div class="form-group">
+                                <label>Code de décryptage : </label>
+                                {{ form_widget(form.code, {"attr": {'class': 'form-control'}}) }}
+                            </div>
+                            {{ form_widget(form.submit, {"attr": {'class': 'button'}}) }}
+                            {{ form_end(form) }}
+
 
                         {% endif %}
                     {% endif %}
@@ -71,3 +79,6 @@
 
 
 {% endblock %}
+
+
+
