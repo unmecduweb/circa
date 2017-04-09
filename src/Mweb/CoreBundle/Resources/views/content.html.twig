@@ -1,6 +1,6 @@
 {% extends "MwebCoreBundle::layout.html.twig" %}
 
-
+{% block metaOgImg %}{{ liip(page, 'parallax','parallaxFile') }}{% endblock %}
 
 {% block title %}{{ page.title }}{% endblock %}
 

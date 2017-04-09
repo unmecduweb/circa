@@ -29,6 +29,8 @@
 
     {% endblock %}
 
+    <meta property="og:image" content="{% spaceless %}{% block metaOgImg %}{{ app.request.schemeAndHttpHost }}{{ asset('bundles/mwebcore/img/logo.png') }}{% endblock %}{% endspaceless %}"/>
+
 
 </head>
 <body id="default">
