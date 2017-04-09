@@ -47,13 +47,12 @@
                     <div class="col-xs-12 col-sm-8">
                         {{ page.content|raw }}
 <br />
-<br />
-<br />
+
                         {% if page.devAlias == 'game' %}
                             {% if game.gameStatus == 0%}
                                 {{ game.firstStep|raw }}
                             {% else %}
-                                <p>Cette semaine le jeu a déjà été remporté par <strong>{{ game.winner.nickname }}</strong> mais tu peux jouer quand même peut être que tu gagneras un poney miniature en bambou!!!</p>
+                                <p>Cette semaine le jeu a déjà été remporté par <strong>{{ game.winner.nickname }}</strong> mais tu peux tout de même jouer! On paye notre coup aux 9 gagnants suivants!</p>
                             {% endif %}
 <br />
                             <br />

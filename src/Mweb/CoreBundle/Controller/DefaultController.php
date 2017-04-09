@@ -139,7 +139,7 @@ class DefaultController extends Controller
                         $form->handleRequest($request);
                         
                         if ($form->isValid()) {
-                                if ($form->get('code')->getData() == $game->getCode()) {
+                                if (strtolower(trim($form->get('code')->getData())) == strtolower(trim($game->getCode()))) {
                                         
                                         //VAINQUEUR DU JEU
                                         if($game->getGameStatus() == 0) {

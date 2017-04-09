@@ -34,15 +34,15 @@
                 <div class="col-xs-12 col-sm-8">
 
                     {% if win == "winGame" %}
-                        <p>Tu as gagné, félicitation.<br />
-                        On te contactera plus tard,<br /> tes coordonnées sont {{ gamer.nickname }}  /// {{ gamer.email }} // {{ gamer.phone }}</p>
+                        <p>Tu as gagné, félicitations.<br />
+                        On te contactera plus tard,<br /> tes coordonnées sont {{ gamer.nickname }}  / {{ gamer.email }} / {{ gamer.phone }}</p>
                     {% elseif win == "winTirage" %}
-                        <p>Ce jeu à déjà été gagné, mais un tirage au sort des éternels second aura lieu, en lot un poney a gagné!!</p>
+                        <p>Félicitations mousaillon! Tu as trouvé la bonne combinaison.<br />Malheureusement le jeu à déjà été remporté, mais si tu fais partie des 9 gagnants suivants on te paye un coup sur place, on te contactera le cas échéant</p>
                     {% else %}
 
 
                         {% if win == "lose" %}
-                            <p>Tu as perdu essaie encore</p>
+                            <p class="highlight">Tu as perdu, essaye encore!</p>
                         {% endif %}
                         {% if gamer.winner %}
                             <p>Tu as déjà joué matelot reviens la semaine prochaine!! </p>
