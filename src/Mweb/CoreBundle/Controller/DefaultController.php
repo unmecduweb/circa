@@ -212,7 +212,7 @@ class DefaultController extends Controller
                         if ($cookie) {
                                 $response->headers->setCookie($cookie);
                         }
-                        return $response->send();
+                        return $response;
                 }
         }
         
