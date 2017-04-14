@@ -262,7 +262,7 @@ button.mobile-menu{background: none; border: none; font-size: 32px; position: ab
 #menu a:hover{ text-decoration: none;  -webkit-mask-image: none;}
 #menu a:last-child{margin-right: 0px; padding-right: 0px;}
 
-
+.content-wrap hr{border: 1px solid #000;}
 /* ==========================================================================
    SECTION PARALAX
    ========================================================================== */
