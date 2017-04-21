@@ -369,6 +369,22 @@ section.content .section-illu{width: 100%; margin: 35px 0 0;}
 #prog .day-04 .scene{width: 40%;float: left;}
 #prog .scene{width: 40%;float: left;}
 #prog .scene{width: 30%;float: left;}
+
+@media screen and (max-width: 1080px) {
+    #prog .day {width: 100%;}
+    #prog .day.day-04 {width: 100%;}
+    #prog .day-04 .scene {width: 100%;float: left; }
+}
+@media screen and (min-width: 1080px) {
+    #prog .day {float: left;width: 40%;}
+    #prog .day.day-04 { width: 20%;}
+}
+
+#prog .day-04 .scene {width: 40%; float: left;}
+#prog .scene {width: 40%; float: left;}
+#prog .scene {width: 30%; float: left;}
+
+
 #prog .line{height: 15px; border-left: 1px solid #000; position: relative;}
 #prog .day-04 .scene:nth-child(3) .col{border-right: 1px solid #000;}
 #prog .day .col{border-top: 1px solid #000; border-bottom: 1px solid #000;}

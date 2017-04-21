@@ -90,22 +90,38 @@ class DefaultController extends Controller
         {
                 
                 $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
-                $allArtists = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findBy(array(), array('sessionDate'=> 'ASC'));
+                $allArtists = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findBy(array(), array('sessionDate' => 'ASC'));
                 $artistsOrder = array();
-                foreach ($allArtists as $k => $artist){
-                        if($artist->getSessionDate()->format('H') < 15 )$key = '3'.$artist->getSessionDate()->format('Hi');
+                foreach ($allArtists as $k => $artist) {
+                        if ($artist->getSessionDate()->format('H') < 15) $key = '3' . $artist->getSessionDate()->format('Hi');
                         else $key = $artist->getSessionDate()->format('Hi');
                         //if(isset($artistsOrder[date('d', $artist->getSessionDate()->getTimestamp()).'_'.$artist->getScene().'_'.$key]))echo $artist->getSessionDate()->format('m-d H:i');
-                        $artistsOrder[date('d', $artist->getSessionDate()->getTimestamp()).'_'.$artist->getScene().'_'.$key] = $k;
-                        
+                        $artistsOrder[date('d', $artist->getSessionDate()->getTimestamp()) . '_' . $artist->getScene() . '_' . $key] = $k;
+                        if ($artist->getId() == 10) {
+                                $artistsOrder['05_out_2030'] = $k;
+                                $artistsOrder['06_out_1830'] = $k;
+                        }
+                        if ($artist->getId() == 8) {
+                                $artistsOrder['04_chapiteau_2330'] = $k;
+                        }
                         
                 }
                 
                 
-
                 ksort($artistsOrder);
-                foreach ($artistsOrder as $k){
-                        $artistsOrderList[date('d', $allArtists[$k]->getSessionDate()->getTimestamp())][$allArtists[$k]->getScene()][$allArtists[$k]->getSessionDate()->format('Hi')] = $allArtists[$k];
+                
+                foreach ($artistsOrder as $i => $k) {
+                        if ($i == '05_out_2030') {
+                                $artistsOrderList['05']['out']["2030"] = $allArtists[$k];
+                        } elseif ($i == '06_out_1830') {
+                                $artistsOrderList['06']['out']["1830"] = $allArtists[$k];
+                        } elseif ($i == '04_chapiteau_2330') {
+                                
+                                $artistsOrderList['04']['chapiteau']["2330"] = $allArtists[$k];
+                                
+                        } else {
+                                $artistsOrderList[date('d', $allArtists[$k]->getSessionDate()->getTimestamp())][$allArtists[$k]->getScene()][$allArtists[$k]->getSessionDate()->format('Hi')] = $allArtists[$k];
+                        }
                 }
                 
                 $parent = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findOneByDevAlias('artist');
@@ -152,40 +168,39 @@ class DefaultController extends Controller
                 $gamer = false;
                 $cookie = false;
                 $cookies = $request->cookies;
-        
                 
                 
                 if ($cookies->has($game->getDevAlias())) {
                         
                         $gamer = $this->getDoctrine()->getRepository('MwebCoreBundle:Gamer')->findOneByCookie($cookies->get($game->getDevAlias()));
-                
-                }else{
-        
+                        
+                } else {
+                        
                         $cookieVal = $game->getId() + time();
                         $cookie = new Cookie($game->getDevAlias(), $cookieVal, time() + 3600 * 24 * 7);
                 }
                 //ETAPE 2 USER EXISTE
                 if ($gamer) {
                         $form = $this->createForm(GameCodeType::class);
-                        $win= false;
+                        $win = false;
                         $form->handleRequest($request);
                         
                         if ($form->isValid()) {
                                 if (strtolower(trim($form->get('code')->getData())) == strtolower(trim($game->getCode()))) {
                                         
                                         //VAINQUEUR DU JEU
-                                        if($game->getGameStatus() == 0) {
+                                        if ($game->getGameStatus() == 0) {
                                                 $game->setGameStatus(1);
                                                 $game->setWinner($gamer);
                                                 $em->persist($game);
-        
+                                                
                                                 $gamer->setWinner(2);
                                                 $em->persist($gamer);
                                                 $win = 'winGame';
-                                        }else{
+                                        } else {
                                                 $gamer->setWinner(1);
                                                 $em->persist($gamer);
-        
+                                                
                                                 $win = 'winTirage';
                                         }
                                         $em->flush();
@@ -203,8 +218,8 @@ class DefaultController extends Controller
                                 'game' => $game,
                                 'gamer' => $gamer,
                                 'win' => $win
-        
-        
+                        
+                        
                         ));
                         
                         

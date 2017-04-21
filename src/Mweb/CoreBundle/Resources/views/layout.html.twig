@@ -13,8 +13,9 @@
     {% block stylesheets %}
         <link rel="stylesheet" type="text/css" media="screen"
               href="{{ asset('bundles/mwebcore/css/bootstrap.min.css') }}"/>
-        <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/mwebcore/css/jquery.fancybox.min.css') }}"/>
-        <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/mwebcore/css/style.css') }}"/>
+        <link rel="stylesheet" type="text/css" media="all" href="{{ asset('bundles/mwebcore/css/jquery.fancybox.min.css') }}"/>
+        <link rel="stylesheet" type="text/css" media="all" href="{{ asset('bundles/mwebcore/css/style.css') }}"/>
+        <link rel="stylesheet" type="text/css" media="print" href="{{ asset('bundles/mwebcore/css/print.css') }}"/>
         <link rel="stylesheet" type="text/css" media="all and (min-width: 768px)"
               href="{{ asset('bundles/mwebcore/css/responsive/responsiveDesk.css') }}"/>
     {% endblock %}
