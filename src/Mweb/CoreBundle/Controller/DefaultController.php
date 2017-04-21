@@ -86,6 +86,38 @@ class DefaultController extends Controller
         }
         
         
+        public function progAction(Request $request)
+        {
+                
+                $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
+                $allArtists = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist')->findBy(array(), array('sessionDate'=> 'ASC'));
+                $artistsOrder = array();
+                foreach ($allArtists as $k => $artist){
+                        if($artist->getSessionDate()->format('H') < 15 )$key = '3'.$artist->getSessionDate()->format('Hi');
+                        else $key = $artist->getSessionDate()->format('Hi');
+                        //if(isset($artistsOrder[date('d', $artist->getSessionDate()->getTimestamp()).'_'.$artist->getScene().'_'.$key]))echo $artist->getSessionDate()->format('m-d H:i');
+                        $artistsOrder[date('d', $artist->getSessionDate()->getTimestamp()).'_'.$artist->getScene().'_'.$key] = $k;
+                        
+                        
+                }
+                
+                
+
+                ksort($artistsOrder);
+                foreach ($artistsOrder as $k){
+                        $artistsOrderList[date('d', $allArtists[$k]->getSessionDate()->getTimestamp())][$allArtists[$k]->getScene()][$allArtists[$k]->getSessionDate()->format('Hi')] = $allArtists[$k];
+                }
+                
+                $parent = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findOneByDevAlias('artist');
+                return $this->render('MwebCoreBundle::prog.html.twig', array(
+                        'pagesMenu' => $pagesMenu,
+                        'artistsList' => $artistsOrderList,
+                        'parent' => $parent
+                
+                ));
+                
+        }
+        
         public function artistAction(Request $request, $slugArtist)
         {
                 

@@ -1,0 +1,80 @@
+{% extends "MwebCoreBundle::layout.html.twig" %}
+
+
+
+{% block title %}Prog{% endblock %}
+
+
+{% block content %}
+
+    <section id="section-page-title" class="paralax-wrap"
+             style="background-image: url('{{ liip(parent, 'parallax','parallaxFile') }}')">
+        <div class="section-container">
+            <div class="container-fluid">
+                <div class="block-title left">
+                    <h2>
+                        <span class="main"><span class="line"></span>{{ parent.title|stripAccents }}</span>
+                        <span class="back">{{ parent.backTitle }}</span>
+                    </h2>
+
+                    <div class="breadcrumb">
+                        $ /<a href="{{ path('_homepage') }}">Circa</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+                        <a href="">{{ parent.title }}</a>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    {% set hours = ["1700","1715","1730","1745","1800","1815","1830","1845","1900","1915","1930","1945","2000","2015","2030","2045","2100","2115","2130","2145","2200","2215","2230","2245","2300","2315","2330","2345","0000","0015","0030","0045","0100","0115","0130","0145","0200","0215","0230","0245","0300","0315","0330","0345","0400"] %}
+
+    <section class="content">
+
+        <div class="content-wrap" id="prog">
+            {% for day, artistsDay in artistsList %}
+                {% set dayTrans = 'date'~day %}
+                <div class="day-{{ day }} day">
+                    <h2 class="title-{{ day }} title">{{ dayTrans|trans }} <span style="font-family: 'number'">{{ day|number_format }}</span></h2>
+                    <ul>
+                        <li class="hours">
+                            <h3>&nbsp;</h3>
+                            <ul class="col">
+                                {% for h in hours %}
+                                    <li class="line">
+                                        {% if h|slice(2,2) == '00' %}
+                                            {{ h|slice(0,2) }}H
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% for scene, artists in artistsDay %}
+                            <li class="scene">
+                                <h3>{{ scene|trans }}</h3>
+                                <ul class="col">
+                                    {% for h in hours %}
+                                        <li class="line">
+                                            {% if artists[h] is defined %}
+                                                {% set height = artists[h].duration * 15 / 25 %}
+                                                <div class="progItem {{ artists[h].type }}"
+                                                     style="line-height:{{ height|number_format }}px;height:{{ height|number_format }}px">
+                                                    <a data-toggle="tooltip" title="Voir la fiche de l'artiste" target="_blank" href="{{ path('circa_artist', {'slugArtist': artists[h].slug}) }}">{{ artists[h].title }}</a>
+                                                </div>
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+
+                        {% endfor %}
+
+
+                    </ul>
+                </div>
+            {% endfor %}
+            <div class="clear"></div>
+        </div>
+    </section>
+
+
+
+{% endblock %}

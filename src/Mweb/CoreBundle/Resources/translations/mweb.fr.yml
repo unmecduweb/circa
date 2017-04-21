@@ -38,6 +38,7 @@ admin:
   artist:
       sessionHours: Horaire de passage ex 19h30 - 22H15
       title: Nom du groupe
+      duration: Durée heure au format numérique ex 30 min = 50; 1h15 = 125
       subTitle: Sous titre format genre - pays
       scene: Scène
       sessionDate: Date et heure de passage

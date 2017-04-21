@@ -49,6 +49,11 @@ class Artist extends AbstractEntity
          */
         private $sessionHours;
         
+        /**
+         * @var string
+         * @ORM\Column(name="duration", type="string", length=250, nullable=true)
+         */
+        private $duration;
         
         /**
          * @ORM\Column(name="slug", type="string", length=250, nullable=false)
@@ -546,5 +551,29 @@ class Artist extends AbstractEntity
     public function getPosition()
     {
         return $this->position;
+    }
+
+    /**
+     * Set duration
+     *
+     * @param string $duration
+     *
+     * @return Artist
+     */
+    public function setDuration($duration)
+    {
+        $this->duration = $duration;
+
+        return $this;
+    }
+
+    /**
+     * Get duration
+     *
+     * @return string
+     */
+    public function getDuration()
+    {
+        return $this->duration;
     }
 }

@@ -328,6 +328,9 @@ section.content .section-illu{width: 100%; margin: 35px 0 0;}
     filter: invert(1);
 }
 
+
+
+
 .artist .artist-illu:hover .theme{}
 .artist .artist-text{text-align: center; height: 150px; display: block; font-style: normal; cursor: pointer;}
 .artist .artist-text:hover{ text-decoration: none;}
@@ -346,6 +349,39 @@ section.content .section-illu{width: 100%; margin: 35px 0 0;}
 .filter.dub.selected{background: #985f0d; color: #fff}
 .filter.electro.selected{background: #0960A4; color: #fff}
 .filter.selected{background: #b13d30; color: #fff}
+
+
+/*    PROG    */
+
+#prog {width: 90%; margin: auto; background: #ededed; padding: 50px 0;}
+#prog ul{list-style: none; padding: 0; margin: 0;}
+#prog li{list-style: none; padding: 0; margin: 0;}
+#prog .title{text-align: center; font-family: "caribbean", 'number'; color: #000; font-size: 25px;}
+
+#prog h3{font-family: 'caribbean'; text-align: center; text-transform: uppercase; font-size: 13px; color:#b13d30; line-height: 18px; height: 36px; margin-bottom: 5px; word-break: keep-all;}
+#prog .hours{width: 10%; float: left;}
+
+#prog .hours .line{text-align: center; border-top:0px; }
+#prog .line:nth-child(2n){border-top: 1px dashed #444;}
+
+#prog .day{float: left; width: 40%;}
+#prog .day.day-04{width: 20%;}
+#prog .day-04 .scene{width: 40%;float: left;}
+#prog .scene{width: 40%;float: left;}
+#prog .scene{width: 30%;float: left;}
+#prog .line{height: 15px; border-left: 1px solid #000; position: relative;}
+#prog .day-04 .scene:nth-child(3) .col{border-right: 1px solid #000;}
+#prog .day .col{border-top: 1px solid #000; border-bottom: 1px solid #000;}
+#prog .day .scene:nth-child(4) .col{border-right: 1px solid #000;}
+#prog .line .progItem{position: absolute; top: 0; left: 0; width: 100%; color: #fff; vertical-align:middle; z-index: 10; text-align: center; outline-width:; border-top: 1px solid #333; border-bottom: 1px solid #333; overflow: hidden;}
+#prog .line .progItem a{color: #fff; display: inline-block;}
+
+
+#prog .line .progItem.circ {background: #537d09;}
+#prog .line .progItem.rock {background: #0c0c0c;}
+#prog .line .progItem.electro {background: #0960A4;}
+#prog .line .progItem.dub {background: #985f0d;}
+
 
 section.footer{background: white; padding: 20px 0;}
 section.footer .footer-icon{margin: 0 10px;}
