@@ -98,6 +98,7 @@ class DefaultController extends Controller
                         //if(isset($artistsOrder[date('d', $artist->getSessionDate()->getTimestamp()).'_'.$artist->getScene().'_'.$key]))echo $artist->getSessionDate()->format('m-d H:i');
                         $artistsOrder[date('d', $artist->getSessionDate()->getTimestamp()) . '_' . $artist->getScene() . '_' . $key] = $k;
                         if ($artist->getId() == 10) {
+                                $artist->setTitle('The Serious Road Trip');
                                 $artistsOrder['05_out_2030'] = $k;
                                 $artistsOrder['06_out_1830'] = $k;
                         }
