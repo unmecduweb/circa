@@ -60,6 +60,9 @@
                                                     <a data-toggle="tooltip" title="Voir la fiche de l'artiste" target="_blank" href="{{ path('circa_artist', {'slugArtist': artists[h].slug}) }}">{{ artists[h].title }}</a>
                                                 </div>
                                             {% endif %}
+                                            {% if scene == 'bar' and ((h == '0100' and day == "04") or (h == '0200' and day == "05") or (h == '0400' and day == "06")) %}
+                                                <div class="progItem red" style="line-height:30px; height:30px; width: {{ day == "04" ? '200%' : '300%' }};">Fermeture du site</div>
+                                            {% endif %}
                                         </li>
                                     {% endfor %}
                                 </ul>

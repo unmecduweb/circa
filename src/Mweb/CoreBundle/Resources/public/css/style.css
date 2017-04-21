@@ -393,6 +393,7 @@ section.content .section-illu{width: 100%; margin: 35px 0 0;}
 #prog .line .progItem a{color: #fff; display: inline-block;}
 
 
+#prog .line .progItem.red {background: #b13d30;}
 #prog .line .progItem.circ {background: #537d09;}
 #prog .line .progItem.rock {background: #0c0c0c;}
 #prog .line .progItem.electro {background: #0960A4;}
