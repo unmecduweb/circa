@@ -28,8 +28,14 @@
     {% set hours = ["1700","1715","1730","1745","1800","1815","1830","1845","1900","1915","1930","1945","2000","2015","2030","2045","2100","2115","2130","2145","2200","2215","2230","2245","2300","2315","2330","2345","0000","0015","0030","0045","0100","0115","0130","0145","0200","0215","0230","0245","0300","0315","0330","0345","0400","0415"] %}
 
     <section class="content">
-
         <div class="content-wrap" id="prog">
+            <p id="prog-legend">
+                <span class="square circ"></span>Cirque &nbsp;
+                <span class="square rock"></span>Rock &nbsp;
+                <span class="square electro"></span>Electro &nbsp;
+                <span class="square dub"></span>Dub &nbsp;
+
+            </p>
             {% for day, artistsDay in artistsList %}
                 {% set dayTrans = 'date'~day %}
                 <div class="day-{{ day }} day">

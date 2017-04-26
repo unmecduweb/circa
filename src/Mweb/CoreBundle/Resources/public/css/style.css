@@ -399,6 +399,12 @@ section.content .section-illu{width: 100%; margin: 35px 0 0;}
 #prog .line .progItem.rock {background: #0c0c0c;}
 #prog .line .progItem.electro {background: #0960A4;}
 #prog .line .progItem.dub {background: #985f0d;}
+#prog-legend{margin: 0 0 20px; text-align: right;}
+.square{display: inline-block; width: 15px; height: 15px; border: 1px solid #444; margin-right: 3px; vertical-align: baseline;}
+.square.circ {background: #537d09;}
+.square.rock {background: #0c0c0c;}
+.square.electro {background: #0960A4;}
+.square.dub {background: #985f0d;}
 
 
 section.footer{background: white; padding: 20px 0;}
