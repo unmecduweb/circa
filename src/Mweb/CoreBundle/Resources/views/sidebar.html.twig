@@ -1,4 +1,3 @@
-
 {% if col is not defined %}
     <div class="col-xs-12">
         <h3>Dernières actualités</h3>
@@ -11,7 +10,11 @@
         <img src="{{ liip(actu, 'news') }}" alt=""/>
         <h3>{{ actu.startDate|date('d/m') }} - {{ actu.title }}</h3>
         <p>{{ actu.summary|raw }}</p>
-        <a href="{{ path('circa_news', {'slugNews': actu.slug}) }}" class="button">En savoir plus</a>
+        {% if actu.devAlias == 'prog' %}
+            <a href="{{ path('circa_prog') }}" class="button">En savoir plus</a>
+        {% else %}
+            <a href="{{ path('circa_news', {'slugNews': actu.slug}) }}" class="button">En savoir plus</a>
+        {% endif %}
         <div class="clear"></div>
     </div>
 
