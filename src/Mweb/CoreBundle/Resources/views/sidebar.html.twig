@@ -8,7 +8,7 @@
 {% for actu in news %}
     <div class="col-sm-{{ col }} col-xs-12 news">
         <img src="{{ liip(actu, 'news') }}" alt=""/>
-        <h3>{{ actu.startDate|date('d/m') }} - {{ actu.title }}</h3>
+        <h3 style="margin-top: 10px;">{{ actu.title }}</h3>
         <p>{{ actu.summary|raw }}</p>
         {% if actu.devAlias == 'prog' %}
             <a href="{{ path('circa_prog') }}" class="button">En savoir plus</a>
