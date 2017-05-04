@@ -10,23 +10,27 @@
     <section id="section-info" class="paralax-wrap" style="background-image: url('{{  asset('bundles/mwebcore/img/illuhome.jpg') }}')">
         <div class="section-container" style="height: 100%;">
             <div class="container-fluid">
-                <div class="block-title right">
-                    <h2>
-                        <span class="main"><span class="line"></span>Festival Besançon</span>
-                        <span class="back">Electro-DUB</span>
-                    </h2>
-                </div>
-                <div class="block-title right">
-                    <h2>
-                        <span class="main">
-                            <span class="line"></span>
-                            <span style="font-family: 'number'">4.5.6</span>
-                            Mai
-                            <span style="font-family: 'number'">2017</span>
-                        </span>
+                {% if artistNow is not empty %}
+                    <div class="block-title double center">
+                        <h2>
+                            <span class="main"><small style="color:#fff;">EN CE MOMENT - {{ artistNow[0].scene|trans }}</small> <br /> {{ artistNow[0].title }}</span>
+                            <span class="back">{{ artistNow[0].type }}</span>
+                        </h2>
+                    </div>
+                {% endif %}
+                <div class="block-title center">
+                    {% if artistToCome is not empty %}
+                        <h2>
+                            <span class="main">
 
-                        <span class="back">Rock'n cirk</span>
-                    </h2>
+                                <span style="font-family: 'number">
+                                {{ artistToCome[0].sessionDate|date('H') }}H{{ artistToCome[0].sessionDate|date('i') }} - {{ artistToCome[0].scene|trans }}</span> - {{ artistToCome[0].title }}
+
+                            </span>
+
+                            <span class="back">{{ artistToCome[0].type }}</span>
+                        </h2>
+                    {% endif %}
                 </div>
             </div>
         </div>

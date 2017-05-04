@@ -14,7 +14,7 @@ use Mweb\AdminBundle\Entity\AbstractEntity;
  * News
  *
  * @ORM\Table(name="artist")
- * @ORM\Entity(repositoryClass="Mweb\AdminBundle\Entity\Translation\TranslatableRepository")
+ * @ORM\Entity(repositoryClass="Mweb\CoreBundle\Repository\ArtistRepository")
  * @Vich\Uploadable
  * @ORM\HasLifecycleCallbacks
  */

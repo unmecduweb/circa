@@ -17,15 +17,21 @@ class DefaultController extends Controller
         
         public function indexAction(Request $request)
         {
-                
+        
+                $artistRepo = $this->getDoctrine()->getRepository('MwebCoreBundle:Artist');
                 
                 $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
                 $news = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findBy(array(), array('created' => 'DESC'), 2);
                 
+                $artistsToCome = $artistRepo->getArtistToCome();
+                $artistsNow = $artistRepo->getArtistNow();
+                
                 
                 $response = $this->render('MwebCoreBundle::index.html.twig', array(
                         'pagesMenu' => $pagesMenu,
-                        'news' => $news
+                        'news' => $news,
+                        'artistNow' => $artistsNow,
+                        'artistToCome' => $artistsToCome
                 
                 
                 ));

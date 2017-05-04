@@ -217,6 +217,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 
 .block-title h2 .main .line{height: 1px; width: 60px; background: #fff; box-shadow: 0 0 2px #444; display: inline-block; vertical-align: middle;}
 .block-title h2 .back{font-size: 55px; font-family: 'pirate'; color: #f23030; text-transform: uppercase; width: 100%; text-shadow:0 0 2px #1e0d0d; text-align: center; position: absolute; top: -8px; left: 0; z-index: 50; opacity: 0.45;}
+.block-title.double h2 .back{top: 11px;}
 #section-info .block-title h2{width: 100%;}
 
 
@@ -276,7 +277,7 @@ body .breadcrumb{color:#fff;}
    ========================================================================== */
 .section-container{background: url('../img/bg-pattern.png') repeat rgba(30,29,28,.2);}
 
-#section-info .block-title.right:first-child{bottom: 150px;}
+#section-info .block-title:first-child{bottom: 150px;}
 #section-info .block-title{bottom: 30px; width: 100%;}
 
 .content-wrap{margin: 50px 0; }
