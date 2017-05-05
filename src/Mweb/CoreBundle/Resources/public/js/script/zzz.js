@@ -94,7 +94,7 @@ function showScrollPosition(hash){
 
 
 function headerPosition() {
-    $('#section-info').height($(window).height()-150);
+
 
     if($(window).width()>1400) {
         if ($(window).scrollTop() > 0) {

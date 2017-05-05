@@ -23,15 +23,43 @@ class DefaultController extends Controller
                 $pagesMenu = $this->getDoctrine()->getRepository('MwebCoreBundle:Content')->findAll();
                 $news = $this->getDoctrine()->getRepository('MwebCoreBundle:News')->findBy(array(), array('created' => 'DESC'), 2);
                 
-                $artistsToCome = $artistRepo->getArtistToCome();
-                $artistsNow = $artistRepo->getArtistNow();
+                $date = new \DateTime('now');
+                if($date->format('H')>=00 && $date->format('H')<=16){
+                        
+                        /*$date = new \DateTime('2017-05-05 00:00');*/
+                        $date = new \DateTime('now -1day');
+                        
+                }else {
+        
+                        
+                        $artists['out']['toCome'] = $artistRepo->getArtistToCome('out', $date, 'ven');
+                        if (count($artists['out']['toCome']) == 0) {
+                                $artists['out']['toCome'] = $artistRepo->getArtistToComeAfterMid('out', new \DateTime('2017-05-05 00:00'), 'ven');
+                        }
+                        
+                }
+                $artists['chapiteau']['toCome'] = $artistRepo->getArtistToCome('chapiteau', $date, 'ven');
+                if (count($artists['chapiteau']['toCome']) == 0) {
+                
+                        $artists['chapiteau']['toCome'] = $artistRepo->getArtistToComeAfterMid('chapiteau', new \DateTime('2017-05-05 00:00'), 'ven');
+                }
+                $artists['bar']['toCome'] = $artistRepo->getArtistToCome('bar', $date, 'ven');
+                if (count($artists['bar']['toCome']) == 0) {
+                        $artists['bar']['toCome'] = $artistRepo->getArtistToComeAfterMid('bar', new \DateTime('2017-05-05 00:00'), 'ven');
+                }
+                
+                              
+                $artists['out']['now'] = $artistRepo->getArtistNow('out', $date, 'ven');
+                $artists['bar']['now'] = $artistRepo->getArtistNow('bar', $date, 'ven');
+                $artists['chapiteau']['now'] = $artistRepo->getArtistNow('chapiteau',$date, 'ven');
+                
+                
                 
                 
                 $response = $this->render('MwebCoreBundle::index.html.twig', array(
                         'pagesMenu' => $pagesMenu,
                         'news' => $news,
-                        'artistNow' => $artistsNow,
-                        'artistToCome' => $artistsToCome
+                        'artists' => $artists
                 
                 
                 ));
