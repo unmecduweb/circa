@@ -8,28 +8,17 @@
 {% block content %}
     {#{{ liip(page, 'paralax', paralax) }}#}
     <section id="section-info" class="paralax-wrap"
-             style="background-image: url('{{ asset('bundles/mwebcore/img/illuhome.jpg') }}')">
-        <div class="section-container" style="height: 100%;">
-            <div class="container-fluid">
-                {% if artists is not empty %}
-                    {% for scene, artistPlace in artists %}
-                        <div class="home-post-artist col-xs-12 col-sm-4">
-                            <h2 class="home-scene">{{ scene|trans }}</h2>
-                            {% if artistPlace['now'] is defined and "now"|date('H')>17 and "now"|date('H')<13 %}
-                                {% for artist in artistPlace['now'] %}
-                                    <h2 class="home-artist"><span style="color:#f23030;">Maintenant:</span><br /> {{ artist.title }}</h2>
-                                {% endfor %}
-                            {% endif %}
-                            {% if artistPlace['toCome'] is defined %}
-                                {% for artist in artistPlace['toCome'] %}
-                                    <h2 class="home-artist"><span style="color:#f23030;">{{ artist.sessionDate|date('H') }}H{{ artist.sessionDate|date('i') }}</span> <br />{{ artist.title }}</h2>
-                                {% endfor %}
-                            {% endif %}
-                        </div>
-                    {% endfor %}
-                {% endif %}
+             style="background-image: url('{{ asset('bundles/mwebcore/img/illuhome.jpg') }}'); height: 400px; ">
+        <div class="section-container">
 
-            </div>
+                <div class="block-title center col-xs-12 ">
+                    <h2>
+                        <span class="main"><span class="line"></span>Festival complet<span class="line"></span></span>
+                        <span class="back">Sold out</span>
+                    </h2>
+                    <div class="clear"></div>
+                </div>
+
         </div>
     </section>
 
