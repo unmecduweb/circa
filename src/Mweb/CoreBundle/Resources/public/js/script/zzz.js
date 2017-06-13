@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    videoHeight();
     $('#section-info').parallax("70% 50%", 0.45);
     $('#section-festival').parallax("70%", 0.45);
 
@@ -11,6 +12,7 @@ $(document).ready(function () {
     $(window).resize(function () {
         borderSize();
         headerPosition();
+        videoHeight();
     })
 
     headerPosition();
@@ -20,6 +22,42 @@ $(document).ready(function () {
     contentSlideManage();
 
     artistManage();
+    $("#jquery_jplayer").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: $("#jquery_jplayer").data('title'),
+                m4v: $("#jquery_jplayer").data('video-mp4'),
+                poster: $("#jquery_jplayer").data('thumbnail')
+            });
+        },
+        play: function () {
+            // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        click: function () {
+
+            if ($(this).data('pause') == 'on') {
+                $(this).data('pause', 'off');
+                $(this).jPlayer("play");
+            } else {
+                $(this).data('pause', 'on');
+                $(this).jPlayer("pause");
+            }
+
+        },
+        swfPath: "../../files",
+        supplied: "m4v",
+        width: '580px',
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true,
+        size: {
+            width: "auto",
+            height: "100%"
+        }
+    });
 
     $("body").click(function(){
         /*vibration()*/
@@ -177,4 +215,9 @@ function artistManage(){
 
 
     })
+}
+
+function videoHeight() {
+    $('.jp-wrap').height($(window).height()-$('header').height()+20);
+
 }

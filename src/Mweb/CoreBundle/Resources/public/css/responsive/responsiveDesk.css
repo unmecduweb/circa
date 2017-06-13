@@ -12,7 +12,21 @@
     #menu-wrap{width: 64% !important;}
     #menu a{padding: 5px 5px !important; margin:0 !important;}
     .social-link{right: 12px !important; top: 1px !important; left: auto;  width: auto;}
+
+    .home-bullet .circle .text{font-size: 20px !important;}
+    .home-bullet .legend{font-size: 13px !important; }
 }
+
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    .home-bullet .circle .text{font-size: 30px !important;}
+    .home-bullet .legend{font-size: 18px !important; }
+
+}
+.home-bullet .circle .text{font-size: 40px;}
+.home-bullet .legend{font-size: 24px; }
+
 
 /* ==========================================================================
    COMMON
